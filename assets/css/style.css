@@ -48,6 +48,7 @@ body {
     margin: 5px auto;
     width: 60%;
     font-size: 1.2rem;
+    padding: 50px;
 }
 
 .controls-area {
@@ -82,13 +83,14 @@ body {
 .scores {
     display: inline-block;
     padding: 25px;
+    border: 50px;
 }
 
 /* --------- Buttons */
 
 .btn {
-    width: 100%;
-    height: ;
+    width: 220px;
+    height: 60px;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.2px;
@@ -100,10 +102,14 @@ body {
 }
 
 .btn--big {
+    padding-top: 10px;
+    border-radius: 50%;
     background-color: white;
     border: 10px solid;
-    width: 30%;
+    width: 100px;
+    height: 100px;
     font-size: 3.2rem;
+    margin: 30px 30px 30px 30px;
     transition: all 0.5s;
 }
 
