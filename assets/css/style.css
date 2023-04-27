@@ -59,7 +59,7 @@
     text-transform: uppercase;
     padding-top: 25px;
     padding-bottom: 10px;
-    color: #ffb338;
+    color: white;
   }
 
 
@@ -193,8 +193,10 @@ body {
 }
 
 .btn--blue {
-    border-color: blue;
-    color: blue;
+    background: url(../images/banana-black-white.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: contain;
 }
 
 .btn--blue:active,
@@ -204,8 +206,10 @@ body {
 }
 
 .btn--orange {
-    border-color: orange;
-    color: orange;
+    background: url(../images/monkey-black-white.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: contain;
 }
 
 .btn--orange:active,
@@ -215,8 +219,10 @@ body {
 }
 
 .btn--red {
-    border-color: red;
-    color: red;
+    background: url(../images/monkey-yellow.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: contain;
 }
 
 .btn--red:active,
@@ -226,7 +232,7 @@ body {
 }
 
 .btn--green {
-    background: url(../images/logo.png);
+    background: url(../images/banana-yellow.png);
     background-position:center;
     background-repeat:no-repeat;
     background-size: contain;

@@ -20,24 +20,58 @@
         <div class="fg"> Knock Knock, Monkey </div>
         <h2>Collect the bananas, avoid the monkey!</h2>
       </div>
+
+
+      <style>
+        .slides { width: 75px; }
+        .slides { height: 75px; }
+        .slides-hidden { display : none; }
+    </style>
     
+   
+    <script>
+        addEventListener("load",() => { // "load" is safe but "DOMContentLoaded" starts earlier
+            var index = 0;
+            const slides = document.querySelectorAll(".slides");
+            const classHide = "slides-hidden", count = slides.length;
+            nextSlide();
+            function nextSlide() {
+                slides[(index ++) % count].classList.add(classHide);
+                slides[index % count].classList.remove(classHide);
+                setTimeout(nextSlide, 300);
+            }
+        });
+    </script>
     
+    <section>
+        <img class="slides slides-hidden" src="/assets/images/banana-black-white.png">
+        <img class="slides slides-hidden" src="/assets/images/monkey-yellow.png">
+        <img class="slides slides-hidden" src="/assets/images/banana-yellow.png">
+        <img class="slides slides-hidden" src="/assets/images/monkey-black-white.png">
+    </section>
+    
+        
 
 
     <div class="game-area">
         <div class="controls-area">
             <button data-type="" class="btn btn--big btn--green">
-                
+            </button>
+            <button data-type="" class="btn btn--big btn--orange">
+            </button>
+            <button data-type="" class="btn btn--big btn--blue">
             </button>
             <br>
             <button data-type="" class="btn btn--big btn--green">
             </button>
+            <button data-type="" class="btn btn--big btn--red">
+            </button>
             <button data-type="" class="btn btn--big btn--green">
             </button>
             <br>
-            <button data-type="" class="btn btn--big btn--green">
+            <button data-type="" class="btn btn--big btn--blue">
             </button>
-            <button data-type="" class="btn btn--big btn--green">
+            <button data-type="" class="btn btn--big btn--orange">
             </button>
             <button data-type="" class="btn btn--big btn--green">
             </button>
@@ -56,7 +90,7 @@
     <button data-type="submit" class="btn btn--gray">Submit Answer</button>
 
     <div class="score-area">
-        <p class="scores">Correct Answers <span id="score">0</span></p>
+        <p class="scores">Bananas Collected <span id="score">0</span></p>
         <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
     </div>
 
