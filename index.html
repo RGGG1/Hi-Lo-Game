@@ -15,10 +15,13 @@
 </head>
 
 <body>
-    <h1 class="heading">
-        <img class="logo" src="assets/images/logo.png" alt="logo"> <br>Knock, Knock, Monkey!
-    </h1>
-    <h2>Avoid the monkey, win the bananas</h2>
+    <div class="wrapper">
+        <div class="bg"> Knock Knock, Monkey </div>
+        <div class="fg"> Knock Knock, Monkey </div>
+        <h2>Collect the bananas, avoid the monkey!</h2>
+      </div>
+    
+    
 
 
     <div class="game-area">
@@ -39,16 +42,18 @@
             <button data-type="" class="btn btn--big btn--green">
             </button>
         </div>
-        <div class="question-area">
-            <span id="operand1">0</span>
-            <span id="operator">x</span>
-            <span id="operand2">0</span>
-            <span>=</span>
-            <p class="answer-message">Enter Answer:</p>
-            <input id="answer-box" type="number">
-        </div>
-        <button data-type="submit" class="btn btn--gray">Submit Answer</button>
+        
     </div>
+
+    <div class="question-area">
+        <span id="operand1">0</span>
+        <span id="operator">x</span>
+        <span id="operand2">0</span>
+        <span>=</span>
+        <p class="answer-message">Enter Answer:</p>
+        <input id="answer-box" type="number">
+    </div>
+    <button data-type="submit" class="btn btn--gray">Submit Answer</button>
 
     <div class="score-area">
         <p class="scores">Correct Answers <span id="score">0</span></p>
