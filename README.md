@@ -1,5 +1,4 @@
 References:
-http://clipart-library.com/
 https://freefrontend.com/css-text-effects/
 https://codepen.io/TajShireen/pen/LYyOzJL - title font effect
 https://fontawesome.com/icons/banana?f=classic&s=duotone&pc=%23ffffff&sc=%23ffffff&po=1&so=0.6 - banana icon
