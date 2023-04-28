@@ -126,7 +126,7 @@ body {
 
 .controls-area {
     width: 85%;
-    margin: 30px auto;
+    margin: auto;
 }
 
 #score {
@@ -161,29 +161,33 @@ body {
 
 /* --------- Buttons */
 
+.image-button {
+    
+}
+
+
 .btn {
-    width: 220px;
-    height: 60px;
+    width: 150px;
+    height: 150px;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    color: black;
+    color: gold;
     border-radius: 50%;
 }
 
 .btn:focus {
-    outline: none;
+    outline: solid;
 }
 
 
 .btn--big {
     
-    padding-top: 10px;
+    padding: 5px 5px 5px 5px;
     border-radius: 50%;
-    background-color: black;
-    border: 5px solid;
-    width: 100px;
-    height: 100px;
+    border-color: gold;
+    width: 150px;
+    height: 150px;
     font-size: 3.2rem;
     margin: 30px 30px 30px 30px;
     transition: all 0.5s;    
@@ -192,7 +196,7 @@ body {
 .btn--big::after {
     content: attr(data-type);
     font-size: 1rem;
-    color: #445361;
+    color: green;
     position: relative;
     left: -0.5em;
 }

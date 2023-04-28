@@ -6,7 +6,7 @@ function changeImg(myelemet,myimgs){
     var myRandomNum = Math.floor(Math.random() * myimgs.length);
 
     myelemet.src = myimgs[myRandomNum];
-  }, 250);
+  }, 350);
 }
 changeImg(myelemet,myimgs);
 
@@ -18,7 +18,7 @@ function changeImg(myelemet,myimgs){
     var myRandomNum = Math.floor(Math.random() * myimgs.length);
 
     myelemet.src = myimgs[myRandomNum];
-  }, 250);
+  }, 350);
 }
 changeImg(myelemet,myimgs);
 
@@ -30,7 +30,7 @@ function changeImg(myelemet,myimgs){
     var myRandomNum = Math.floor(Math.random() * myimgs.length);
 
     myelemet.src = myimgs[myRandomNum];
-  }, 250);
+  }, 230);
 }
 changeImg(myelemet,myimgs);
 
@@ -43,7 +43,7 @@ function changeImg(myelemet,myimgs){
     var myRandomNum = Math.floor(Math.random() * myimgs.length);
 
     myelemet.src = myimgs[myRandomNum];
-  }, 250);
+  }, 350);
 }
 changeImg(myelemet,myimgs);
 
@@ -55,7 +55,7 @@ function changeImg(myelemet,myimgs){
     var myRandomNum = Math.floor(Math.random() * myimgs.length);
 
     myelemet.src = myimgs[myRandomNum];
-  }, 250);
+  }, 350);
 }
 changeImg(myelemet,myimgs);
 
@@ -67,7 +67,7 @@ function changeImg(myelemet,myimgs){
     var myRandomNum = Math.floor(Math.random() * myimgs.length);
 
     myelemet.src = myimgs[myRandomNum];
-  }, 250);
+  }, 350);
 }
 changeImg(myelemet,myimgs);
 
@@ -80,7 +80,7 @@ function changeImg(myelemet,myimgs){
     var myRandomNum = Math.floor(Math.random() * myimgs.length);
 
     myelemet.src = myimgs[myRandomNum];
-  }, 250);
+  }, 350);
 }
 changeImg(myelemet,myimgs);
 
@@ -93,7 +93,7 @@ function changeImg(myelemet,myimgs){
     var myRandomNum = Math.floor(Math.random() * myimgs.length);
 
     myelemet.src = myimgs[myRandomNum];
-  }, 250);
+  }, 350);
 }
 changeImg(myelemet,myimgs);
 
@@ -105,7 +105,7 @@ function changeImg(myelemet,myimgs){
     var myRandomNum = Math.floor(Math.random() * myimgs.length);
 
     myelemet.src = myimgs[myRandomNum];
-  }, 250);
+  }, 350);
 }
 changeImg(myelemet,myimgs);
 

@@ -3,7 +3,7 @@ https://freefrontend.com/css-text-effects/
 https://codepen.io/TajShireen/pen/LYyOzJL - title font effect
 https://fontawesome.com/icons/banana?f=classic&s=duotone&pc=%23ffffff&sc=%23ffffff&po=1&so=0.6 - banana icon
 https://fontawesome.com/icons/monkey?f=classic&s=solid&pc=%23ffff06 - Monkey icon
-https://stackoverflow.com/questions/61957530/how-to-change-an-image-every-5-seconds-for-example - for image transition effect
+https://codepen.io/houssem93171714/pen/abZZEaz - for image transition effect
 
 
 

@@ -22,72 +22,21 @@
       </div>
 
       
-      <script>
-      var myIndex = 0;
-      carousel();
-      
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-        }
-        myIndex = getRandomInt(0, x.length - 1);
-        x[myIndex].style.display = "block";  
-        setTimeout(carousel, 2000); // Change image every 2 seconds
-      }
-      
-      function getRandomInt(min, max) {
-          min = Math.ceil(min);
-          max = Math.floor(max);
-          return Math.floor(Math.random() * (max - min + 1)) + min;
-      }
-      </script>
-<style>
-    .mySlides { width: 75px; }
-    .mySlides { height: 75px; }
-    .mySlides-hidden { display : none; }
-</style>
-
-
-      <style>
-        .slides { width: 75px; }
-        .slides { height: 75px; }
-        .slides-hidden { display : none; }
-    </style>
-    
-   
-    <script>
-        addEventListener("load",() => { // "load" is safe but "DOMContentLoaded" starts earlier
-        var index = 0;
-            const slides = document.querySelectorAll(".slides");
-            const classHide = "slides-hidden", count = slides.length;
-            nextSlide();
-            function nextSlide() {
-                slides[(index ++) % count].classList.add(classHide);
-                slides[index % count].classList.remove(classHide);
-                setTimeout(nextSlide, 1000);
-            }
-        });
-    </script>
-
-    
-
-
-
 
     <div class="game-area">
         <div class="controls-area">
-            <button data-type="" class="btn btn--big ">
-                <img id='myimg1' src="/assets/images/banana-yellow.png" alt='' height="100px" width="100px"/>
+            <button class="image-button"><img id='myimg1' src="/assets/images/banana-black-white.png" alt="Image"></button>
+            <button data-type="" class="btn btn--big">
+                <img id='myimg1' src="/assets/images/banana-black-white.png" alt='' height="100px" width="100px" position="center"; repeat="no-repeat"; size="fill"/>
             </button>
-            <button data-type="" class="btn btn--big ">
-                <img id='myimg2' src="/assets/images/banana-black-white.png" alt='' height="100px" width="100px"/>
+            <button data-type="" class="btn btn--big">
+                <img id='myimg2' src="/assets/images/banana-black-white.png" alt='' height="100px" width="100px" background-position="center"; background-repeat="no-repeat"; background-size="contain"/>
             </button>
             <button data-type="" class="btn btn--big ">
                 <img id='myimg3' src="/assets/images/banana-yellow.png" alt='' height="100px" width="100px"/>
             </button>
-            <br>
+        </div>
+        <div class="controls-area">
             <button data-type="" class="btn btn--big ">
                 <img id='myimg4' src="/assets/images/banana-black-white.png" alt='' height="100px" width="100px"/>
             </button>
@@ -97,7 +46,8 @@
             <button data-type="" class="btn btn--big ">
                 <img id='myimg6' src="/assets/images/banana-black-white.png" alt='' height="100px" width="100px"/>
             </button>
-            <br>
+        </div>
+        <div class="controls-area">
             <button data-type="" class="btn btn--big ">
                 <img id='myimg7' src="/assets/images/banana-yellow.png" alt='' height="100px" width="100px"/>
             </button>
