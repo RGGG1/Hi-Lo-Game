@@ -12,14 +12,42 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Knock Knock, Monkey</title>
-</head>
 
-<body>
+
+
     <div class="wrapper">
         <div class="bg"> Knock Knock, Monkey </div>
         <div class="fg"> Knock Knock, Monkey </div>
         <h2>Collect the bananas, avoid the monkey!</h2>
       </div>
+
+      
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex = getRandomInt(0, x.length - 1);
+        x[myIndex].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      
+      function getRandomInt(min, max) {
+          min = Math.ceil(min);
+          max = Math.floor(max);
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      </script>
+<style>
+    .mySlides { width: 75px; }
+    .mySlides { height: 75px; }
+    .mySlides-hidden { display : none; }
+</style>
 
 
       <style>
@@ -31,101 +59,62 @@
    
     <script>
         addEventListener("load",() => { // "load" is safe but "DOMContentLoaded" starts earlier
-            var index = 0;
+        var index = 0;
             const slides = document.querySelectorAll(".slides");
             const classHide = "slides-hidden", count = slides.length;
             nextSlide();
             function nextSlide() {
                 slides[(index ++) % count].classList.add(classHide);
                 slides[index % count].classList.remove(classHide);
-                setTimeout(nextSlide, 300);
+                setTimeout(nextSlide, 1000);
             }
         });
     </script>
+
     
+
+
+
 
     <div class="game-area">
         <div class="controls-area">
             <button data-type="" class="btn btn--big ">
-                <img class="slides slides-hidden" src="/assets/images/banana-black-white.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/banana-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-black-white.png">
-
+                <img id='myimg1' src="/assets/images/banana-yellow.png" alt='' height="100px" width="100px"/>
             </button>
             <button data-type="" class="btn btn--big ">
-                <img class="slides slides-hidden" src="/assets/images/banana-black-white.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/banana-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-black-white.png">
-
+                <img id='myimg2' src="/assets/images/banana-black-white.png" alt='' height="100px" width="100px"/>
             </button>
             <button data-type="" class="btn btn--big ">
-                <img class="slides slides-hidden" src="/assets/images/banana-black-white.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/banana-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-black-white.png">
-
+                <img id='myimg3' src="/assets/images/banana-yellow.png" alt='' height="100px" width="100px"/>
             </button>
             <br>
             <button data-type="" class="btn btn--big ">
-                <img class="slides slides-hidden" src="/assets/images/banana-black-white.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/banana-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-black-white.png">
-
+                <img id='myimg4' src="/assets/images/banana-black-white.png" alt='' height="100px" width="100px"/>
+            </button>
+            <button data-type="" class="btn btn--big ">             
+                <img id='myimg5' src="/assets/images/banana-yellow.png" alt='' height="100px" width="100px"/>
             </button>
             <button data-type="" class="btn btn--big ">
-                <img class="slides slides-hidden" src="/assets/images/banana-black-white.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/banana-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-black-white.png">
-
-            </button>
-            <button data-type="" class="btn btn--big ">
-                <img class="slides slides-hidden" src="/assets/images/banana-black-white.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/banana-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-black-white.png">
+                <img id='myimg6' src="/assets/images/banana-black-white.png" alt='' height="100px" width="100px"/>
             </button>
             <br>
             <button data-type="" class="btn btn--big ">
-                <img class="slides slides-hidden" src="/assets/images/banana-black-white.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/banana-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-black-white.png">
-
+                <img id='myimg7' src="/assets/images/banana-yellow.png" alt='' height="100px" width="100px"/>
             </button>
             <button data-type="" class="btn btn--big ">
-                <img class="slides slides-hidden" src="/assets/images/banana-black-white.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/banana-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-black-white.png">
-
+                <img id='myimg8' src="/assets/images/banana-black-white.png" alt='' height="100px" width="100px"/>
             </button>
             <button data-type="" class="btn btn--big ">
-                <img class="slides slides-hidden" src="/assets/images/banana-black-white.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/banana-yellow.png">
-                <img class="slides slides-hidden" src="/assets/images/monkey-black-white.png">
+                <img id='myimg9' src="/assets/images/banana-black-white.png" alt='' height="100px" width="100px"/>
             </button>
         </div>
         
     </div>
 
-    <div class="question-area">
-        <span id="operand1">0</span>
-        <span id="operator">x</span>
-        <span id="operand2">0</span>
-        <span>=</span>
-        <p class="answer-message">Enter Answer:</p>
-        <input id="answer-box" type="number">
-    </div>
-    <button data-type="submit" class="btn btn--gray">Submit Answer</button>
-
+    
     <div class="score-area">
         <p class="scores">Bananas Collected <span id="score">0</span></p>
-        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+        <p class="scores">Monkey Lives Remaining <span id="incorrect">3</span></p>
     </div>
 
     <script src="assets/js/script.js"></script>
