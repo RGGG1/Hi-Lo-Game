@@ -4,7 +4,7 @@ https://codepen.io/TajShireen/pen/LYyOzJL - title font effect
 https://fontawesome.com/icons/banana?f=classic&s=duotone&pc=%23ffffff&sc=%23ffffff&po=1&so=0.6 - banana icon
 https://fontawesome.com/icons/monkey?f=classic&s=solid&pc=%23ffff06 - Monkey icon
 https://codepen.io/houssem93171714/pen/abZZEaz - for image transition effect
-
+https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward - countdown timer code
 
 
 

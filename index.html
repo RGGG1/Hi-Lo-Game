@@ -8,7 +8,6 @@
     <!-- font awesome and google fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Knock Knock, Monkey</title>
@@ -18,9 +17,13 @@
     <div class="wrapper">
         <div class="bg"> Knock Knock, Monkey </div>
         <div class="fg"> Knock Knock, Monkey </div>
-        <h2>Collect the bananas, avoid the monkey!</h2>
+        <h2>Grab the bananas, avoid the monkey!</h2>
       </div>
 
+    <i class="fa-solid fa-clock"></i>
+    <div class="timer" id="timer">
+    </div>
+    
 
     <div class="game-area">
         <div class="controls-area">
@@ -38,11 +41,11 @@
         </div>        
     </div>
 
-    
     <div class="score-area">
         <p class="scores">Bananas Collected <span id="score">0</span></p>
-        <p class="scores">Monkey Lives Remaining <span id="incorrect">3</span></p>
+        <p class="scores">Monkey Lives Remaining <span id="monkey-lives">3</span></p>
     </div>
+    
 
     <script src="assets/js/script.js"></script>
     <!--font awesome script-->
