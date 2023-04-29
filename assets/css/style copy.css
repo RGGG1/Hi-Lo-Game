@@ -3,6 +3,11 @@ img {
     width: 125px;
     background-color: black;
     color: red;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
 }
 
 
@@ -165,12 +170,6 @@ body {
 
 .image-button {
     color: black;
-    margin: 30px 30px 30px 30px;
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;  
     
     
 }
@@ -179,19 +178,11 @@ body {
     content: attr(data-type);
     color: black;
     position: relative;
-
 }
 
 .image-button:focus {
     outline: solid;
     color: red;
-    border-radius: 50%;
-}
-
-.image-button:hover {
-    outline: solid;
-    color: red;
-    border-radius: 50%;
 }
 
 
