@@ -5,16 +5,25 @@ these make the slideshow work
 button {
     border-radius: 50%;
     background-color: black;
+    border-color: black;
+    color: transparent;
+    height: 500px;
+    width: 500px;
 }
 
 #slides{
 	position: relative;
-	height: 500px;
-    width: 500px;
-    border-radius: 50%;
-	padding: 0px;
-	margin: 0px;
+	height: 250px;
+    width: 250px;
+	padding: 0;
+	margin: auto;
 	list-style-type: none;
+    color: black;
+    border-color: black;
+    background-color: black;
+    
+    
+    
 }
 
 .slide{
@@ -25,6 +34,7 @@ button {
 	height: 100%;
 	opacity: 1;
 	z-index: 1;
+    
     
 
 	-webkit-transition: opacity 1;
@@ -45,19 +55,14 @@ non-essential styles:
 just for appearance; change whatever you want
 */
 
-.slide{
-	font-size: 40px;
-	padding: 40px;
-	box-sizing: border-box;
-	background: #333;
-	color: #fff;
-}
+
 
 .slide:nth-of-type(1){
 	background-image: url("/assets/images/banana-black-white.png");
     background-repeat: no-repeat;
-    background-size:     cover;      
+    background-size:     contain;      
     background-position: center center;
+    
     
 }
 .slide:nth-of-type(2){
@@ -300,6 +305,7 @@ body {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
+    
     
 }
 

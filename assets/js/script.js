@@ -1,12 +1,25 @@
+function incrementScore() {
+
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+
+}
+
+function decrementWrongAnswer() {
+
+    let oldScore = parseInt(document.getElementById("monkey-lives").innerText);
+    document.getElementById("monkey-lives").innerText = --oldScore;
+}
 
 
+//
 
+  
 
 var slides = document.querySelectorAll('#slides .slide');
 var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,250);
+var slideInterval = setInterval(nextSlide,1000);
 
-var myRandomNum = Math.floor(Math.random() * slides.length);
 
 function nextSlide(){
 	slides[currentSlide].className = 'slide';
@@ -18,15 +31,32 @@ var playing = true;
 var pauseButton = document.getElementById('pause');
 
 function pauseSlideshow(){
+    
+    
 	playing = false;
 	clearInterval(slideInterval);
     console.log(currentSlide);
+    
+    if (currentSlide === 0) {
+        alert("BANANA");
+        incrementScore();
+    } if (currentSlide === 1) {
+        alert("BANANA");
+        incrementScore();
+    }
+     else {
+        alert(`Uh-oh! MONKEY!`);
+        decrementWrongAnswer();
+    }
+    
     setTimeout(
         function playSlideshow(){
             playing = true;
-            slideInterval = setInterval(nextSlide,250);
+            slideInterval = setInterval(nextSlide,1000);
         }, 2000);
 }
+
+
 
 /* disabled the play function, so the user has to wait for it to execute after they pause, in the function above this one.
 
