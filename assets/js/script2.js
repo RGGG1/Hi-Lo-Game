@@ -1,6 +1,7 @@
+
 var slides = document.querySelectorAll('#slides .slide');
 var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,2000);
+var slideInterval = setInterval(nextSlide,250);
 
 function nextSlide(){
 	slides[currentSlide].className = 'slide';
@@ -14,11 +15,12 @@ var pauseButton = document.getElementById('pause');
 function pauseSlideshow(){
 	playing = false;
 	clearInterval(slideInterval);
+    console.log(currentSlide);
 }
 
 function playSlideshow(){
 	playing = true;
-	slideInterval = setInterval(nextSlide,2000);
+	slideInterval = setInterval(nextSlide,250);
 }
 
 pauseButton.onclick = function(){
