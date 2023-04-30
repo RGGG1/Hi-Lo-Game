@@ -1,11 +1,16 @@
 
+
+
+
 var slides = document.querySelectorAll('#slides .slide');
 var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,250);
+var slideInterval = setInterval(nextSlide,2500);
+
+var myRandomNum = Math.floor(Math.random() * slides.length);
 
 function nextSlide(){
 	slides[currentSlide].className = 'slide';
-	currentSlide = (currentSlide+1)%slides.length;
+	currentSlide = (currentSlide+Math.floor(Math.random() * slides.length))%slides.length;
 	slides[currentSlide].className = 'slide showing';
 }
 
@@ -20,7 +25,7 @@ function pauseSlideshow(){
 
 function playSlideshow(){
 	playing = true;
-	slideInterval = setInterval(nextSlide,250);
+	slideInterval = setInterval(nextSlide,2500);
 }
 
 pauseButton.onclick = function(){
