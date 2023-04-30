@@ -1,10 +1,8 @@
 
 
-
-
 var slides = document.querySelectorAll('#slides .slide');
 var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,2500);
+var slideInterval = setInterval(nextSlide,250);
 
 var myRandomNum = Math.floor(Math.random() * slides.length);
 
@@ -25,7 +23,7 @@ function pauseSlideshow(){
 
 function playSlideshow(){
 	playing = true;
-	slideInterval = setInterval(nextSlide,2500);
+	slideInterval = setInterval(nextSlide,250);
 }
 
 pauseButton.onclick = function(){

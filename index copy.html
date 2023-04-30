@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome and google fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Knock Knock, Monkey</title>
+
+
+
+    <div class="wrapper">
+        <div class="bg"> Knock Knock, Monkey </div>
+        <div class="fg"> Knock Knock, Monkey </div>
+        <h2>Grab the bananas, avoid the monkey!</h2>
+      </div>
+
+    <i class="fa-solid fa-clock"></i>
+    <div class="timer" id="timer">
+    </div>
+
+    <html>
+
+<body>
+
+
+
+    
+
+<b>HTML stand for</b> <br>
+
+<p>
+
+<input type="button" id="bt" value="Show Answer" onclick="changeImg();" />
+
+<button id="show-image-button">Show Image</button>
+<img id="myimg10" src="/assets/images/banana-black-white.png" style="display: none;">
+<script>
+   const showImageButton = document.getElementById("show-image-button");
+   const myImage = document.getElementById("myimg10");
+
+   showImageButton.addEventListener("click", () => { 
+      myImage.style.display = "hide";
+   });
+</script>
+
+
+    <div class="game-area">
+        <div class="controls-area">
+            <button class="image-button" onclick="pause()"><img id='myimg1' src="/assets/images/banana-black-white.png" alt="Image"></button>
+            <button class="image-button"><img id='myimg2' src="/assets/images/banana-black-white.png" alt="Image"></button>
+            <button class="image-button"><img id='myimg3' src="/assets/images/banana-black-white.png" alt="Image"></button>
+            <br>
+            <button class="image-button"><img id='myimg4' src="/assets/images/banana-black-white.png" alt="Image"></button>
+            <button class="image-button"><img id='myimg5' src="/assets/images/banana-black-white.png" alt="Image"></button>
+            <button class="image-button"><img id='myimg6' src="/assets/images/banana-black-white.png" alt="Image"></button>
+            <br>
+            <button class="image-button"><img id='myimg7' src="/assets/images/banana-black-white.png" alt="Image"></button>
+            <button class="image-button"><img id='myimg8' src="/assets/images/banana-black-white.png" alt="Image"></button>
+            <button class="image-button"><img id='myimg9' src="/assets/images/banana-black-white.png" alt="Image"></button>
+        </div>        
+    </div>
+
+    <div class="score-area">
+        <p class="scores">Bananas Collected <span id="score">0</span></p>
+        <p class="scores">Monkey Lives Remaining <span id="monkey-lives">3</span></p>
+    </div>
+    
+
+    <script src="assets/js/script.js"></script>
+    <!--font awesome script-->
+    <script src="https://kit.fontawesome.com/1f271c2fd4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -2,10 +2,14 @@
 essential styles:
 these make the slideshow work
 */
+button {
+    border-radius: 50%;
+}
+
 #slides{
 	position: relative;
-	height: 150px;
-    width: 150px;
+	height: 500px;
+    width: 500px;
     border-radius: 50%;
 	padding: 0px;
 	margin: 0px;
@@ -51,16 +55,64 @@ just for appearance; change whatever you want
 .slide:nth-of-type(1){
 	background-image: url("/assets/images/banana-black-white.png");
     background-repeat: no-repeat;
+    background-size:     cover;      
+    background-position: center center;
+    
 }
 .slide:nth-of-type(2){
 	background-image: url("/assets/images/banana-yellow.png");
     background-repeat: no-repeat;
+    background-size:     cover;      
+    background-position: center center;
 }
 .slide:nth-of-type(3){
 	background-image: url("/assets/images/monkey-black-white.png");
     background-repeat: no-repeat;
+    background-size:     cover;      
+    background-position: center center;
 }
 .slide:nth-of-type(4){
 	background-image: url("/assets/images/monkey-yellow.png");
     background-repeat: no-repeat;
+    background-size:     cover;      
+    background-position: center center;
+}
+
+.image-button {
+    color: transparent;
+    margin: 30px 30px 30px 30px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms
+    
+}
+
+.image-button::after {
+    content: attr(data-type);
+    color: black;
+    position: relative;
+
+}
+
+.image-button:focus {
+    outline: solid;
+    border-radius: 50%;
+    
+}
+
+.image-button:hover {
+    color: black;
+    border-radius: 50%;
+    outline-offset: 15px;
+}
+
+.image-button:active {
+    color: transparent;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 60px gold;
+    outline: none;
+    
 }

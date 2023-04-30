@@ -2,114 +2,45 @@
 
 
 
-var myelement = document.getElementById('myimg1'),
-    myimgs =["/assets/images/banana-yellow.png","/assets/images/monkey-black-white.png","/assets/images/banana-black-white.png","/assets/images/monkey-yellow.png"];
-    function changeImg(myelement,myimgs){
-  setInterval(function(){
-    var myRandomNum = Math.floor(Math.random() * myimgs.length);
-    myelement.src = myimgs[myRandomNum];
-      }, 250);
+var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,250);
+
+var myRandomNum = Math.floor(Math.random() * slides.length);
+
+function nextSlide(){
+	slides[currentSlide].className = 'slide';
+	currentSlide = (currentSlide+Math.floor(Math.random() * slides.length))%slides.length;
+	slides[currentSlide].className = 'slide showing';
+}
+
+var playing = true;
+var pauseButton = document.getElementById('pause');
+
+function pauseSlideshow(){
+	playing = false;
+	clearInterval(slideInterval);
+    console.log(currentSlide);
+    setTimeout(
+        function playSlideshow(){
+            playing = true;
+            slideInterval = setInterval(nextSlide,250);
+        }, 2000);
+}
+
+/* disabled the play function, so the user has to wait for it to execute after they pause, in the function above this one.
+
+function playSlideshow(){
+	playing = true;
+	slideInterval = setInterval(nextSlide,250);
+}
+*/
+
+pauseButton.onclick = function(){
+	if(playing){ pauseSlideshow(); }
+	else{ playSlideshow(); }
     
-}
-changeImg(myelement,myimgs);
-
-function pause() {
-    clearInterval(myimgs);
-  }
-
-
-
-
-var myelement = document.getElementById('myimg2'),
-    myimgs =["/assets/images/banana-yellow.png","/assets/images/monkey-black-white.png","/assets/images/banana-black-white.png","/assets/images/monkey-yellow.png"];
-function changeImg(myelement,myimgs){
-  setInterval(function(){
-    var myRandomNum = Math.floor(Math.random() * myimgs.length);
-
-    myelement.src = myimgs[myRandomNum];
-  }, 250);
-}
-changeImg(myelement,myimgs);
-
-var myelement = document.getElementById('myimg3'),
-    myimgs =["/assets/images/banana-yellow.png","/assets/images/monkey-black-white.png","/assets/images/banana-black-white.png","/assets/images/monkey-yellow.png"];
-function changeImg(myelement,myimgs){
-  setInterval(function(){
-    var myRandomNum = Math.floor(Math.random() * myimgs.length);
-
-    myelement.src = myimgs[myRandomNum];
-  }, 250);
-}
-changeImg(myelement,myimgs);
-
-
-var myelement = document.getElementById('myimg4'),
-    myimgs =["/assets/images/banana-yellow.png","/assets/images/monkey-black-white.png","/assets/images/banana-black-white.png","/assets/images/monkey-yellow.png"];
-function changeImg(myelement,myimgs){
-  setInterval(function(){
-    var myRandomNum = Math.floor(Math.random() * myimgs.length);
-
-    myelement.src = myimgs[myRandomNum];
-  }, 250);
-}
-changeImg(myelement,myimgs);
-
-var myelement = document.getElementById('myimg5'),
-    myimgs =["/assets/images/banana-yellow.png","/assets/images/monkey-black-white.png","/assets/images/banana-black-white.png","/assets/images/monkey-yellow.png"];
-function changeImg(myelement,myimgs){
-  setInterval(function(){
-    var myRandomNum = Math.floor(Math.random() * myimgs.length);
-
-    myelement.src = myimgs[myRandomNum];
-  }, 250);
-}
-changeImg(myelement,myimgs);
-
-var myelement = document.getElementById('myimg6'),
-    myimgs =["/assets/images/banana-yellow.png","/assets/images/monkey-black-white.png","/assets/images/banana-black-white.png","/assets/images/monkey-yellow.png"];
-function changeImg(myelement,myimgs){
-  setInterval(function(){
-    var myRandomNum = Math.floor(Math.random() * myimgs.length);
-
-    myelement.src = myimgs[myRandomNum];
-  }, 250);
-}
-changeImg(myelement,myimgs);
-
-
-var myelement = document.getElementById('myimg7'),
-    myimgs =["/assets/images/banana-yellow.png","/assets/images/monkey-black-white.png","/assets/images/banana-black-white.png","/assets/images/monkey-yellow.png"];
-function changeImg(myelement,myimgs){
-  setInterval(function(){
-    var myRandomNum = Math.floor(Math.random() * myimgs.length);
-
-    myelement.src = myimgs[myRandomNum];
-  }, 250);
-}
-changeImg(myelement,myimgs);
-
-
-var myelement = document.getElementById('myimg8'),
-    myimgs =["/assets/images/banana-yellow.png","/assets/images/monkey-black-white.png","/assets/images/banana-black-white.png","/assets/images/monkey-yellow.png"];
-function changeImg(myelement,myimgs){
-  setInterval(function(){
-    var myRandomNum = Math.floor(Math.random() * myimgs.length);
-
-    myelement.src = myimgs[myRandomNum];
-  }, 250);
-}
-changeImg(myelement,myimgs);
-
-var myelement = document.getElementById('myimg9'),
-    myimgs =["/assets/images/banana-yellow.png","/assets/images/monkey-black-white.png","/assets/images/banana-black-white.png","/assets/images/monkey-yellow.png"];
-function changeImg(myelement,myimgs){
-  setInterval(function(){
-    var myRandomNum = Math.floor(Math.random() * myimgs.length);
-
-    myelement.src = myimgs[myRandomNum];
-  }, 250);
-}
-changeImg(myelement,myimgs);
+};
 
 
 
