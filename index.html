@@ -23,11 +23,36 @@
     <i class="fa-solid fa-clock"></i>
     <div class="timer" id="timer">
     </div>
+
+    <html>
+
+<body>
+
+
+
     
+
+<b>HTML stand for</b> <br>
+
+<p>
+
+<input type="button" id="bt" value="Show Answer" onclick="changeImg();" />
+
+<button id="show-image-button">Show Image</button>
+<img id="myimg10" src="/assets/images/banana-black-white.png" style="display: none;">
+<script>
+   const showImageButton = document.getElementById("show-image-button");
+   const myImage = document.getElementById("myimg10");
+
+   showImageButton.addEventListener("click", () => { 
+      myImage.style.display = "hide";
+   });
+</script>
+
 
     <div class="game-area">
         <div class="controls-area">
-            <button class="image-button" onclick="changeImg()"><img id='myimg1' src="/assets/images/banana-black-white.png" alt="Image"></button>
+            <button class="image-button" onclick="pause()"><img id='myimg1' src="/assets/images/banana-black-white.png" alt="Image"></button>
             <button class="image-button"><img id='myimg2' src="/assets/images/banana-black-white.png" alt="Image"></button>
             <button class="image-button"><img id='myimg3' src="/assets/images/banana-black-white.png" alt="Image"></button>
             <br>
