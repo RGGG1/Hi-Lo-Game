@@ -18,7 +18,7 @@ function decrementWrongAnswer() {
 
 var slides = document.querySelectorAll('#slides .slide');
 var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,1000);
+var slideInterval = setInterval(nextSlide,250);
 
 
 function nextSlide(){
@@ -52,8 +52,8 @@ function pauseSlideshow(){
     setTimeout(
         function playSlideshow(){
             playing = true;
-            slideInterval = setInterval(nextSlide,1000);
-        }, 2000);
+            slideInterval = setInterval(nextSlide,250);
+        }, 250);
 }
 
 
