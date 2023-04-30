@@ -1,3 +1,13 @@
+
+
+img {
+    height: 125px;
+    width: 125px;
+    background-color: black;
+    border: 0;
+}
+
+
 /*
 essential styles:
 these make the slideshow work
@@ -7,23 +17,23 @@ button {
     background-color: black;
     border-color: black;
     color: transparent;
-    height: 500px;
-    width: 500px;
+    height: 150px;
+    width: 150px;
 }
 
 #slides{
 	position: relative;
-	height: 250px;
-    width: 250px;
+	height: 100px;
+    width: 100px;
 	padding: 0;
 	margin: auto;
 	list-style-type: none;
     color: black;
     border-color: black;
     background-color: black;
-    
-    
-    
+    outline-color: black;
+    border-radius: 50%;
+
 }
 
 .slide{
@@ -86,7 +96,7 @@ just for appearance; change whatever you want
 
 .image-button {
     color: transparent;
-    margin: 30px 30px 30px 30px;
+    margin: 10px 10px 10px 10px;
     background-color: black;
     background-repeat:no-repeat;
     border: none;
@@ -104,7 +114,7 @@ just for appearance; change whatever you want
 }
 
 .image-button:focus {
-    outline: solid;
+    outline: soid;
     border-radius: 50%;
     
 }
@@ -118,7 +128,7 @@ just for appearance; change whatever you want
 .image-button:active {
     color: transparent;
     border-radius: 50%;
-    box-shadow: inset 0 0 20px black, 0 0 60px gold;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
     
 }
@@ -130,6 +140,7 @@ img {
     height: 125px;
     width: 125px;
     background-color: black;
+    border: 0;
 }
 
 .timer {
@@ -298,7 +309,7 @@ body {
 
 .image-button {
     color: transparent;
-    margin: 30px 30px 30px 30px;
+    margin: 10px 10px 10px 10px;
     background-color: black;
     background-repeat:no-repeat;
     border: none;
@@ -331,7 +342,7 @@ body {
 .image-button:active {
     color: transparent;
     border-radius: 50%;
-    box-shadow: inset 0 0 20px black, 0 0 60px gold;
+    box-shadow: inset 0 0 25px black, 0 0 25px gold;
     outline: none;
     
 }
