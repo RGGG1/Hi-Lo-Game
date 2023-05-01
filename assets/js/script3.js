@@ -1,3 +1,45 @@
+
+// score counter
+
+function incrementScore() {
+
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+
+}
+
+function decrementWrongAnswer() {
+
+    let oldScore = parseInt(document.getElementById("monkey-lives").innerText);
+    document.getElementById("monkey-lives").innerText = --oldScore;
+}
+
+
+// countdown timer
+
+var timeLeft = 5;
+    var elem = document.getElementById('timer');
+    
+    var timerId = setInterval(countdown, 1000);
+    
+    function countdown() {
+      if (timeLeft == -1) {
+        clearTimeout(timerId);
+        doSomething();
+    
+      }  if (timeLeft == 0) {
+        elem.innerHTML = 'Time up!';
+        timeLeft--;
+    
+      } else {
+        elem.innerHTML = timeLeft;
+        timeLeft--;
+      }
+    }
+
+    //
+
+
 // button a
 
 var slidesa = document.querySelectorAll('#slidesa .slidea');
@@ -21,12 +63,18 @@ function pauseSlideshowa(){
 	clearInterval(slideIntervala);
     console.log(currentSlidea);
     
-    if (currentSlidea === 0) {
+    if (currentSlidea === 1) {
         alert("BANANA");
         incrementScore();
-    } if (currentSlidea === 1) {
+    } if (currentSlidea === 2) {
         alert("BANANA");
         incrementScore();
+    } if (currentSlidea === 3) {
+        alert(`Uh-oh! MONKEY!`);
+        decrementScore();
+    } if (currentSlidea === 0) {
+        alert(`Uh-oh! MONKEY!`);
+        decrementScore();
     }
      else {
         alert(`Uh-oh! MONKEY!`);
@@ -70,16 +118,15 @@ function pauseSlideshowb(){
 	clearInterval(slideIntervalb);
     console.log(currentSlideb);
     
-    if (currentSlideb === 0) {
-        alert("BANANA");
+    if (currentSlideb === 1) {        
         incrementScore();
-    } if (currentSlideb === 1) {
-        alert("BANANA");
+    } if (currentSlideb === 2) {        
         incrementScore();
-    }
-     else {
-        alert(`Uh-oh! MONKEY!`);
+    } if (currentSlideb === 3) {        
         decrementWrongAnswer();
+    } if (currentSlideb === 0) {        
+        decrementWrongAnswer();
+    } else {
     }
     
     setTimeout(
@@ -119,16 +166,15 @@ function pauseSlideshowc(){
 	clearInterval(slideIntervalc);
     console.log(currentSlidec);
     
-    if (currentSlidec === 0) {
-        alert("BANANA");
+    if (currentSlidec === 1) {        
         incrementScore();
-    } if (currentSlidec === 1) {
-        alert("BANANA");
+    } if (currentSlidec === 2) {        
         incrementScore();
-    }
-     else {
-        alert(`Uh-oh! MONKEY!`);
+    } if (currentSlidec === 3) {        
         decrementWrongAnswer();
+    } if (currentSlidec === 0) {        
+        decrementWrongAnswer();
+    } else {
     }
     
     setTimeout(
@@ -145,44 +191,305 @@ pauseButtonc.onclick = function c(){
 };
 
 
+// button d
 
-// score counter
+var slidesd = document.querySelectorAll('#slidesd .slided');
+var currentSlided = 0;
+var slideIntervald = setInterval(nextSlided,250);
 
-function incrementScore() {
 
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
-
+function nextSlided(){
+	slidesd[currentSlided].className = 'slided';
+	currentSlided = (currentSlided+Math.floor(Math.random() * slidesd.length))%slidesd.length;
+	slidesd[currentSlided].className = 'slided showing';
 }
 
-function decrementWrongAnswer() {
+var playingd = true;
+var pauseButtond = document.getElementById('paused');
 
-    let oldScore = parseInt(document.getElementById("monkey-lives").innerText);
-    document.getElementById("monkey-lives").innerText = --oldScore;
-}
-
-
-// countdown timer
-
-var timeLeft = 5;
-    var elem = document.getElementById('timer');
+function pauseSlideshowd(){
     
-    var timerId = setInterval(countdown, 1000);
     
-    function countdown() {
-      if (timeLeft == -1) {
-        clearTimeout(timerId);
-        doSomething();
+	playingd = false;
+	clearInterval(slideIntervald);
+    console.log(currentSlided);
     
-      }  if (timeLeft == 0) {
-        elem.innerHTML = 'Time up!';
-        timeLeft--;
-    
-      } else {
-        elem.innerHTML = timeLeft;
-        timeLeft--;
-      }
+    if (currentSlided === 1) {        
+        incrementScore();
+    } if (currentSlided === 2) {        
+        incrementScore();
+    } if (currentSlided === 3) {        
+        decrementWrongAnswer();
+    } if (currentSlided === 0) {        
+        decrementWrongAnswer();
+    } else {
     }
+    
+    setTimeout(
+        function playSlideshowd(){
+            playingd = true;
+            slideIntervald = setInterval(nextSlided,250);
+        }, 250);
+}
 
-    //
+pauseButtond.onclick = function d(){
+	if(playingd){ pauseSlideshowd(); }
+	else{ playSlideshowd(); }
+    
+};
+
+
+
+
+// button e
+
+var slidese = document.querySelectorAll('#slidese .slidee');
+var currentSlidee = 0;
+var slideIntervale = setInterval(nextSlidee,250);
+
+
+function nextSlidee(){
+	slidese[currentSlidee].className = 'slidee';
+	currentSlidee = (currentSlidee+Math.floor(Math.random() * slidese.length))%slidese.length;
+	slidese[currentSlidee].className = 'slidee showing';
+}
+
+var playinge = true;
+var pauseButtone = document.getElementById('pausee');
+
+function pauseSlideshowe(){
+    
+    
+	playinge = false;
+	clearInterval(slideIntervale);
+    console.log(currentSlidee);
+    
+    if (currentSlidee === 1) {        
+        incrementScore();
+    } if (currentSlidee === 2) {        
+        incrementScore();
+    } if (currentSlidee === 3) {        
+        decrementWrongAnswer();
+    } if (currentSlidee === 0) {        
+        decrementWrongAnswer();
+    } else {
+    }
+    
+    setTimeout(
+        function playSlideshowe(){
+            playinge = true;
+            slideIntervale = setInterval(nextSlidee,250);
+        }, 250);
+}
+
+pauseButtone.onclick = function e(){
+	if(playinge){ pauseSlideshowe(); }
+	else{ playSlideshowe(); }
+    
+};
+
+
+
+
+// button f
+
+var slidesf = document.querySelectorAll('#slidesf .slidef');
+var currentSlidef = 0;
+var slideIntervalf = setInterval(nextSlidef,250);
+
+
+function nextSlidef(){
+	slidesf[currentSlidef].className = 'slidef';
+	currentSlidef = (currentSlidef+Math.floor(Math.random() * slidesf.length))%slidesf.length;
+	slidesf[currentSlidef].className = 'slidef showing';
+}
+
+var playingf = true;
+var pauseButtonf = document.getElementById('pausef');
+
+function pauseSlideshowf(){
+    
+    
+	playingf = false;
+	clearInterval(slideIntervalf);
+    console.log(currentSlidef);
+    
+    if (currentSlidef === 1) {        
+        incrementScore();
+    } if (currentSlidef === 2) {        
+        incrementScore();
+    } if (currentSlidef === 3) {        
+        decrementWrongAnswer();
+    } if (currentSlidef === 0) {        
+        decrementWrongAnswer();
+    } else {
+    }
+    
+    setTimeout(
+        function playSlideshowf(){
+            playingf = true;
+            slideIntervalf = setInterval(nextSlidef,250);
+        }, 250);
+}
+
+pauseButtonf.onclick = function f(){
+	if(playingf){ pauseSlideshowf(); }
+	else{ playSlideshowf(); }
+    
+};
+
+
+
+
+// button g
+
+var slidesg = document.querySelectorAll('#slidesg .slideg');
+var currentSlideg = 0;
+var slideIntervalg = setInterval(nextSlideg,250);
+
+
+function nextSlideg(){
+	slidesg[currentSlideg].className = 'slideg';
+	currentSlideg = (currentSlideg+Math.floor(Math.random() * slidesg.length))%slidesg.length;
+	slidesg[currentSlideg].className = 'slideg showing';
+}
+
+var playingg = true;
+var pauseButtong = document.getElementById('pauseg');
+
+function pauseSlideshowg(){
+    
+    
+	playingg = false;
+	clearInterval(slideIntervalg);
+    console.log(currentSlideg);
+    
+    if (currentSlideg === 1) {        
+        incrementScore();
+    } if (currentSlideg === 2) {        
+        incrementScore();
+    } if (currentSlideg === 3) {        
+        decrementWrongAnswer();
+    } if (currentSlideg === 0) {        
+        decrementWrongAnswer();
+    } else {
+    }
+    
+    setTimeout(
+        function playSlideshowg(){
+            playingg = true;
+            slideIntervalg = setInterval(nextSlideg,250);
+        }, 250);
+}
+
+pauseButtong.onclick = function g(){
+	if(playingg){ pauseSlideshowg(); }
+	else{ playSlideshowg(); }
+    
+};
+
+
+
+
+// button h
+
+var slidesh = document.querySelectorAll('#slidesh .slideh');
+var currentSlideh = 0;
+var slideIntervalh = setInterval(nextSlideh,250);
+
+
+function nextSlideh(){
+	slidesh[currentSlideh].className = 'slideh';
+	currentSlideh = (currentSlideh+Math.floor(Math.random() * slidesh.length))%slidesh.length;
+	slidesh[currentSlideh].className = 'slideh showing';
+}
+
+var playingh = true;
+var pauseButtonh = document.getElementById('pauseh');
+
+function pauseSlideshowh(){
+    
+    
+	playingh = false;
+	clearInterval(slideIntervalh);
+    console.log(currentSlideh);
+    
+    if (currentSlideh === 1) {        
+        incrementScore();
+    } if (currentSlideh === 2) {        
+        incrementScore();
+    } if (currentSlideh === 3) {        
+        decrementWrongAnswer();
+    } if (currentSlideh === 0) {        
+        decrementWrongAnswer();
+    } else {
+    }
+    
+    setTimeout(
+        function playSlideshowh(){
+            playingh = true;
+            slideIntervalh = setInterval(nextSlideh,250);
+        }, 250);
+}
+
+pauseButtonh.onclick = function h(){
+	if(playingh){ pauseSlideshowh(); }
+	else{ playSlideshowh(); }
+    
+};
+
+
+
+
+// button i
+
+var slidesi = document.querySelectorAll('#slidesi .slidei');
+var currentSlidei = 0;
+var slideIntervali = setInterval(nextSlidei,250);
+
+
+function nextSlidei(){
+	slidesi[currentSlidei].className = 'slidei';
+	currentSlidei = (currentSlidei+Math.floor(Math.random() * slidesi.length))%slidesi.length;
+	slidesi[currentSlidei].className = 'slidei showing';
+}
+
+var playingi = true;
+var pauseButtoni = document.getElementById('pausei');
+
+function pauseSlideshowi(){
+    
+    
+	playingi = false;
+	clearInterval(slideIntervali);
+    console.log(currentSlidei);
+    
+    if (currentSlidei === 1) {        
+        incrementScore();
+    } if (currentSlidei === 2) {        
+        incrementScore();
+    } if (currentSlidei === 3) {        
+        decrementWrongAnswer();
+    } if (currentSlidei === 0) {        
+        decrementWrongAnswer();
+    } else {        
+    }
+    
+    setTimeout(
+        function playSlideshowi(){
+            playingi = true;
+            slideIntervali = setInterval(nextSlidei,250);
+        }, 250);
+}
+
+pauseButtoni.onclick = function i(){
+	if(playingi){ pauseSlideshowi(); }
+	else{ playSlideshowi(); }
+    
+};
+
+
+
+
+
 
