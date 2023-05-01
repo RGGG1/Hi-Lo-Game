@@ -195,25 +195,25 @@ body {
 }
 
 .slidea:nth-of-type(1){
-	background-image: url("/assets/images/monkey-yellow.png");
+	background-image: url("/assets/images/a-monkey-yellow.png");
     background-repeat: no-repeat;
     background-size:     100%;      
     background-position: center center;    
 }
 .slidea:nth-of-type(2){
-	background-image: url("/assets/images/banana-black-white.png");
+	background-image: url("/assets/images/a-banana-black-white.png");
     background-repeat: no-repeat;
     background-size:     100%;      
     background-position: center center;
 }
 .slidea:nth-of-type(3){
-	background-image: url("/assets/images/banana-yellow.png");
+	background-image: url("/assets/images/a-banana-yellow.png");
     background-repeat: no-repeat;
     background-size:     100%;      
     background-position: center center;
 }
 .slidea:nth-of-type(4){
-	background-image: url("/assets/images/monkey-black-white.png");
+	background-image: url("/assets/images/a-monkey-black-white.png");
     background-repeat: no-repeat;
     background-size:     100%;      
     background-position: center center;
@@ -311,25 +311,25 @@ body {
 }
 
 .slideb:nth-of-type(1){
-	background-image: url("/assets/images/monkey-yellow-b.png");
+	background-image: url("/assets/images/b-monkey-yellow.png");
     background-repeat: no-repeat;
     background-size:     100%;      
     background-position: center center;    
 }
 .slideb:nth-of-type(2){
-	background-image: url("/assets/images/banana-black-white-b.png");
+	background-image: url("/assets/images/b-banana-black-white.png");
     background-repeat: no-repeat;
     background-size:     100%;      
     background-position: center center;
 }
 .slideb:nth-of-type(3){
-	background-image: url("/assets/images/banana-yellow-b.png");
+	background-image: url("/assets/images/b-banana-yellow.png");
     background-repeat: no-repeat;
     background-size:     100%;      
     background-position: center center;
 }
 .slideb:nth-of-type(4){
-	background-image: url("/assets/images/monkey-black-white-b.png");
+	background-image: url("/assets/images/b-monkey-black-white.png");
     background-repeat: no-repeat;
     background-size:     100%;      
     background-position: center center;
@@ -428,25 +428,25 @@ body {
 }
 
 .slidec:nth-of-type(1){
-	background-image: url("/assets/images/monkey-yellow-c.png");
+	background-image: url("/assets/images/c- monkey-yellow.png");
     background-repeat: no-repeat;
     background-size:     100%;      
     background-position: center center;    
 }
 .slidec:nth-of-type(2){
-	background-image: url("/assets/images/banana-black-white-c.png");
+	background-image: url("/assets/images/c-banana-black-white.png");
     background-repeat: no-repeat;
     background-size:     100%;      
     background-position: center center;
 }
 .slidec:nth-of-type(3){
-	background-image: url("/assets/images/banana-yellow-c.png");
+	background-image: url("/assets/images/c-banana-yellow.png");
     background-repeat: no-repeat;
     background-size:     100%;      
     background-position: center center;
 }
 .slidec:nth-of-type(4){
-	background-image: url("/assets/images/monkey-black-white-c.png");
+	background-image: url("/assets/images/c-monkey-black-white.png");
     background-repeat: no-repeat;
     background-size:     100%;      
     background-position: center center;
@@ -454,9 +454,702 @@ body {
 
 
 
+/* everything D */
+
+.image-d {
+    color: black;
+    margin: 10px 10px 10px 10px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms
+    
+}
+
+.image-d::after {
+    content: attr(data-type);
+    color: black;
+    position: relative;
+
+}
+
+.image-d:focus {
+    outline: soid;
+    border-radius: 50%;
+}
+
+.image-d:hover {
+    color: black;
+    border-radius: 50%;
+    outline-offset: 15px;
+}
+
+.image-d:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
+    outline: none;
+    
+}
 
 
+#paused {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 125px;
+    width: 125px;
+    outline-color: black;
 
+    
+}
+
+#slidesd{
+	position: relative;
+	height: 120px;
+    width: 120px;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+       
+
+}
+
+
+.slided{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    
+    
+
+
+	-webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+.slided:nth-of-type(1){
+	background-image: url("/assets/images/c- monkey-yellow.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;    
+}
+.slided:nth-of-type(2){
+	background-image: url("/assets/images/c-banana-black-white.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
+.slided:nth-of-type(3){
+	background-image: url("/assets/images/c-banana-yellow.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
+.slided:nth-of-type(4){
+	background-image: url("/assets/images/c-monkey-black-white.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
+
+
+/* everything E */
+
+.image-e {
+    color: black;
+    margin: 10px 10px 10px 10px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms
+    
+}
+
+.image-e::after {
+    content: attr(data-type);
+    color: black;
+    position: relative;
+
+}
+
+.image-e:focus {
+    outline: soid;
+    border-radius: 50%;
+}
+
+.image-e:hover {
+    color: black;
+    border-radius: 50%;
+    outline-offset: 15px;
+}
+
+.image-e:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
+    outline: none;
+    
+}
+
+
+#pausee {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 125px;
+    width: 125px;
+    outline-color: black;
+
+    
+}
+
+#slidese{
+	position: relative;
+	height: 120px;
+    width: 120px;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+       
+
+}
+
+
+.slidee{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    
+    
+
+
+	-webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+.slidee:nth-of-type(1){
+	background-image: url("/assets/images/c- monkey-yellow.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;    
+}
+.slidee:nth-of-type(2){
+	background-image: url("/assets/images/c-banana-black-white.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
+.slidee:nth-of-type(3){
+	background-image: url("/assets/images/c-banana-yellow.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
+.slidee:nth-of-type(4){
+	background-image: url("/assets/images/c-monkey-black-white.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
+
+/* everything F */
+
+.image-f {
+    color: black;
+    margin: 10px 10px 10px 10px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms
+    
+}
+
+.image-f::after {
+    content: attr(data-type);
+    color: black;
+    position: relative;
+
+}
+
+.image-f:focus {
+    outline: soid;
+    border-radius: 50%;
+}
+
+.image-f:hover {
+    color: black;
+    border-radius: 50%;
+    outline-offset: 15px;
+}
+
+.image-f:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
+    outline: none;
+    
+}
+
+
+#pausef {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 125px;
+    width: 125px;
+    outline-color: black;
+
+    
+}
+
+#slidesf{
+	position: relative;
+	height: 120px;
+    width: 120px;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+       
+
+}
+
+
+.slidef{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    
+    
+
+
+	-webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+.slidef:nth-of-type(1){
+	background-image: url("/assets/images/c- monkey-yellow.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;    
+}
+.slidef:nth-of-type(2){
+	background-image: url("/assets/images/c-banana-black-white.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
+.slidef:nth-of-type(3){
+	background-image: url("/assets/images/c-banana-yellow.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
+.slidef:nth-of-type(4){
+	background-image: url("/assets/images/c-monkey-black-white.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
+
+/* everything G */
+
+.image-g {
+    color: black;
+    margin: 10px 10px 10px 10px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms
+    
+}
+
+.image-g::after {
+    content: attr(data-type);
+    color: black;
+    position: relative;
+
+}
+
+.image-g:focus {
+    outline: soid;
+    border-radius: 50%;
+}
+
+.image-g:hover {
+    color: black;
+    border-radius: 50%;
+    outline-offset: 15px;
+}
+
+.image-g:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
+    outline: none;
+    
+}
+
+
+#pauseg {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 125px;
+    width: 125px;
+    outline-color: black;
+
+    
+}
+
+#slidesg{
+	position: relative;
+	height: 120px;
+    width: 120px;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+       
+
+}
+
+
+.slideg{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    
+    
+
+
+	-webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+.slideg:nth-of-type(1){
+	background-image: url("/assets/images/c- monkey-yellow.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;    
+}
+.slideg:nth-of-type(2){
+	background-image: url("/assets/images/c-banana-black-white.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
+.slideg:nth-of-type(3){
+	background-image: url("/assets/images/c-banana-yellow.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
+.slideg:nth-of-type(4){
+	background-image: url("/assets/images/c-monkey-black-white.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
+
+/* everything H */
+
+.image-h {
+    color: black;
+    margin: 10px 10px 10px 10px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms
+    
+}
+
+.image-h::after {
+    content: attr(data-type);
+    color: black;
+    position: relative;
+
+}
+
+.image-h:focus {
+    outline: soid;
+    border-radius: 50%;
+}
+
+.image-h:hover {
+    color: black;
+    border-radius: 50%;
+    outline-offset: 15px;
+}
+
+.image-h:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
+    outline: none;
+    
+}
+
+
+#pauseh {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 125px;
+    width: 125px;
+    outline-color: black;
+
+    
+}
+
+#slidesh{
+	position: relative;
+	height: 120px;
+    width: 120px;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+       
+
+}
+
+
+.slideh{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    
+    
+
+
+	-webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+.slideh:nth-of-type(1){
+	background-image: url("/assets/images/c- monkey-yellow.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;    
+}
+.slideh:nth-of-type(2){
+	background-image: url("/assets/images/c-banana-black-white.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
+.slideh:nth-of-type(3){
+	background-image: url("/assets/images/c-banana-yellow.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
+.slideh:nth-of-type(4){
+	background-image: url("/assets/images/c-monkey-black-white.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
+
+/* everything I */
+
+.image-i {
+    color: black;
+    margin: 10px 10px 10px 10px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms
+    
+}
+
+.image-i::after {
+    content: attr(data-type);
+    color: black;
+    position: relative;
+
+}
+
+.image-i:focus {
+    outline: soid;
+    border-radius: 50%;
+}
+
+.image-i:hover {
+    color: black;
+    border-radius: 50%;
+    outline-offset: 15px;
+}
+
+.image-i:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
+    outline: none;
+    
+}
+
+
+#pausei {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 125px;
+    width: 125px;
+    outline-color: black;
+
+    
+}
+
+#slidesi{
+	position: relative;
+	height: 120px;
+    width: 120px;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+       
+
+}
+
+
+.slidei{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    
+    
+
+
+	-webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+.slidei:nth-of-type(1){
+	background-image: url("/assets/images/c- monkey-yellow.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;    
+}
+.slidei:nth-of-type(2){
+	background-image: url("/assets/images/c-banana-black-white.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
+.slidei:nth-of-type(3){
+	background-image: url("/assets/images/c-banana-yellow.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
+.slidei:nth-of-type(4){
+	background-image: url("/assets/images/c-monkey-black-white.png");
+    background-repeat: no-repeat;
+    background-size:     100%;      
+    background-position: center center;
+}
 
 
 /* scores */
