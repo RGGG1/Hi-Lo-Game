@@ -1,40 +1,31 @@
+/* button a */
 
 
-img {
-    height: 125px;
-    width: 125px;
-    background-color: black;
-    border: 0;
-}
-
-
-/*
-essential styles:
-these make the slideshow work
-*/
-button {
+#pause {
     border-radius: 50%;
     background-color: black;
     border-color: black;
-    color: transparent;
-    height: 150px;
-    width: 150px;
+    color: black;
+    height: 125px;
+    width: 125px;
+    outline-color: black;
+
+    
 }
 
 #slides{
 	position: relative;
-	height: 100px;
-    width: 100px;
+	height: 120px;
+    width: 120px;
 	padding: 0;
 	margin: auto;
 	list-style-type: none;
-    color: black;
-    border-color: black;
-    background-color: black;
-    outline-color: black;
+    overflow: hidden;
     border-radius: 50%;
+       
 
 }
+
 
 .slide{
 	position: absolute;
@@ -44,8 +35,10 @@ button {
 	height: 100%;
 	opacity: 1;
 	z-index: 1;
+    overflow: hidden;
     
     
+
 
 	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
@@ -59,43 +52,33 @@ button {
 }
 
 
-
-/*
-non-essential styles:
-just for appearance; change whatever you want
-*/
-
-
-
 .slide:nth-of-type(1){
-	background-image: url("/assets/images/banana-black-white.png");
+	background-image: url("/assets/images/monkey-yellow.png");
     background-repeat: no-repeat;
-    background-size:     contain;      
-    background-position: center center;
-    
-    
+    background-size:     100%;      
+    background-position: center center;    
 }
 .slide:nth-of-type(2){
-	background-image: url("/assets/images/banana-yellow.png");
+	background-image: url("/assets/images/banana-black-white.png");
     background-repeat: no-repeat;
-    background-size:     cover;      
+    background-size:     100%;      
     background-position: center center;
 }
 .slide:nth-of-type(3){
-	background-image: url("/assets/images/monkey-black-white.png");
+	background-image: url("/assets/images/banana-yellow.png");
     background-repeat: no-repeat;
-    background-size:     cover;      
+    background-size:     100%;      
     background-position: center center;
 }
 .slide:nth-of-type(4){
-	background-image: url("/assets/images/monkey-yellow.png");
+	background-image: url("/assets/images/monkey-black-white.png");
     background-repeat: no-repeat;
-    background-size:     cover;      
+    background-size:     100%;      
     background-position: center center;
 }
 
 .image-button {
-    color: transparent;
+    color: black;
     margin: 10px 10px 10px 10px;
     background-color: black;
     background-repeat:no-repeat;
@@ -116,7 +99,6 @@ just for appearance; change whatever you want
 .image-button:focus {
     outline: soid;
     border-radius: 50%;
-    
 }
 
 .image-button:hover {
@@ -126,7 +108,7 @@ just for appearance; change whatever you want
 }
 
 .image-button:active {
-    color: transparent;
+    color: black;
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
@@ -134,14 +116,36 @@ just for appearance; change whatever you want
 }
 
 
-/*old code below here*/
 
-img {
+
+/*
+essential styles:
+these make the slideshow work
+*/
+button {
+    border-radius: 50%;
+    background-color: red;
+    border-color: red;
+    color: red;
     height: 125px;
     width: 125px;
-    background-color: black;
-    border: 0;
+    outline-color: red;
+
 }
+
+
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+
+
+
+
+/*old code below here*/
+
 
 .timer {
     color: gold;
@@ -251,17 +255,6 @@ body {
     margin-right: auto;
 }
 
-.question-area {
-    width: 50%;
-    font-size: 2rem;
-    margin: auto;
-    padding: 50px 0;
-}
-
-.question-area span {
-    padding: 0 15px;
-}
-
 .score-area {
     margin: 5px auto;
     width: 60%;
@@ -270,7 +263,7 @@ body {
 }
 
 .controls-area {
-    width: 85%;
+    width: 100%;
     margin: auto;
 }
 
@@ -285,20 +278,6 @@ body {
     font-weight: bold;
 }
 
-.answer-message {
-    display: none;
-    font-size: 1rem;
-}
-
-#answer-box {
-    border: none;
-    color: white;
-    display: inline-block;
-    height: 40px;
-    width: 80px;
-    font-size: 1.2rem;
-}
-
 .scores {
     display: inline-block;
     padding: 10px;
@@ -307,191 +286,12 @@ body {
 
 /* --------- Buttons */
 
-.image-button {
-    color: transparent;
-    margin: 10px 10px 10px 10px;
-    background-color: black;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;  
-    transition: all 200ms
-    
-    
-}
-
-.image-button::after {
-    content: attr(data-type);
-    color: black;
-    position: relative;
-
-}
-
-.image-button:focus {
-    outline: solid;
-    border-radius: 50%;
-    
-}
-
-.image-button:hover {
-    color: black;
-    border-radius: 50%;
-    outline-offset: 15px;
-}
-
-.image-button:active {
-    color: transparent;
-    border-radius: 50%;
-    box-shadow: inset 0 0 25px black, 0 0 25px gold;
-    outline: none;
-    
-}
-
-
-.btn {
-    width: 150px;
-    height: 150px;
-    font-family: sans-serif;
-    color: red;
-    border-radius: 50%;
-    background: black;
-}
-
-.btn:focus {
-    outline: solid;
-    color: red;
-}
-
-
-.btn--big {
-    
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    font-size: 3.2rem;
-    margin: 30px 30px 30px 30px;
-    transition: all ;    
-    background: black;
-}
-
-.btn--big::after {
-    content: attr(data-type);
-    font-size: 1rem;
-    color: green;
-    position: relative;
-    left: -0.5em;
-}
-
-.btn--blue {
-    background: url(../images/banana-black-white.png);
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size: contain;
-}
-
-.btn--blue:active,
-.btn--blue:hover {
-    background-color: darkblue;
-    color: white;
-}
-
-.btn--orange {
-    background: url(../images/monkey-black-white.png);
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size: contain;
-}
-
-.btn--orange:active,
-.btn--orange:hover {
-    background-color: darkorange;
-    color: white;
-}
-
-.btn--red {
-    background: url(../images/monkey-yellow.png);
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size: contain;
-}
-
-.btn--red:active,
-.btn--red:hover {
-    background-color: darkred;
-    color: white;
-}
-
-.btn--green {
-    background: url(../images/banana-yellow.png);
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size: contain;
-}
-
-.btn--black {
-    border-color: yellow;
-    color: black;
-}
-
-.btn--green:active,
-.btn--green:hover {
-    background-color: darkgreen;
-    color: white;
-}
-
-.btn--gray {
-    margin-top: 25px;
-    background-color: #445361;
-    border: 1px transparent;
-    border-radius: 20px;
-}
-
-.btn--gray:active,
-.btn--gray:hover {
-    background-color: #0d1013;
-}
 
 /* --------- Media queries */
 
 @media (max-width: 414px) {
     .controls-area {
         width: 100%;
-    }
-
-    .btn--big {
-        margin: 0 10px;
-        padding: 5px;
-        border: 5px solid;
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
-    }
-
-    .btn--big::after {
-        font-size: 0.6rem;
-        left: -0.7rem;
-    }
-
-    .question-area {
-        padding: 10% 0;
-        width: 100%;
-    }
-
-    .question-area span {
-        padding: 0;
-    }
-
-    .answer-message {
-        display: block;
-    }
-
-    #answer-box {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .btn--gray {
-        margin-top: 0;
     }
 
     .score-area {
@@ -517,10 +317,6 @@ body {
     .controls-area {
         width: 75%;
         margin: 10px auto;
-    }
-
-    .btn--big {
-        margin: 10px 10px;
     }
 
     .question-area {
