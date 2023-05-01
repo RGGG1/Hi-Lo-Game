@@ -63,22 +63,15 @@ function pauseSlideshowa(){
 	clearInterval(slideIntervala);
     console.log(currentSlidea);
     
-    if (currentSlidea === 1) {
-        alert("BANANA");
+    if (currentSlidea === 1) {        
         incrementScore();
-    } if (currentSlidea === 2) {
-        alert("BANANA");
+    } if (currentSlidea === 2) {        
         incrementScore();
-    } if (currentSlidea === 3) {
-        alert(`Uh-oh! MONKEY!`);
-        decrementScore();
-    } if (currentSlidea === 0) {
-        alert(`Uh-oh! MONKEY!`);
-        decrementScore();
-    }
-     else {
-        alert(`Uh-oh! MONKEY!`);
+    } if (currentSlidea === 3) {        
         decrementWrongAnswer();
+    } if (currentSlidea === 0) {        
+        decrementWrongAnswer();
+    } else {
     }
     
     setTimeout(
