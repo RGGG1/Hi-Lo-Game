@@ -1,3 +1,71 @@
+HTML CSS 
+
+Result
+Skip Results Iframe
+
+EDIT ON
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+height: 100%;
+font-weight: 800;
+}
+
+body{
+background: yellow;
+font-family: Arial;
+}
+
+svg {
+display: block;
+font: 10.5em 'Montserrat';
+width: 960px;
+height: 300px;
+margin: 0 auto;
+}
+
+.text-copy {
+fill: none;
+stroke: white;
+stroke-dasharray: 6% 29%;
+stroke-width: 5px;
+stroke-dashoffset: 0%;
+animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+stroke: gold;
+animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+stroke: yellow;
+animation-delay: -1.2s;
+}
+
+.text-copy:nth-child(3){
+stroke: black;
+animation-delay: -1.23s;
+}
+
+.text-copy:nth-child(4){
+stroke: black;
+animation-delay: -1.24s;
+}
+
+.text-copy:nth-child(5){
+stroke: gold;
+animation-delay: -1.25s;
+}
+
+@keyframes stroke-offset{
+100% {stroke-dashoffset: -35%;}
+}
+
+
+
+
 /* button a */
 
 

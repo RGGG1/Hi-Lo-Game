@@ -80,6 +80,25 @@ body {
     color: white;
   }
 
+/* Play Now Button */
+
+.play-now {
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: gold;
+    background-color: black;
+    border-color: gold;
+    border: solid;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5%;
+  }
+
+  .play-now:hover {
+    background-color: gold;
+    color: black;
+    border-color: black;
+  }
 
 
 /* Game area */
