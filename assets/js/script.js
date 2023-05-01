@@ -1,3 +1,10 @@
+let foos = document.querySelectorAll(".foo")
+document.querySelector("button").addEventListener("click", function() {
+  foos.forEach(function(el){
+    el.classList.toggle("hidden");
+  });
+});
+
 // button a
 
 var slides = document.querySelectorAll('#slides .slide');

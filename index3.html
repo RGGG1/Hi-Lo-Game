@@ -33,23 +33,15 @@
 
 <!--Testing Hide feature-->  
 
+<body>
+    
+    <button id="play-now" class="play-now">PLAY NOW</button>
 
-<button onclick="showhidemenu()" class="play-now">PLAY NOW</button>
-   
-<script>
-function showhidemenu() {
-  var x = document.getElementById("game-hide");
-  if (x.style.display == "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-    </script>
+
 
 <!--Game-->  
 
-<div class="game-area" id="game-hide" display="none" hidden>
+<div class="game-area" id="box" display="none" hidden>
     <div class="controls-area">
             <button class="image-a" id="pausea">
                 <ul id="slidesa">

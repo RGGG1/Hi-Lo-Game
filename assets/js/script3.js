@@ -1,3 +1,15 @@
+const btn = document.getElementById('play-now');
+
+btn.addEventListener('click', () => {
+  // 👇️ hide button
+  btn.style.display = 'none';
+
+  // 👇️ show div
+  const box = document.getElementById('box');
+  box.style.display = 'block';
+});
+
+
 
 // score counter
 

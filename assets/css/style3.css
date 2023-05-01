@@ -92,6 +92,7 @@ body {
     border: solid;
     padding: 10px 10px 10px 10px;
     border-radius: 5%;
+    display: none;
   }
 
   .play-now:hover {
