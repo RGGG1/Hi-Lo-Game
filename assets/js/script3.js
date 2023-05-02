@@ -61,9 +61,9 @@ function decrementLives() {
 function incrementResult() {
         let oldResult = parseInt(document.getElementById("result").innerText);
         if (oldResult == "0") {
-            document.getElementById("result").innerText = ++oldResult;
+            document.getElementById("result").innerText = ++oldResult + " banana";
         } else {
-            document.getElementById("result").innerText = ++oldResult;
+            document.getElementById("result").innerText = ++oldResult + " bananas";
         }
     }
 
@@ -151,8 +151,10 @@ function pauseSlideshowb(){
         incrementResult();
     } if (currentSlideb === 3) {        
         decrementWrongAnswer();
+        decrementLives();
     } if (currentSlideb === 0) {        
         decrementWrongAnswer();
+        decrementLives();
     } else {
     }
     
@@ -201,8 +203,10 @@ function pauseSlideshowc(){
         incrementResult();
     } if (currentSlidec === 3) {        
         decrementWrongAnswer();
+        decrementLives();
     } if (currentSlidec === 0) {        
         decrementWrongAnswer();
+        decrementLives();
     } else {
     }
     
@@ -251,8 +255,10 @@ function pauseSlideshowd(){
         incrementResult();
     } if (currentSlided === 3) {        
         decrementWrongAnswer();
+        decrementLives();
     } if (currentSlided === 0) {        
         decrementWrongAnswer();
+        decrementLives();
     } else {
     }
     
@@ -303,8 +309,10 @@ function pauseSlideshowe(){
         incrementResult();
     } if (currentSlidee === 3) {        
         decrementWrongAnswer();
+        decrementLives();
     } if (currentSlidee === 0) {        
         decrementWrongAnswer();
+        decrementLives();
     } else {
     }
     
@@ -355,8 +363,10 @@ function pauseSlideshowf(){
         incrementResult();
     } if (currentSlidef === 3) {        
         decrementWrongAnswer();
+        decrementLives();
     } if (currentSlidef === 0) {        
         decrementWrongAnswer();
+        decrementLives();
     } else {
     }
     
@@ -407,8 +417,10 @@ function pauseSlideshowg(){
         incrementResult();
     } if (currentSlideg === 3) {        
         decrementWrongAnswer();
+        decrementLives();
     } if (currentSlideg === 0) {        
         decrementWrongAnswer();
+        decrementLives();
     } else {
     }
     
@@ -459,8 +471,10 @@ function pauseSlideshowh(){
         incrementResult();
     } if (currentSlideh === 3) {        
         decrementWrongAnswer();
+        decrementLives();
     } if (currentSlideh === 0) {        
         decrementWrongAnswer();
+        decrementLives();
     } else {
     }
     
@@ -511,8 +525,10 @@ function pauseSlideshowi(){
         incrementResult();
     } if (currentSlidei === 3) {        
         decrementWrongAnswer();
+        decrementLives();
     } if (currentSlidei === 0) {        
         decrementWrongAnswer();
+        decrementLives();
     } else {        
     }
     
