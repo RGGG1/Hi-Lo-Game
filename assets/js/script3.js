@@ -27,14 +27,14 @@ function myFunction() {
 
 // Score - Monkey Lives = 0 - Hide Game
 
-function myFunction() {
-    var x = document.getElementById("box");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
+function Monkey0() {
+    var x = document.getElementById("monkey-lives");
+    if (x === "3") {
         x.style.display = "block";
+    } else {
+        x.style.display = "none";
     }
-
+}
 
 // score counter
 
@@ -43,12 +43,20 @@ function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
 
+
 }
 
 function decrementWrongAnswer() {
 
     let oldScore = parseInt(document.getElementById("monkey-lives").innerText);
     document.getElementById("monkey-lives").innerText = --oldScore;
+
+    var x = document.getElementById("box");
+    if (oldScore === "3") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
 }
 
 
