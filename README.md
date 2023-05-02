@@ -7,6 +7,7 @@ https://codepen.io/houssem93171714/pen/abZZEaz - for image transition effect
 https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward - countdown timer code
 https://codepen.io/SitePoint/pen/zqVGQK - slider inside button effect
 https://developer.mozilla.org/en-US/docs/Web/CSS/opacity - to fix opacity on slider images
+https://bobbyhadz.com/blog/javascript-hide-button-after-click - hide button functionality
 
 
 

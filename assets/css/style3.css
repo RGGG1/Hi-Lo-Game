@@ -72,33 +72,34 @@ body {
 /* h2 sizing - for timer area */
 
   h2 {
-    font-size: 26px;
+    font-size: 88px;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     padding-top: 25px;
     padding-bottom: 10px;
-    color: white;
+    color: gold;
   }
 
 /* Play Now Button */
 
-.play-now {
+.p1 {
     font-size: 26px;
     text-align: center;
     text-transform: uppercase;
     color: gold;
-    background-color: black;
-    border-color: gold;
+    background-color: red;
+    border-color: green;
     border: solid;
     padding: 10px 10px 10px 10px;
     border-radius: 5%;
-    display: none;
+    display:;
   }
 
-  .play-now:hover {
-    background-color: gold;
-    color: black;
-    border-color: black;
+.p1:hover {
+    background-color: orange;
+    color: blue;
+    border-color: pink;
   }
 
 
