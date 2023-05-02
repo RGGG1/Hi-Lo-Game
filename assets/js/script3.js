@@ -40,25 +40,29 @@ function decrementWrongAnswer() {
     document.getElementById("monkey-lives").innerText = --oldScore;
 
     
-    var x = document.getElementById("box");
-    if (oldScore == "3") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+   
 }
 
 // Game Over - show / hide screen
 
-
+function decrementLives() {
+    let oldLives = parseInt(document.getElementById("lives").innerText);
+    if (oldLives == "1") {
+        document.getElementById("lives").innerText = --oldLives;
+        box.style.display = "none";
+        
+    } else {
+        document.getElementById("lives").innerText = --oldLives;
+    }
+}
 
 // Game Over - results screen
 function incrementResult() {
         let oldResult = parseInt(document.getElementById("result").innerText);
         if (oldResult == "0") {
-            document.getElementById("result").innerText = ++oldResult + " banana";
+            document.getElementById("result").innerText = ++oldResult;
         } else {
-            document.getElementById("result").innerText = ++oldResult + " bananas";
+            document.getElementById("result").innerText = ++oldResult;
         }
     }
 
@@ -94,8 +98,10 @@ function pauseSlideshowa(){
         incrementResult();
     } if (currentSlidea === 3) {        
         decrementWrongAnswer();
+        decrementLives();
     } if (currentSlidea === 0) {        
         decrementWrongAnswer();
+        decrementLives();
     } else {
     }
     

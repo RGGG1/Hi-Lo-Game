@@ -1205,6 +1205,12 @@ button:hover {
     
 }
 
+#test {
+    color: gold;
+    font-weight: bold;
+    
+}
+
 #bananas {
     color: gold;
     font-weight: bold;
