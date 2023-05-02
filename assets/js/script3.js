@@ -61,9 +61,9 @@ function decrementLives() {
 function incrementResult() {
         let oldResult = parseInt(document.getElementById("result").innerText);
         if (oldResult == "0") {
-            document.getElementById("result").innerText = ++oldResult + " banana";
+            document.getElementById("result").innerText = ++oldResult + "\nbanana";
         } else {
-            document.getElementById("result").innerText = ++oldResult + " bananas";
+            document.getElementById("result").innerText = ++oldResult + "\nbananas";
         }
     }
 
