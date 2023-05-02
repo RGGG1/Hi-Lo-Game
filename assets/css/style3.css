@@ -1191,6 +1191,12 @@ button:hover {
     
 }
 
+#game-over-score {
+    color: gold;
+    font-weight: bold;
+    
+}
+
 #monkey-lives {
     color: red;
     font-weight: bold;

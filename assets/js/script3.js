@@ -24,18 +24,6 @@ function myFunction() {
 
 }
 
-
-// Score - Monkey Lives = 0 - Hide Game
-
-function Monkey0() {
-    var x = document.getElementById("monkey-lives");
-    if (x === "3") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
 // score counter
 
 function incrementScore() {
@@ -59,6 +47,21 @@ function decrementWrongAnswer() {
     }
 }
 
+// Game Over - Monkey lives = 0, show game over screen, hide game
+
+function Monkey0() {
+    var x = document.getElementById("monkey-lives");
+    if (x === "3") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function incrementResult() {
+        let oldResult = parseInt(document.getElementById("result").innerText);
+        document.getElementById("result").innerText = ++oldResult; 
+    }
 
 
 // button a
@@ -86,8 +89,10 @@ function pauseSlideshowa(){
     
     if (currentSlidea === 1) {        
         incrementScore();
+        incrementResult();
     } if (currentSlidea === 2) {        
         incrementScore();
+        incrementResult();
     } if (currentSlidea === 3) {        
         decrementWrongAnswer();
     } if (currentSlidea === 0) {        
@@ -134,8 +139,10 @@ function pauseSlideshowb(){
     
     if (currentSlideb === 1) {        
         incrementScore();
+        incrementResult();
     } if (currentSlideb === 2) {        
         incrementScore();
+        incrementResult();
     } if (currentSlideb === 3) {        
         decrementWrongAnswer();
     } if (currentSlideb === 0) {        
@@ -182,8 +189,10 @@ function pauseSlideshowc(){
     
     if (currentSlidec === 1) {        
         incrementScore();
+        incrementResult();
     } if (currentSlidec === 2) {        
         incrementScore();
+        incrementResult();
     } if (currentSlidec === 3) {        
         decrementWrongAnswer();
     } if (currentSlidec === 0) {        
@@ -230,8 +239,10 @@ function pauseSlideshowd(){
     
     if (currentSlided === 1) {        
         incrementScore();
+        incrementResult();
     } if (currentSlided === 2) {        
         incrementScore();
+        incrementResult();
     } if (currentSlided === 3) {        
         decrementWrongAnswer();
     } if (currentSlided === 0) {        
@@ -280,8 +291,10 @@ function pauseSlideshowe(){
     
     if (currentSlidee === 1) {        
         incrementScore();
+        incrementResult();
     } if (currentSlidee === 2) {        
         incrementScore();
+        incrementResult();
     } if (currentSlidee === 3) {        
         decrementWrongAnswer();
     } if (currentSlidee === 0) {        
@@ -330,8 +343,10 @@ function pauseSlideshowf(){
     
     if (currentSlidef === 1) {        
         incrementScore();
+        incrementResult();
     } if (currentSlidef === 2) {        
         incrementScore();
+        incrementResult();
     } if (currentSlidef === 3) {        
         decrementWrongAnswer();
     } if (currentSlidef === 0) {        
@@ -380,8 +395,10 @@ function pauseSlideshowg(){
     
     if (currentSlideg === 1) {        
         incrementScore();
+        incrementResult();
     } if (currentSlideg === 2) {        
         incrementScore();
+        incrementResult();
     } if (currentSlideg === 3) {        
         decrementWrongAnswer();
     } if (currentSlideg === 0) {        
@@ -430,8 +447,10 @@ function pauseSlideshowh(){
     
     if (currentSlideh === 1) {        
         incrementScore();
+        incrementResult();
     } if (currentSlideh === 2) {        
         incrementScore();
+        incrementResult();
     } if (currentSlideh === 3) {        
         decrementWrongAnswer();
     } if (currentSlideh === 0) {        
@@ -480,8 +499,10 @@ function pauseSlideshowi(){
     
     if (currentSlidei === 1) {        
         incrementScore();
+        incrementResult();
     } if (currentSlidei === 2) {        
         incrementScore();
+        incrementResult();
     } if (currentSlidei === 3) {        
         decrementWrongAnswer();
     } if (currentSlidei === 0) {        
