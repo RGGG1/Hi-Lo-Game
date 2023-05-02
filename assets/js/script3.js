@@ -39,20 +39,8 @@ function decrementWrongAnswer() {
     let oldScore = parseInt(document.getElementById("monkey-lives").innerText);
     document.getElementById("monkey-lives").innerText = --oldScore;
 
+    
     var x = document.getElementById("box");
-    if (oldScore === "3") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-// Game Over - Monkey lives = 0, show game over screen, hide game
-
-function Monkey0() {
-    let oldScore = parseInt(document.getElementById("monkey-lives").innerText);
-    document.getElementById("monkey-lives").innerText = --oldScore;
-    var x = document.getElementById("monkey-lives");
     if (oldScore == "3") {
         x.style.display = "block";
     } else {
@@ -60,6 +48,11 @@ function Monkey0() {
     }
 }
 
+// Game Over - show / hide screen
+
+
+
+// Game Over - results screen
 function incrementResult() {
         let oldResult = parseInt(document.getElementById("result").innerText);
         if (oldResult == "0") {
