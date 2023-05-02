@@ -6,6 +6,7 @@ https://codepen.io/houssem93171714/pen/abZZEaz - for image transition effect
 https://codepen.io/SitePoint/pen/zqVGQK - slider inside button effect
 https://developer.mozilla.org/en-US/docs/Web/CSS/opacity - to fix opacity on slider images
 https://codepen.io/dajreamdigital/pen/jvqKLX - hide button functionality
+https://bobbyhadz.com/blog/javascript-hide-button-after-click - hide button functionality
 
 
 
