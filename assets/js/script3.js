@@ -50,8 +50,10 @@ function decrementWrongAnswer() {
 // Game Over - Monkey lives = 0, show game over screen, hide game
 
 function Monkey0() {
+    let oldScore = parseInt(document.getElementById("monkey-lives").innerText);
+    document.getElementById("monkey-lives").innerText = --oldScore;
     var x = document.getElementById("monkey-lives");
-    if (x === "3") {
+    if (oldScore == "3") {
         x.style.display = "block";
     } else {
         x.style.display = "none";
@@ -60,7 +62,11 @@ function Monkey0() {
 
 function incrementResult() {
         let oldResult = parseInt(document.getElementById("result").innerText);
-        document.getElementById("result").innerText = ++oldResult; 
+        if (oldResult == "0") {
+            document.getElementById("result").innerText = ++oldResult + " banana";
+        } else {
+            document.getElementById("result").innerText = ++oldResult + " bananas";
+        }
     }
 
 

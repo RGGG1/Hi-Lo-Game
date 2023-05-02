@@ -1183,6 +1183,14 @@ button:hover {
     padding: 10px;
 }
 
+.game-over {
+    margin: 5px auto;
+    width: 60%;
+    padding: 20px 20px 20px 20px;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
 
 
 #score {
@@ -1191,9 +1199,22 @@ button:hover {
     
 }
 
-#game-over-score {
+#result {
     color: gold;
     font-weight: bold;
+    
+}
+
+#bananas {
+    color: gold;
+    font-weight: bold;
+    
+}
+
+#game-over {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
     
 }
 
