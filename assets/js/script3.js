@@ -1,14 +1,39 @@
-const btn = document.getElementById('play-now');
+// Hide / reveal functions - Start button
 
-btn.addEventListener('click', () => {
-  // 👇️ hide button
-  btn.style.display = 'none';
+function myFunction() {
+    var x = document.getElementById("box");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
 
-  // 👇️ show div
-  const box = document.getElementById('box');
-  box.style.display = 'block';
-});
+    var x = document.getElementById("box2");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
 
+    var x = document.getElementById("start");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+
+}
+
+
+// Score - Monkey Lives = 0 - Hide Game
+
+function myFunction() {
+    var x = document.getElementById("box");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
 
 
 // score counter
@@ -26,30 +51,6 @@ function decrementWrongAnswer() {
     document.getElementById("monkey-lives").innerText = --oldScore;
 }
 
-
-// countdown timer
-
-var timeLeft = 5;
-    var elem = document.getElementById('timer');
-    
-    var timerId = setInterval(countdown, 1000);
-    
-    function countdown() {
-      if (timeLeft == -1) {
-        clearTimeout(timerId);
-        doSomething();
-    
-      }  if (timeLeft == 0) {
-        elem.innerHTML = 'Time up!';
-        timeLeft--;
-    
-      } else {
-        elem.innerHTML = timeLeft;
-        timeLeft--;
-      }
-    }
-
-    //
 
 
 // button a
