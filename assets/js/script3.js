@@ -50,6 +50,7 @@ function decrementLives() {
     if (oldLives == "1") {
         document.getElementById("lives").innerText = --oldLives;
         box.style.display = "none";
+        over.style.display = "block";
         
     } else {
         document.getElementById("lives").innerText = --oldLives;
