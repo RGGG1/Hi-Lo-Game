@@ -36,8 +36,8 @@ function incrementScore() {
 
 function decrementWrongAnswer() {
 
-    let oldScore = parseInt(document.getElementById("monkey-lives").innerText);
-    document.getElementById("monkey-lives").innerText = --oldScore;
+    let oldScore = parseInt(document.getElementById("monkeylives").innerText);
+    document.getElementById("monkeylives").innerText = --oldScore;
 
     
    
@@ -68,6 +68,18 @@ function incrementResult() {
     }
 
 
+// Game over - Play Again
+
+    var span = document.getElementById("result");
+    
+ 
+    function gfg_Run() {
+        result.textContent = "100";
+        box.style.display = "block";
+        over.style.display = "none";
+    }
+
+    
 // button a
 
 var slidesa = document.querySelectorAll('#slidesa .slidea');
