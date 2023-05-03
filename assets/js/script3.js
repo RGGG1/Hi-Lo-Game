@@ -70,16 +70,16 @@ function incrementResult() {
 
 // Game over - Play Again
 
-    var span = document.getElementById("result");
+    var span = document.getElementById("monkeylives");
     
  
     function gfg_Run() {
-        result.textContent = "100";
+        monkeylives.textContent = "3";
         box.style.display = "block";
         over.style.display = "none";
     }
 
-    
+
 // button a
 
 var slidesa = document.querySelectorAll('#slidesa .slidea');

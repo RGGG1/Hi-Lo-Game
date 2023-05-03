@@ -37,7 +37,7 @@ body {
   .wrapper > div {
     background-clip: text;  
     -webkit-background-clip: text;
-    color: #363833;
+    color: black;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     text-align: center;
@@ -64,7 +64,7 @@ body {
       var(--gold) 0% , 
       var(--light-shadow) 23%, 
       var(--gold) 31%);
-    color: #1e2127;
+    color: black;
     transform: scale(1);
   }
 
@@ -1236,7 +1236,6 @@ button:hover {
 }
 
 
-/* everything else irrelevant? */
 
 
 /* --------- Media queries */
