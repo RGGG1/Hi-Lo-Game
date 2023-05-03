@@ -7,6 +7,9 @@ https://codepen.io/SitePoint/pen/zqVGQK - slider inside button effect
 https://developer.mozilla.org/en-US/docs/Web/CSS/opacity - to fix opacity on slider images
 https://codepen.io/dajreamdigital/pen/jvqKLX - hide button functionality
 https://bobbyhadz.com/blog/javascript-hide-button-after-click - hide button functionality
+https://stackoverflow.com/questions/12953928/immediate-play-sound-on-button-click-in-html-page - audio functionality
+https://pixabay.com/sound-effects/ - yippee sound
+
 
 
 

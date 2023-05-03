@@ -24,7 +24,10 @@
 
 <body>
 
-    
+
+<audio id="monkey" src="/assets/audio/monkey.mp3" preload="auto"></audio>
+<audio id="yip" src="/assets/audio/yip.mp3" preload="auto"></audio>
+
 
 
 <button onclick="myFunction()" id="start">Play Now</button>
@@ -36,7 +39,7 @@
 
 <div class="game-area" id="box" hidden>
     <div class="controls-area">
-            <button class="image-a" id="pausea">
+            <button class="image-a" id="pausea" onclick="document.getElementById('yip').play();">
                 <ul id="slidesa">
                     <img class="slidea showing" src="">
                     <img class="slidea" src="">
@@ -123,7 +126,7 @@
 
 <div class="game-over" id="over" hidden>
     <p class="result"><h2>Game Over<br><br><span id="result">0<br><br><p id="bananas">bananas</p></span><br><br>Well Done!</h2></p>
-    <button id="play-again" onClick="gfg_Run()">Play Again</button>
+    <button id="play-again" onClick="gamerestart()">Play Again</button>
     <p class="lives" hidden>Monkey Lives Remaining <span id="lives">3</span></p>
 </div>
 

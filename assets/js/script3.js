@@ -1,6 +1,8 @@
 // Hide / reveal functions - Start button
 
-function myFunction() {
+
+
+function myFunction() {  
     var x = document.getElementById("box");
     if (x.style.display === "block") {
         x.style.display = "none";
@@ -68,17 +70,24 @@ function incrementResult() {
     }
 
 
-// Game over - Play Again
+// Game over - Play Again - Not perfect, as brings to start screen instead of straight into a new game
+
+function gamerestart() {
+        window.location.reload();
+}
+
+
+/* this function might work for game restart, if adjusted a bit, but the problem is the original game over functions don't restart.
 
     var span = document.getElementById("monkeylives");
     
  
     function gfg_Run() {
-        monkeylives.textContent = "3";
+        monkeylives.textContent = "33";
         box.style.display = "block";
         over.style.display = "none";
     }
-
+*/
 
 // button a
 
@@ -106,15 +115,19 @@ function pauseSlideshowa(){
     if (currentSlidea === 1) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlidea === 2) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlidea === 3) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
     } if (currentSlidea === 0) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
     } else {
     }
     
@@ -158,15 +171,19 @@ function pauseSlideshowb(){
     if (currentSlideb === 1) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlideb === 2) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlideb === 3) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
     } if (currentSlideb === 0) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
     } else {
     }
     
@@ -210,15 +227,19 @@ function pauseSlideshowc(){
     if (currentSlidec === 1) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlidec === 2) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlidec === 3) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
     } if (currentSlidec === 0) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
     } else {
     }
     
@@ -262,15 +283,19 @@ function pauseSlideshowd(){
     if (currentSlided === 1) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlided === 2) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlided === 3) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
     } if (currentSlided === 0) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
     } else {
     }
     
@@ -316,15 +341,19 @@ function pauseSlideshowe(){
     if (currentSlidee === 1) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlidee === 2) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlidee === 3) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
     } if (currentSlidee === 0) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
     } else {
     }
     
@@ -370,15 +399,19 @@ function pauseSlideshowf(){
     if (currentSlidef === 1) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlidef === 2) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlidef === 3) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
     } if (currentSlidef === 0) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
     } else {
     }
     
@@ -424,15 +457,19 @@ function pauseSlideshowg(){
     if (currentSlideg === 1) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlideg === 2) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlideg === 3) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
     } if (currentSlideg === 0) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
     } else {
     }
     
@@ -478,15 +515,19 @@ function pauseSlideshowh(){
     if (currentSlideh === 1) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlideh === 2) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlideh === 3) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
     } if (currentSlideh === 0) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
     } else {
     }
     
@@ -532,15 +573,20 @@ function pauseSlideshowi(){
     if (currentSlidei === 1) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlidei === 2) {        
         incrementScore();
         incrementResult();
+        document.getElementById('yip').play();
     } if (currentSlidei === 3) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
     } if (currentSlidei === 0) {        
         decrementWrongAnswer();
         decrementLives();
+        document.getElementById('monkey').play();
+        
     } else {        
     }
     
