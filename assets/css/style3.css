@@ -217,25 +217,25 @@ button:hover {
 }
 
 .slidea:nth-of-type(1){
-	background-image: url("/assets/images/a-monkey-yellow.png");
+	background-image: url("assets/images/a-monkey-yellow.png");
     background-repeat: no-repeat;
     background-size:     100%;      
     background-position: center center;    
 }
 .slidea:nth-of-type(2){
-	background-image: url("/assets/images/a-banana-black-white.png");
+	background-image: url("assets/images/a-banana-black-white.png");
     background-repeat: no-repeat;
     background-size:     100%;      
     background-position: center center;
 }
 .slidea:nth-of-type(3){
-	background-image: url("/assets/images/a-banana-yellow.png");
+	background-image: url("assets/images/a-banana-yellow.png");
     background-repeat: no-repeat;
     background-size:     100%;      
     background-position: center center;
 }
 .slidea:nth-of-type(4){
-	background-image: url("/assets/images/a-monkey-black-white.png");
+	background-image: url("assets/images/a-monkey-black-white.png");
     background-repeat: no-repeat;
     background-size:     100%;      
     background-position: center center;
