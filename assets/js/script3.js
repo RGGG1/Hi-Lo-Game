@@ -400,7 +400,7 @@ function pauseSlideshowe(){
         incrementScore();
         incrementResult();
         pauseButtone.classList.add('animate__animated', 'animate__backOutUp');
-        } if (currentSlideea === 2) {        
+        } if (currentSlidee === 2) {        
         document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
