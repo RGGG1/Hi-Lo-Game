@@ -1,6 +1,32 @@
+// Mute audio
+
+function muteMe(elem) {
+    
+    elem.muted = true;
+    elem.pause();
+    object.style.borderColor = 'color | red | inherit | initial';
+}
+
+// Try to mute all video and audio elements on the page
+function mutePage() {
+    var elems = document.querySelectorAll("audio");
+    const object = document.getElementById('mute');
+
+    [].forEach.call(elems, function(elem) { muteMe(elem); }); 
+    
+        mute.classList.toggle('muted');
+        if (elem.muted === true) {
+            elem.muted = false;
+        }
+        else if (elem.muted === false) {
+            elem.muted = true;
+        }
+    }
+    
+
+
+
 // Hide / reveal functions - Start button
-
-
 
 function myFunction() {  
     var x = document.getElementById("box");

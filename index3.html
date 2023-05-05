@@ -29,10 +29,6 @@
 
 
 
-<button onclick="myFunction()" id="start">Go Bananas</button>
-
-
-
 <!--Game-->  
 
 
@@ -126,6 +122,15 @@
     </div>
 </div>      
 
+<!--Mute-->
+<div>
+    <button onclick="myFunction()" id="start">Go Bananas</button>
+    <br>
+    <br>
+    <button id="mute" onclick="mutePage()"><i class="fa fa-volume-off" aria-hidden="true"></i>
+    </button>
+</div>
+<!--Game Over-->
 <div class="game-over" id="over" hidden>
     <p class="result"><h2>You<br>Collected<br><br><span id="result">0<br><br><p id="bananas">bananas</p></span></h2></p>
     <button id="play-again" onClick="gamerestart()">Play Again</button>

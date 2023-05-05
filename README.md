@@ -10,6 +10,7 @@ https://bobbyhadz.com/blog/javascript-hide-button-after-click - hide button func
 https://stackoverflow.com/questions/12953928/immediate-play-sound-on-button-click-in-html-page - audio functionality
 https://pixabay.com/sound-effects/ - yippee sound
 https://animate.style/ - effects
+https://stackoverflow.com/questions/14044761/how-to-mute-all-sound-in-a-page-with-js - mute control
 
 
 
