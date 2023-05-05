@@ -1045,11 +1045,12 @@ button:hover {
 }
 
 .game-over {
-    margin: 5px auto;
-    width: 60%;
-    padding: 20px 20px 20px 20px;
-    font-size: 1.5rem;
-    padding: 10px;
+    margin: auto;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 
@@ -1080,12 +1081,6 @@ button:hover {
     
 }
 
-#game-over {
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    
-}
 
 #monkeylives {
     color: red;
