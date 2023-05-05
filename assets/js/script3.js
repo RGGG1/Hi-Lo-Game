@@ -26,7 +26,7 @@ function mutePage() {
 
 // Hide / reveal functions - Start button
 
-function myFunction() {  
+function start() {  
     var x = document.getElementById("box");
     if (x.style.display === "block") {
         x.style.display = "none";

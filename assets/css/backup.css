@@ -1,11 +1,16 @@
 /* root */
-:root {
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
     --gold: gold;
     --light-shadow: #77571d;
     --dark-shadow: #3e2904;
   }
 
 /* body */
+
 body {
     background: black;
     background-position:center;
@@ -19,6 +24,7 @@ body {
 }
 
 /* header logo effect */
+
 .wrapper {
     background-color: black;
     display: grid;
@@ -27,8 +33,7 @@ body {
     text-transform: uppercase;
     height: auto;
   }
-
-.wrapper > div {
+  .wrapper > div {
     background-clip: text;  
     -webkit-background-clip: text;
     color: black;
@@ -43,7 +48,7 @@ body {
 
   
 
-div.bg {
+  div.bg {
     background-image: repeating-linear-gradient( 105deg, 
       var(--gold) 0% , 
       var(--dark-shadow) 5%,
@@ -53,8 +58,7 @@ div.bg {
     transform: scaleY(1.05);
     transform-origin: top;
   }
-
-div.fg{
+  div.fg{
     background-image: repeating-linear-gradient( 5deg,  
       var(--gold) 0% , 
       var(--light-shadow) 23%, 
@@ -64,8 +68,9 @@ div.fg{
   }
 
 
-/* h2 */
-h2 {
+/* h2 sizing - for timer area */
+
+  h2 {
     font-size: 34px;
     font-weight: ;
     text-align: center;
@@ -77,6 +82,7 @@ h2 {
 
 
 /* Mute Button */
+
 #mute {
     font-size: 14px;
     text-align: center;
@@ -114,6 +120,7 @@ h2 {
 }
 
   /* Play Now Button */
+
 button {
     font-size: 26px;
     text-align: center;
@@ -132,7 +139,9 @@ button:hover {
     border-color: white;
   }
 
+
 /* Game area */
+
 .game-area {
     background-color: black;
     box-sizing: border-box;
@@ -143,14 +152,19 @@ button:hover {
     margin-right: auto;
 }
 
+
 /* controls area */
+
 .controls-area {
     width: 100%;
     margin: auto;
-    padding: ;  
+    padding: ;
+    
 }
 
+
 /* everything A */
+
 .image-a {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -160,12 +174,14 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
+    
 }
 
 .image-a::after {
     content: attr(data-type);
     color: black;
     position: relative;
+
 }
 
 .image-a:focus {
@@ -184,6 +200,7 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
+    
 }
 
 #pausea {
@@ -193,8 +210,11 @@ button:hover {
     color: black;
     height: 125px;
     width: 125px;
-    outline-color: black;    
+    outline-color: black;
+
+    
 }
+
 
 #slidesa{
 	position: relative;
@@ -205,7 +225,10 @@ button:hover {
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
+       
+
 }
+
 
 .slidea{
 	position: absolute;
@@ -219,7 +242,12 @@ button:hover {
     padding: 15px 15px 15px 15px;
     margin: 0;
     border: 0;
-    -webkit-transition: opacity 1;
+    
+    
+    
+
+
+	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -230,7 +258,11 @@ button:hover {
 	z-index: 2;
 }
 
+
+
+
 /* everything B */
+
 .image-b {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -240,12 +272,14 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
+    
 }
 
 .image-b::after {
     content: attr(data-type);
     color: black;
     position: relative;
+
 }
 
 .image-b:focus {
@@ -264,6 +298,7 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
+    
 }
 
 #pauseb {
@@ -273,7 +308,9 @@ button:hover {
     color: black;
     height: 125px;
     width: 125px;
-    outline-color: black;    
+    outline-color: black;
+
+    
 }
 
 
@@ -286,6 +323,8 @@ button:hover {
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
+       
+
 }
 
 
@@ -301,6 +340,11 @@ button:hover {
     padding: 15px 15px 15px 15px;
     margin: 0;
     border: 0;
+    
+    
+    
+
+
 	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
@@ -312,7 +356,10 @@ button:hover {
 	z-index: 2;
 }
 
+
+
 /* everything C */
+
 .image-c {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -322,12 +369,14 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
+    
 }
 
 .image-c::after {
     content: attr(data-type);
     color: black;
     position: relative;
+
 }
 
 .image-c:focus {
@@ -346,7 +395,9 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
+    
 }
+
 
 #pausec {
     border-radius: 50%;
@@ -356,6 +407,8 @@ button:hover {
     height: 125px;
     width: 125px;
     outline-color: black;
+
+    
 }
 
 #slidesc{
@@ -367,7 +420,10 @@ button:hover {
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
+       
+
 }
+
 
 .slidec{
 	position: absolute;
@@ -381,7 +437,10 @@ button:hover {
     padding: 15px 15px 15px 15px;
     margin: 0;
     border: 0;
-    -webkit-transition: opacity 1;
+    
+
+
+	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -392,7 +451,9 @@ button:hover {
 	z-index: 2;
 }
 
+
 /* everything D */
+
 .image-d {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -402,12 +463,14 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
+    
 }
 
 .image-d::after {
     content: attr(data-type);
     color: black;
     position: relative;
+
 }
 
 .image-d:focus {
@@ -426,6 +489,7 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
+    
 }
 
 
@@ -437,6 +501,8 @@ button:hover {
     height: 125px;
     width: 125px;
     outline-color: black;
+
+    
 }
 
 #slidesd{
@@ -448,6 +514,8 @@ button:hover {
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
+       
+
 }
 
 
@@ -463,6 +531,11 @@ button:hover {
     padding: 15px 15px 15px 15px;
     margin: 0;
     border: 0;
+    
+    
+    
+
+
 	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
@@ -474,7 +547,10 @@ button:hover {
 	z-index: 2;
 }
 
+
+
 /* everything E */
+
 .image-e {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -484,12 +560,14 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
+    
 }
 
 .image-e::after {
     content: attr(data-type);
     color: black;
     position: relative;
+
 }
 
 .image-e:focus {
@@ -508,7 +586,9 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
+    
 }
+
 
 #pausee {
     border-radius: 50%;
@@ -518,6 +598,8 @@ button:hover {
     height: 125px;
     width: 125px;
     outline-color: black;
+
+    
 }
 
 #slidese{
@@ -529,7 +611,10 @@ button:hover {
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
+       
+
 }
+
 
 .slidee{
 	position: absolute;
@@ -543,7 +628,12 @@ button:hover {
     padding: 15px 15px 15px 15px;
     margin: 0;
     border: 0;
-    -webkit-transition: opacity 1;
+    
+    
+    
+
+
+	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -554,7 +644,10 @@ button:hover {
 	z-index: 2;
 }
 
+
+
 /* everything F */
+
 .image-f {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -564,12 +657,14 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
+    
 }
 
 .image-f::after {
     content: attr(data-type);
     color: black;
     position: relative;
+
 }
 
 .image-f:focus {
@@ -588,7 +683,9 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
+    
 }
+
 
 #pausef {
     border-radius: 50%;
@@ -598,6 +695,8 @@ button:hover {
     height: 125px;
     width: 125px;
     outline-color: black;
+
+    
 }
 
 #slidesf{
@@ -609,6 +708,8 @@ button:hover {
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
+       
+
 }
 
 
@@ -624,7 +725,11 @@ button:hover {
     padding: 15px 15px 15px 15px;
     margin: 0;
     border: 0;
-    -webkit-transition: opacity 1;
+    
+    
+
+
+	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -635,7 +740,10 @@ button:hover {
 	z-index: 2;
 }
 
+
+
 /* everything G */
+
 .image-g {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -645,12 +753,14 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
+    
 }
 
 .image-g::after {
     content: attr(data-type);
     color: black;
     position: relative;
+
 }
 
 .image-g:focus {
@@ -669,6 +779,7 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
+    
 }
 
 
@@ -679,7 +790,9 @@ button:hover {
     color: black;
     height: 125px;
     width: 125px;
-    outline-color: black;   
+    outline-color: black;
+
+    
 }
 
 #slidesg{
@@ -691,6 +804,8 @@ button:hover {
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
+       
+
 }
 
 
@@ -706,7 +821,12 @@ button:hover {
     padding: 15px 15px 15px 15px;
     margin: 0;
     border: 0;
-    -webkit-transition: opacity 1;
+    
+    
+    
+
+
+	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -717,7 +837,10 @@ button:hover {
 	z-index: 2;
 }
 
+
+
 /* everything H */
+
 .image-h {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -727,12 +850,14 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
+    
 }
 
 .image-h::after {
     content: attr(data-type);
     color: black;
     position: relative;
+
 }
 
 .image-h:focus {
@@ -751,7 +876,9 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
+    
 }
+
 
 #pauseh {
     border-radius: 50%;
@@ -761,6 +888,8 @@ button:hover {
     height: 125px;
     width: 125px;
     outline-color: black;
+
+    
 }
 
 #slidesh{
@@ -772,7 +901,10 @@ button:hover {
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
+       
+
 }
+
 
 .slideh{
 	position: absolute;
@@ -786,7 +918,12 @@ button:hover {
     padding: 15px 15px 15px 15px;
     margin: 0;
     border: 0;
-    -webkit-transition: opacity 1;
+    
+    
+    
+
+
+	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -797,7 +934,10 @@ button:hover {
 	z-index: 2;
 }
 
+
+
 /* everything I */
+
 .image-i {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -807,12 +947,14 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
+    
 }
 
 .image-i::after {
     content: attr(data-type);
     color: black;
     position: relative;
+
 }
 
 .image-i:focus {
@@ -831,6 +973,7 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
+    
 }
 
 
@@ -842,6 +985,8 @@ button:hover {
     height: 125px;
     width: 125px;
     outline-color: black;
+
+    
 }
 
 #slidesi{
@@ -853,7 +998,10 @@ button:hover {
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
+       
+
 }
+
 
 .slidei{
 	position: absolute;
@@ -867,7 +1015,12 @@ button:hover {
     padding: 15px 15px 15px 15px;
     margin: 0;
     border: 0;
-    -webkit-transition: opacity 1;
+    
+    
+    
+
+
+	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -878,7 +1031,12 @@ button:hover {
 	z-index: 2;
 }
 
+
+
+
+
 /* scores */
+
 .score-area {
     margin: 5px auto;
     width: 60%;
@@ -895,27 +1053,34 @@ button:hover {
     font-size: 30px;
 }
 
+
+
 #score {
     color: gold;
     font-weight: bold;
     font-size: 75px;
-}
+    
+    }
 
 #result {
     color: gold;
     font-weight: bold;
     text-align: center;
+    
 }
 
 #test {
     color: gold;
     font-weight: bold;
+    
 }
 
 #bananas {
     color: gold;
     font-weight: bold;
+    
 }
+
 
 #monkeylives {
     color: red;
@@ -931,8 +1096,12 @@ button:hover {
 }
 
 
+
+
 /* --------- Media queries */
+
 @media (max-width: 460px) {
+
 
 .score-area {
     width: 100%;
@@ -953,6 +1122,7 @@ button:hover {
     width: 100%;
 }
 
+
 button {
     font-size: 26px;
     text-align: center;
@@ -965,7 +1135,10 @@ button {
     border-radius: 5%;
   }
 
+
+
 /* A */
+
 .image-a {
     color: black;
     margin: 20px 1px 0px 1px;
@@ -976,6 +1149,7 @@ button {
     overflow: hidden;  
     transition: all 200ms;   
 }
+
 
 .image-a:active {
     color: black;
@@ -994,6 +1168,7 @@ button {
     outline-color: black;
 }
 
+
 #slidesa {
 	position: relative;
 	height: 100%;
@@ -1004,6 +1179,7 @@ button {
     overflow: hidden;
     border-radius: 50%;
 }
+
 
 .slidea{
 	position: absolute;
@@ -1016,7 +1192,11 @@ button {
     overflow: hidden;
     margin: 0;
     border: 0;
-    -webkit-transition: opacity 1;
+    
+    
+
+
+	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -1028,6 +1208,7 @@ button {
 }
 
 /* B */
+
 .image-b {
     color: black;
     margin: 20px 1px 0px 1px;
@@ -1038,6 +1219,7 @@ button {
     overflow: hidden;  
     transition: all 200ms;   
 }
+
 
 .image-b:active {
     color: black;
@@ -1056,6 +1238,7 @@ button {
     outline-color: black;
 }
 
+
 #slidesb {
 	position: relative;
 	height: 100%;
@@ -1066,6 +1249,7 @@ button {
     overflow: hidden;
     border-radius: 50%;
 }
+
 
 .slideb{
 	position: absolute;
@@ -1078,7 +1262,11 @@ button {
     overflow: hidden;
     margin: 0;
     border: 0;
-    -webkit-transition: opacity 1;
+    
+    
+
+
+	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -1090,6 +1278,7 @@ button {
 }
 
 /* C */
+
 .image-c {
     color: black;
     margin: 20px 1px 0px 1px;
@@ -1100,6 +1289,7 @@ button {
     overflow: hidden;  
     transition: all 200ms;   
 }
+
 
 .image-c:active {
     color: black;
@@ -1118,6 +1308,7 @@ button {
     outline-color: black;
 }
 
+
 #slidesc {
 	position: relative;
 	height: 100%;
@@ -1128,6 +1319,7 @@ button {
     overflow: hidden;
     border-radius: 50%;
 }
+
 
 .slidec{
 	position: absolute;
@@ -1140,7 +1332,11 @@ button {
     overflow: hidden;
     margin: 0;
     border: 0;
-    -webkit-transition: opacity 1;
+    
+    
+
+
+	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -1152,6 +1348,7 @@ button {
 }
 
 /* D */
+
 .image-d {
     color: black;
     margin: 20px 1px 0px 1px;
@@ -1162,6 +1359,7 @@ button {
     overflow: hidden;  
     transition: all 200ms;   
 }
+
 
 .image-d:active {
     color: black;
@@ -1180,6 +1378,7 @@ button {
     outline-color: black;
 }
 
+
 #slidesd {
 	position: relative;
 	height: 100%;
@@ -1190,6 +1389,7 @@ button {
     overflow: hidden;
     border-radius: 50%;
 }
+
 
 .slided{
 	position: absolute;
@@ -1202,7 +1402,11 @@ button {
     overflow: hidden;
     margin: 0;
     border: 0;
-    -webkit-transition: opacity 1;
+    
+    
+
+
+	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -1214,6 +1418,7 @@ button {
 }
 
 /* E */
+
 .image-e {
     color: black;
     margin: 20px 1px 0px 1px;
@@ -1224,6 +1429,7 @@ button {
     overflow: hidden;  
     transition: all 200ms;   
 }
+
 
 .image-e:active {
     color: black;
@@ -1242,6 +1448,7 @@ button {
     outline-color: black;
 }
 
+
 #slidese {
 	position: relative;
 	height: 100%;
@@ -1252,6 +1459,7 @@ button {
     overflow: hidden;
     border-radius: 50%;
 }
+
 
 .slidee{
 	position: absolute;
@@ -1264,7 +1472,11 @@ button {
     overflow: hidden;
     margin: 0;
     border: 0;
-    -webkit-transition: opacity 1;
+    
+    
+
+
+	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -1276,6 +1488,7 @@ button {
 }
 
 /* F */
+
 .image-f {
     color: black;
     margin: 20px 1px 0px 1px;
@@ -1286,6 +1499,7 @@ button {
     overflow: hidden;  
     transition: all 200ms;   
 }
+
 
 .image-f:active {
     color: black;
@@ -1304,6 +1518,7 @@ button {
     outline-color: black;
 }
 
+
 #slidesf {
 	position: relative;
 	height: 100%;
@@ -1314,6 +1529,7 @@ button {
     overflow: hidden;
     border-radius: 50%;
 }
+
 
 .slidef{
 	position: absolute;
@@ -1326,7 +1542,11 @@ button {
     overflow: hidden;
     margin: 0;
     border: 0;
-    -webkit-transition: opacity 1;
+    
+    
+
+
+	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -1338,6 +1558,7 @@ button {
 }
 
 /* G */
+
 .image-g {
     color: black;
     margin: 20px 1px 0px 1px;
@@ -1348,6 +1569,7 @@ button {
     overflow: hidden;  
     transition: all 200ms;   
 }
+
 
 .image-g:active {
     color: black;
@@ -1378,6 +1600,7 @@ button {
     border-radius: 50%;
 }
 
+
 .slideg{
 	position: absolute;
 	left: 0px;
@@ -1389,7 +1612,11 @@ button {
     overflow: hidden;
     margin: 0;
     border: 0;
-    -webkit-transition: opacity 1;
+    
+    
+
+
+	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -1401,6 +1628,7 @@ button {
 }
 
 /* H */
+
 .image-h {
     color: black;
     margin: 20px 1px 0px 1px;
@@ -1411,6 +1639,7 @@ button {
     overflow: hidden;  
     transition: all 200ms;   
 }
+
 
 .image-h:active {
     color: black;
@@ -1429,6 +1658,7 @@ button {
     outline-color: black;
 }
 
+
 #slidesh {
 	position: relative;
 	height: 100%;
@@ -1439,6 +1669,7 @@ button {
     overflow: hidden;
     border-radius: 50%;
 }
+
 
 .slideh{
 	position: absolute;
@@ -1451,7 +1682,11 @@ button {
     overflow: hidden;
     margin: 0;
     border: 0;
-    -webkit-transition: opacity 1;
+    
+    
+
+
+	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -1462,7 +1697,9 @@ button {
 	z-index: 2;
 }
 
+
 /* I */
+
 .image-i {
     color: black;
     margin: 20px 1px 0px 1px;
@@ -1473,6 +1710,7 @@ button {
     overflow: hidden;  
     transition: all 200ms;   
 }
+
 
 .image-i:active {
     color: black;
@@ -1491,6 +1729,7 @@ button {
     outline-color: black;
 }
 
+
 #slidesi {
 	position: relative;
 	height: 100%;
@@ -1501,6 +1740,7 @@ button {
     overflow: hidden;
     border-radius: 50%;
 }
+
 
 .slidei{
 	position: absolute;
@@ -1513,7 +1753,11 @@ button {
     overflow: hidden;
     margin: 0;
     border: 0;
-    -webkit-transition: opacity 1;
+    
+    
+
+
+	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -1528,11 +1772,13 @@ button {
     color: gold;
     font-weight: bold;
     font-size: 32px;
-}
+    
+    }
 
 #monkeylives {
     color: red;
     font-weight: bold;
     font-size: 32px;
 }
+
 }
