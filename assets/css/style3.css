@@ -1063,7 +1063,7 @@ button:hover {
 
 /* --------- Media queries */
 
-@media (max-width: 470px) {
+@media (max-width: 460px) {
 .controls-area {
     width: 100%;
 }
@@ -1084,7 +1084,7 @@ button:hover {
 
  
 .game-area {
-    height: 70vh;
+    width: 100%;
 }
 
 .question-area {
@@ -1122,7 +1122,7 @@ button {
 .image-a:active {
     color: black;
     border-radius: 50%;
-    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;  
 }
 
@@ -1192,7 +1192,7 @@ button {
 .image-b:active {
     color: black;
     border-radius: 50%;
-    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;  
 }
 
@@ -1262,7 +1262,7 @@ button {
 .image-c:active {
     color: black;
     border-radius: 50%;
-    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;  
 }
 
@@ -1332,7 +1332,7 @@ button {
 .image-d:active {
     color: black;
     border-radius: 50%;
-    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;  
 }
 
@@ -1402,7 +1402,7 @@ button {
 .image-d:active {
     color: black;
     border-radius: 50%;
-    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;  
 }
 
@@ -1472,7 +1472,7 @@ button {
 .image-e:active {
     color: black;
     border-radius: 50%;
-    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;  
 }
 
@@ -1542,7 +1542,7 @@ button {
 .image-f:active {
     color: black;
     border-radius: 50%;
-    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;  
 }
 
@@ -1612,7 +1612,7 @@ button {
 .image-g:active {
     color: black;
     border-radius: 50%;
-    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;  
 }
 
@@ -1682,7 +1682,7 @@ button {
 .image-h:active {
     color: black;
     border-radius: 50%;
-    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;  
 }
 
@@ -1753,7 +1753,7 @@ button {
 .image-i:active {
     color: black;
     border-radius: 50%;
-    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;  
 }
 

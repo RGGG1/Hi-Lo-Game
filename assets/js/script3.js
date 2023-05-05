@@ -134,21 +134,22 @@ function pauseSlideshowa(){
     console.log(currentSlidea);
     
     if (currentSlidea === 0) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
     } if (currentSlidea === 1) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
-    } if (currentSlidea === 2) {        
+        } if (currentSlidea === 2) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
         document.getElementById('monkey').play();
     } if (currentSlidea === 3) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        document.getElementById('monkey').play();
     } else {
     }
     
@@ -156,7 +157,7 @@ function pauseSlideshowa(){
         function playSlideshowa(){
             playinga = true;
             slideIntervala = setInterval(nextSlidea,250);
-        }, 250);
+        }, 5000);
 }
 
 pauseButtona.onclick = function a(){
@@ -212,7 +213,7 @@ function pauseSlideshowb(){
         function playSlideshowb(){
             playingb = true;
             slideIntervalb = setInterval(nextSlideb,250);
-        }, 250);
+        }, 0);
 }
 
 pauseButtonb.onclick = function b(){
