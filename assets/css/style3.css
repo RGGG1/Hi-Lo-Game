@@ -1063,7 +1063,7 @@ button:hover {
 
 /* --------- Media queries */
 
-@media (max-width: 400px) {
+@media (max-width: 470px) {
 .controls-area {
     width: 100%;
 }
