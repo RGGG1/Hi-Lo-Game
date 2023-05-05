@@ -1063,7 +1063,7 @@ button:hover {
 
 /* --------- Media queries */
 
-@media (max-width: 440px) {
+@media (max-width: 400px) {
 .controls-area {
     width: 100%;
 }
@@ -1085,7 +1085,6 @@ button:hover {
  
 .game-area {
     height: 70vh;
-    width: 90%
 }
 
 .question-area {
@@ -1104,7 +1103,7 @@ button {
     border-radius: 5%;
   }
 
-}
+
 
 /* A */
 
@@ -1807,3 +1806,4 @@ button {
 	z-index: 2;
 }
 
+}
