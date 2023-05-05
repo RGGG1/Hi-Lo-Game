@@ -72,7 +72,7 @@ body {
 /* h2 sizing - for timer area */
 
   h2 {
-    font-size: 26px;
+    font-size: 34px;
     font-weight: ;
     text-align: center;
     text-transform: uppercase;
@@ -1018,8 +1018,9 @@ button:hover {
 #score {
     color: gold;
     font-weight: bold;
+    font-size: 75px;
     
-}
+    }
 
 #result {
     color: gold;
@@ -1050,12 +1051,14 @@ button:hover {
 #monkeylives {
     color: red;
     font-weight: bold;
+    font-size: 75px;
 }
 
 .scores {
     display: inline-block;
     padding: 10px;
     border: 10px;
+    font-size: 42;
 }
 
 
