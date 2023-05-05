@@ -1024,6 +1024,7 @@ button:hover {
 #result {
     color: gold;
     font-weight: bold;
+    text-align: center;
     
 }
 
@@ -1096,7 +1097,7 @@ button {
     background-color: black;
     border-color: gold;
     border: solid;
-    padding: 1px 1px 1px 1px;
+    padding: 10px 10px 10px 10px;
     border-radius: 5%;
   }
 
