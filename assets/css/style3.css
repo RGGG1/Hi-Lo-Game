@@ -1063,72 +1063,59 @@ button:hover {
 
 /* --------- Media queries */
 
-@media (max-width: 414px) {
-    .controls-area {
-        width: 100%;
-    }
-
-    .score-area {
-        width: 100%;
-    }
-
-    .scores {
-        margin: 0.5em auto;
-        display: block;
-        padding: 5px;
-    }
-
-    .heading {
-        font-size: 2rem;
-    }
+@media (max-width: 440px) {
+.controls-area {
+    width: 100%;
 }
 
-@media (max-width: 320px) {
-    .game-area {
-        height: 70vh;
-    }
+.score-area {
+    width: 100%;
+}
 
-    .controls-area {
-        width: 75%;
-        margin: 10px auto;
-    }
+.scores {
+    margin: 0.5em auto;
+    display: block;
+    padding: 5px;
+}
 
-    .question-area {
-        padding: 10px 0;
-    }
+.heading {
+    font-size: 2rem;
+}
 
-    #slidesa{
-        position: relative;
-        height: 20px;
-        width: 20px;
-        padding: 0;
-        margin: auto;
-        list-style-type: none;
-        overflow: hidden;
-        border-radius: 50%;
-           
-    
-    }
-    
+ 
+.game-area {
+    height: 70vh;
+}
+
+.question-area {
+    padding: 10px 0;
+}
+
+button {
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: gold;
+    background-color: black;
+    border-color: gold;
+    border: solid;
+    padding: 2px 2px 2px 2px;
+    border-radius: 5%;
+  }
 
 }
 
-
-/* mobile buttons
+/* A */
 
 .image-a {
     color: black;
     margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
     background-color: black;
     background-repeat:no-repeat;
     border: none;
     cursor:pointer;
     overflow: hidden;  
-    transition: all 200ms;
-    
-    
-    
+    transition: all 200ms;   
 }
 
 
@@ -1136,8 +1123,7 @@ button:hover {
     color: black;
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px red;
-    outline: none;
-    
+    outline: none;  
 }
 
 #pausea {
@@ -1148,8 +1134,6 @@ button:hover {
     height: 65px;
     width: 65px;
     outline-color: black;
-
-    
 }
 
 
@@ -1162,9 +1146,6 @@ button:hover {
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
-    
-       
-
 }
 
 
@@ -1194,17 +1175,634 @@ button:hover {
 	z-index: 2;
 }
 
+/* B */
 
-
-
-button {
-    font-size: 26px;
-    text-align: center;
-    text-transform: uppercase;
-    color: gold;
+.image-b {
+    color: black;
+    margin: 10px 10px 10px 10px;
     background-color: black;
-    border-color: gold;
-    border: solid;
-    padding: 2px 2px 2px 2px;
-    border-radius: 5%;
-  }
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+
+.image-b:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    outline: none;  
+}
+
+#pauseb {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 65px;
+    width: 65px;
+    outline-color: black;
+}
+
+
+#slidesb {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.slideb{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    
+    
+
+
+	-webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+/* C */
+
+.image-c {
+    color: black;
+    margin: 10px 10px 10px 10px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+
+.image-c:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    outline: none;  
+}
+
+#pausec {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 65px;
+    width: 65px;
+    outline-color: black;
+}
+
+
+#slidesc {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.slidec{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    
+    
+
+
+	-webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+/* D */
+
+.image-d {
+    color: black;
+    margin: 10px 10px 10px 10px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+
+.image-d:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    outline: none;  
+}
+
+#paused {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 65px;
+    width: 65px;
+    outline-color: black;
+}
+
+
+#slidesd {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.slided{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    
+    
+
+
+	-webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+/* D */
+
+.image-d {
+    color: black;
+    margin: 10px 10px 10px 10px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+
+.image-d:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    outline: none;  
+}
+
+#paused {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 65px;
+    width: 65px;
+    outline-color: black;
+}
+
+
+#slidesd {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.slided{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    
+    
+
+
+	-webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+/* E */
+
+.image-e {
+    color: black;
+    margin: 10px 10px 10px 10px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+
+.image-e:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    outline: none;  
+}
+
+#pausee {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 65px;
+    width: 65px;
+    outline-color: black;
+}
+
+
+#slidese {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.slidee{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    
+    
+
+
+	-webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+/* F */
+
+.image-f {
+    color: black;
+    margin: 10px 10px 10px 10px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+
+.image-f:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    outline: none;  
+}
+
+#pausef {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 65px;
+    width: 65px;
+    outline-color: black;
+}
+
+
+#slidesf {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.slidef{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    
+    
+
+
+	-webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+/* G */
+
+.image-g {
+    color: black;
+    margin: 10px 10px 10px 10px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+
+.image-g:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    outline: none;  
+}
+
+#pauseg {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 65px;
+    width: 65px;
+    outline-color: black;
+}
+
+
+#slidesg {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.slideg{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    
+    
+
+
+	-webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+/* H */
+
+.image-h {
+    color: black;
+    margin: 10px 10px 10px 10px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+
+.image-h:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    outline: none;  
+}
+
+#pauseh {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 65px;
+    width: 65px;
+    outline-color: black;
+}
+
+
+#slidesh {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.slideh{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    
+    
+
+
+	-webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+
+/* I */
+
+.image-i {
+    color: black;
+    margin: 10px 10px 10px 10px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+
+.image-i:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px red;
+    outline: none;  
+}
+
+#pausei {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 65px;
+    width: 65px;
+    outline-color: black;
+}
+
+
+#slidesi {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.slidei{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    
+    
+
+
+	-webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
