@@ -187,7 +187,7 @@ function pauseSlideshowa(){
             playinga = true;            
             pauseButtona.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervala = setInterval(nextSlidea,250);
-        }, 1000);
+        }, 2500);
 }
 
 pauseButtona.onclick = function a(){
@@ -249,7 +249,7 @@ function pauseSlideshowb(){
             playingb = true;            
             pauseButtonb.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervalb = setInterval(nextSlideb,250);
-        }, 1000);
+        }, 2500);
 }
 
 pauseButtonb.onclick = function b(){
@@ -311,7 +311,7 @@ function pauseSlideshowc(){
             playingc = true;            
             pauseButtonc.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervalc = setInterval(nextSlidec,250);
-        }, 1000);
+        }, 2500);
 }
 
 
@@ -377,7 +377,7 @@ function pauseSlideshowd(){
             playingd = true;            
             pauseButtond.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervald = setInterval(nextSlided,250);
-        }, 1000);
+        }, 2500);
 }
 
 
@@ -443,7 +443,7 @@ function pauseSlideshowe(){
             playinge = true;            
             pauseButtone.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervale = setInterval(nextSlidee,250);
-        }, 1000);
+        }, 2500);
 }
 
 
@@ -508,7 +508,7 @@ function pauseSlideshowf(){
             playingf = true;            
             pauseButtonf.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervalf = setInterval(nextSlidef,250);
-        }, 1000);
+        }, 2500);
 }
 
 
@@ -574,7 +574,7 @@ function pauseSlideshowg(){
             playingg = true;            
             pauseButtong.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervalg = setInterval(nextSlideg,250);
-        }, 1000);
+        }, 2500);
 }
 
 
@@ -640,7 +640,7 @@ function pauseSlideshowh(){
             playingh = true;            
             pauseButtonh.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervalh = setInterval(nextSlideh,250);
-        }, 1000);
+        }, 2500);
 }
 
 
@@ -707,7 +707,7 @@ function pauseSlideshowi(){
             playingi = true;            
             pauseButtoni.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervali = setInterval(nextSlidei,250);
-        }, 1000);
+        }, 2500);
 }
 
 
