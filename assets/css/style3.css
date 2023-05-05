@@ -1737,4 +1737,17 @@ button {
 	z-index: 2;
 }
 
+#score {
+    color: gold;
+    font-weight: bold;
+    font-size: 32px;
+    
+    }
+
+#monkeylives {
+    color: red;
+    font-weight: bold;
+    font-size: 32px;
+}
+
 }
