@@ -1,7 +1,5 @@
 // Mute audio
-
 function muteMe(elem) {
-    
     elem.muted = true;
     elem.pause();
 }
@@ -10,22 +8,17 @@ function muteMe(elem) {
 function mutePage() {
     var elems = document.querySelectorAll("audio");
     const object = document.getElementById('mute');
-
     [].forEach.call(elems, function(elem) { muteMe(elem); }); 
-    
-    object.classList.toggle('muted');
+        object.classList.toggle('muted');
         if (elem.muted === true) {
             elem.muted = false;
         }
         else if (elem.muted === false) {
             elem.muted = true;
         }
-    }
-    
-
+}
 
 // Hide / reveal functions - Start button
-
 function start() {  
     var x = document.getElementById("box");
     if (x.style.display === "block") {
@@ -47,56 +40,26 @@ function start() {
     } else {
         x.style.display = "none";
     }
-
 }
 
 // score counter
-
 function incrementScore() {
-
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
-    
-
-
 }
 
 function decrementWrongAnswer() {
-
     let oldScore = parseInt(document.getElementById("monkeylives").innerText);
     document.getElementById("monkeylives").innerText = --oldScore;
-
-    
-   
 }
-
-/* Speed
-
-function incrementSpeed() {
-
-    let oldSpeed = parseInt(document.getElementById("speed").innerText);
-    if (oldSpeed > "10") {
-        document.getElementById("speed").innerText = oldSpeed += 100;
-        
-    } else {
-            }
-    
-    
-}
-
-*/
-
-
 
 // Game Over - show / hide screen
-
 function decrementLives() {
     let oldLives = parseInt(document.getElementById("lives").innerText);
     if (oldLives == "1") {
         document.getElementById("lives").innerText = --oldLives;
         box.style.display = "none";
         over.style.display = "block";
-        
     } else {
         document.getElementById("lives").innerText = --oldLives;
     }
@@ -110,36 +73,18 @@ function incrementResult() {
         } else {
             document.getElementById("result").innerText = ++oldResult + "\nbananas";
         }
-    }
+}
 
 
 // Game over - Play Again - Not perfect, as brings to start screen instead of straight into a new game
-
 function gamerestart() {
         window.location.reload();
 }
 
-
-/* this function might work for game restart, if adjusted a bit, but the problem is the original game over functions don't restart.
-
-    var span = document.getElementById("monkeylives");
-    
- 
-    function gfg_Run() {
-        monkeylives.textContent = "33";
-        box.style.display = "block";
-        over.style.display = "none";
-    }
-*/
-
-
-
 // button a
-
 var slidesa = document.querySelectorAll('#slidesa .slidea');
 var currentSlidea = 0;
 var slideIntervala = setInterval(nextSlidea,250);
-
 
 function nextSlidea(){
 	slidesa[currentSlidea].className = 'slidea';
@@ -151,13 +96,10 @@ var playinga = true;
 var pauseButtona = document.getElementById('pausea');
 
 function pauseSlideshowa(){
-    
-    
-	playinga = false;
+    playinga = false;
 	clearInterval(slideIntervala);
     console.log(currentSlidea);
-    
-    
+        
     if (currentSlidea === 0) {        
         document.getElementById('yip').play();
         incrementScore();
@@ -180,8 +122,7 @@ function pauseSlideshowa(){
         pauseButtona.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
-    
-    
+        
     setTimeout(
         function playSlideshowa(){
             playinga = true;            
@@ -193,16 +134,13 @@ function pauseSlideshowa(){
 pauseButtona.onclick = function a(){
 	if(playinga){ pauseSlideshowa(); }
 	else{ playSlideshowa(); }
-    
 };
 
 
 // button b
-
 var slidesb = document.querySelectorAll('#slidesb .slideb');
 var currentSlideb = 0;
 var slideIntervalb = setInterval(nextSlideb,250);
-
 
 function nextSlideb(){
 	slidesb[currentSlideb].className = 'slideb';
@@ -214,9 +152,7 @@ var playingb = true;
 var pauseButtonb = document.getElementById('pauseb');
 
 function pauseSlideshowb(){
-    
-    
-	playingb = false;
+    playingb = false;
 	clearInterval(slideIntervalb);
     console.log(currentSlideb);
     
@@ -242,8 +178,7 @@ function pauseSlideshowb(){
         pauseButtonb.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
-    
-    
+       
     setTimeout(
         function playSlideshowb(){
             playingb = true;            
@@ -255,16 +190,13 @@ function pauseSlideshowb(){
 pauseButtonb.onclick = function b(){
 	if(playingb){ pauseSlideshowb(); }
 	else{ playSlideshowb(); }
-    
 };
 
 
 // button c
-
 var slidesc = document.querySelectorAll('#slidesc .slidec');
 var currentSlidec = 0;
 var slideIntervalc = setInterval(nextSlidec,250);
-
 
 function nextSlidec(){
 	slidesc[currentSlidec].className = 'slidec';
@@ -276,9 +208,7 @@ var playingc = true;
 var pauseButtonc = document.getElementById('pausec');
 
 function pauseSlideshowc(){
-    
-    
-	playingc = false;
+    playingc = false;
 	clearInterval(slideIntervalc);
     console.log(currentSlidec);
     
@@ -304,8 +234,7 @@ function pauseSlideshowc(){
         pauseButtonc.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
-    
-    
+        
     setTimeout(
         function playSlideshowc(){
             playingc = true;            
@@ -314,23 +243,15 @@ function pauseSlideshowc(){
         }, 2500);
 }
 
-
-
 pauseButtonc.onclick = function c(){
 	if(playingc){ pauseSlideshowc(); }
-	else{ playSlideshowc(); }
-    
+	else{ playSlideshowc(); }  
 };
 
-
-
-
 // button d
-
 var slidesd = document.querySelectorAll('#slidesd .slided');
 var currentSlided = 0;
 var slideIntervald = setInterval(nextSlided,250);
-
 
 function nextSlided(){
 	slidesd[currentSlided].className = 'slided';
@@ -342,9 +263,7 @@ var playingd = true;
 var pauseButtond = document.getElementById('paused');
 
 function pauseSlideshowd(){
-    
-    
-	playingd = false;
+    playingd = false;
 	clearInterval(slideIntervald);
     console.log(currentSlided);
     
@@ -370,8 +289,7 @@ function pauseSlideshowd(){
         pauseButtond.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
-    
-    
+
     setTimeout(
         function playSlideshowd(){
             playingd = true;            
@@ -380,23 +298,15 @@ function pauseSlideshowd(){
         }, 2500);
 }
 
-
-
 pauseButtond.onclick = function d(){
 	if(playingd){ pauseSlideshowd(); }
 	else{ playSlideshowd(); }
-    
 };
 
-
-
-
 // button e
-
 var slidese = document.querySelectorAll('#slidese .slidee');
 var currentSlidee = 0;
 var slideIntervale = setInterval(nextSlidee,250);
-
 
 function nextSlidee(){
 	slidese[currentSlidee].className = 'slidee';
@@ -408,9 +318,7 @@ var playinge = true;
 var pauseButtone = document.getElementById('pausee');
 
 function pauseSlideshowe(){
-    
-    
-	playinge = false;
+    playinge = false;
 	clearInterval(slideIntervale);
     console.log(currentSlidee);
     
@@ -436,8 +344,7 @@ function pauseSlideshowe(){
         pauseButtone.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
-    
-    
+        
     setTimeout(
         function playSlideshowe(){
             playinge = true;            
@@ -446,22 +353,15 @@ function pauseSlideshowe(){
         }, 2500);
 }
 
-
 pauseButtone.onclick = function e(){
 	if(playinge){ pauseSlideshowe(); }
-	else{ playSlideshowe(); }
-    
+	else{ playSlideshowe(); } 
 };
 
-
-
-
 // button f
-
 var slidesf = document.querySelectorAll('#slidesf .slidef');
 var currentSlidef = 0;
 var slideIntervalf = setInterval(nextSlidef,250);
-
 
 function nextSlidef(){
 	slidesf[currentSlidef].className = 'slidef';
@@ -473,9 +373,7 @@ var playingf = true;
 var pauseButtonf = document.getElementById('pausef');
 
 function pauseSlideshowf(){
-    
-    
-	playingf = false;
+    playingf = false;
 	clearInterval(slideIntervalf);
     console.log(currentSlidef);
     
@@ -501,8 +399,7 @@ function pauseSlideshowf(){
         pauseButtonf.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
-    
-    
+       
     setTimeout(
         function playSlideshowf(){
             playingf = true;            
@@ -511,23 +408,15 @@ function pauseSlideshowf(){
         }, 2500);
 }
 
-
-
 pauseButtonf.onclick = function f(){
 	if(playingf){ pauseSlideshowf(); }
 	else{ playSlideshowf(); }
-    
 };
 
-
-
-
 // button g
-
 var slidesg = document.querySelectorAll('#slidesg .slideg');
 var currentSlideg = 0;
 var slideIntervalg = setInterval(nextSlideg,250);
-
 
 function nextSlideg(){
 	slidesg[currentSlideg].className = 'slideg';
@@ -539,9 +428,7 @@ var playingg = true;
 var pauseButtong = document.getElementById('pauseg');
 
 function pauseSlideshowg(){
-    
-    
-	playingg = false;
+    playingg = false;
 	clearInterval(slideIntervalg);
     console.log(currentSlideg);
     
@@ -567,8 +454,7 @@ function pauseSlideshowg(){
         pauseButtong.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
-    
-    
+       
     setTimeout(
         function playSlideshowg(){
             playingg = true;            
@@ -577,23 +463,16 @@ function pauseSlideshowg(){
         }, 2500);
 }
 
-
-
 pauseButtong.onclick = function g(){
 	if(playingg){ pauseSlideshowg(); }
 	else{ playSlideshowg(); }
     
 };
 
-
-
-
 // button h
-
 var slidesh = document.querySelectorAll('#slidesh .slideh');
 var currentSlideh = 0;
 var slideIntervalh = setInterval(nextSlideh,250);
-
 
 function nextSlideh(){
 	slidesh[currentSlideh].className = 'slideh';
@@ -605,9 +484,7 @@ var playingh = true;
 var pauseButtonh = document.getElementById('pauseh');
 
 function pauseSlideshowh(){
-    
-    
-	playingh = false;
+    playingh = false;
 	clearInterval(slideIntervalh);
     console.log(currentSlideh);
     
@@ -633,8 +510,7 @@ function pauseSlideshowh(){
         pauseButtonh.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
-    
-    
+        
     setTimeout(
         function playSlideshowh(){
             playingh = true;            
@@ -643,22 +519,18 @@ function pauseSlideshowh(){
         }, 2500);
 }
 
-
 pauseButtonh.onclick = function h(){
 	if(playingh){ pauseSlideshowh(); }
 	else{ playSlideshowh(); }
-    
 };
 
 
 
 
 // button i
-
 var slidesi = document.querySelectorAll('#slidesi .slidei');
 var currentSlidei = 0;
 var slideIntervali = setInterval(nextSlidei,250);
-
 
 function nextSlidei(){
 	slidesi[currentSlidei].className = 'slidei';
@@ -666,15 +538,11 @@ function nextSlidei(){
 	slidesi[currentSlidei].className = 'slidei showing';
 }
 
-
-
 var playingi = true;
 var pauseButtoni = document.getElementById('pausei');
 
 function pauseSlideshowi(){
-    
-    
-	playingi = false;
+    playingi = false;
 	clearInterval(slideIntervali);
     console.log(currentSlidei);
     
@@ -700,8 +568,7 @@ function pauseSlideshowi(){
         pauseButtoni.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
-    
-    
+       
     setTimeout(
         function playSlideshowi(){
             playingi = true;            
@@ -710,15 +577,7 @@ function pauseSlideshowi(){
         }, 2500);
 }
 
-
 pauseButtoni.onclick = function i(){
 	if(playingi){ pauseSlideshowi(); }
 	else{ playSlideshowi(); }
-    
 };
-
-
-
-
-
-

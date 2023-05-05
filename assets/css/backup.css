@@ -1771,14 +1771,14 @@ button {
 #score {
     color: gold;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 44px;
     
     }
 
 #monkeylives {
     color: red;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 44px;
 }
 
 }

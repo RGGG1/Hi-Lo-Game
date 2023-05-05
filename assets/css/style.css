@@ -1,17 +1,15 @@
-
 /* root */
 * {
     box-sizing: border-box;
   }
   
-  :root {
+:root {
     --gold: gold;
     --light-shadow: #77571d;
     --dark-shadow: #3e2904;
   }
 
 /* body */
-
 body {
     background: black;
     background-position:center;
@@ -25,7 +23,6 @@ body {
 }
 
 /* header logo effect */
-
 .wrapper {
     background-color: black;
     display: grid;
@@ -34,7 +31,8 @@ body {
     text-transform: uppercase;
     height: auto;
   }
-  .wrapper > div {
+
+.wrapper > div {
     background-clip: text;  
     -webkit-background-clip: text;
     color: black;
@@ -49,7 +47,7 @@ body {
 
   
 
-  div.bg {
+div.bg {
     background-image: repeating-linear-gradient( 105deg, 
       var(--gold) 0% , 
       var(--dark-shadow) 5%,
@@ -59,7 +57,8 @@ body {
     transform: scaleY(1.05);
     transform-origin: top;
   }
-  div.fg{
+
+div.fg{
     background-image: repeating-linear-gradient( 5deg,  
       var(--gold) 0% , 
       var(--light-shadow) 23%, 
@@ -69,10 +68,9 @@ body {
   }
 
 
-/* h2 sizing - for timer area */
-
-  h2 {
-    font-size: 26px;
+/* h2 */
+h2 {
+    font-size: 34px;
     font-weight: ;
     text-align: center;
     text-transform: uppercase;
@@ -81,8 +79,45 @@ body {
     display: ;
   }
 
-/* Play Now Button */
 
+/* Mute Button */
+#mute {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    border-color: black;
+    border: solid;
+    padding: 1px 1px 1px 1px;
+    border-radius: 5%;
+  }
+
+#mute:active {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: gold;
+    background-color: black;
+    border-color: black;
+    border: solid;
+    padding: 1px 1px 1px 1px;
+    border-radius: 5%;
+}
+
+#mute:focus {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: gold;
+    background-color: black;
+    border-color: black;
+    border: solid;
+    padding: 1px 1px 1px 1px;
+    border-radius: 5%;
+}
+
+  /* Play Now Button */
 button {
     font-size: 26px;
     text-align: center;
@@ -93,7 +128,6 @@ button {
     border: solid;
     padding: 10px 10px 10px 10px;
     border-radius: 5%;
-    display:;
   }
 
 button:hover {
@@ -102,31 +136,25 @@ button:hover {
     border-color: white;
   }
 
-
 /* Game area */
-
 .game-area {
     background-color: black;
     box-sizing: border-box;
-    width: 85%;
+    width: 100%;
     height: auto;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 20px 20px 20px;
 }
 
-
 /* controls area */
-
 .controls-area {
     width: 100%;
     margin: auto;
+    padding: ;  
 }
 
-
 /* everything A */
-
 .image-a {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -136,14 +164,12 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
-    
 }
 
 .image-a::after {
     content: attr(data-type);
     color: black;
     position: relative;
-
 }
 
 .image-a:focus {
@@ -162,7 +188,6 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
-    
 }
 
 #pausea {
@@ -172,25 +197,19 @@ button:hover {
     color: black;
     height: 125px;
     width: 125px;
-    outline-color: black;
-
-    
+    outline-color: black;    
 }
-
 
 #slidesa{
 	position: relative;
-	height: 120px;
-    width: 120px;
+	height: 100%;
+    width: 100%;
 	padding: 0;
 	margin: auto;
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
-       
-
 }
-
 
 .slidea{
 	position: absolute;
@@ -201,11 +220,10 @@ button:hover {
 	opacity: 1;
 	z-index: 1;
     overflow: hidden;
-    
-    
-
-
-	-webkit-transition: opacity 1;
+    padding: 15px 15px 15px 15px;
+    margin: 0;
+    border: 0;
+    -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -216,33 +234,7 @@ button:hover {
 	z-index: 2;
 }
 
-.slidea:nth-of-type(1){
-	background-image: url("/assets/images/a-monkey-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;    
-}
-.slidea:nth-of-type(2){
-	background-image: url("/assets/images/a-banana-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slidea:nth-of-type(3){
-	background-image: url("/assets/images/a-banana-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slidea:nth-of-type(4){
-	background-image: url("/assets/images/a-monkey-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-
 /* everything B */
-
 .image-b {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -252,14 +244,12 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
-    
 }
 
 .image-b::after {
     content: attr(data-type);
     color: black;
     position: relative;
-
 }
 
 .image-b:focus {
@@ -278,7 +268,6 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
-    
 }
 
 #pauseb {
@@ -288,23 +277,19 @@ button:hover {
     color: black;
     height: 125px;
     width: 125px;
-    outline-color: black;
-
-    
+    outline-color: black;    
 }
 
 
 #slidesb{
 	position: relative;
-	height: 120px;
-    width: 120px;
+	height: 100%;
+    width: 100%;
 	padding: 0;
 	margin: auto;
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
-       
-
 }
 
 
@@ -317,10 +302,9 @@ button:hover {
 	opacity: 1;
 	z-index: 1;
     overflow: hidden;
-    
-    
-
-
+    padding: 15px 15px 15px 15px;
+    margin: 0;
+    border: 0;
 	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
@@ -332,34 +316,7 @@ button:hover {
 	z-index: 2;
 }
 
-.slideb:nth-of-type(1){
-	background-image: url("/assets/images/b-monkey-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;    
-}
-.slideb:nth-of-type(2){
-	background-image: url("/assets/images/b-banana-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slideb:nth-of-type(3){
-	background-image: url("/assets/images/b-banana-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slideb:nth-of-type(4){
-	background-image: url("/assets/images/b-monkey-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-
-
 /* everything C */
-
 .image-c {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -369,14 +326,12 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
-    
 }
 
 .image-c::after {
     content: attr(data-type);
     color: black;
     position: relative;
-
 }
 
 .image-c:focus {
@@ -395,9 +350,7 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
-    
 }
-
 
 #pausec {
     border-radius: 50%;
@@ -407,23 +360,18 @@ button:hover {
     height: 125px;
     width: 125px;
     outline-color: black;
-
-    
 }
 
 #slidesc{
 	position: relative;
-	height: 120px;
-    width: 120px;
+	height: 100%;
+    width: 100%;
 	padding: 0;
 	margin: auto;
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
-       
-
 }
-
 
 .slidec{
 	position: absolute;
@@ -434,11 +382,10 @@ button:hover {
 	opacity: 1;
 	z-index: 1;
     overflow: hidden;
-    
-    
-
-
-	-webkit-transition: opacity 1;
+    padding: 15px 15px 15px 15px;
+    margin: 0;
+    border: 0;
+    -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -449,35 +396,7 @@ button:hover {
 	z-index: 2;
 }
 
-.slidec:nth-of-type(1){
-	background-image: url("/assets/images/c-monkey-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;    
-}
-.slidec:nth-of-type(2){
-	background-image: url("/assets/images/c-banana-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slidec:nth-of-type(3){
-	background-image: url("/assets/images/c-banana-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slidec:nth-of-type(4){
-	background-image: url("/assets/images/c-monkey-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-
-
-
 /* everything D */
-
 .image-d {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -487,14 +406,12 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
-    
 }
 
 .image-d::after {
     content: attr(data-type);
     color: black;
     position: relative;
-
 }
 
 .image-d:focus {
@@ -513,7 +430,6 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
-    
 }
 
 
@@ -525,21 +441,17 @@ button:hover {
     height: 125px;
     width: 125px;
     outline-color: black;
-
-    
 }
 
 #slidesd{
 	position: relative;
-	height: 120px;
-    width: 120px;
+	height: 100%;
+    width: 100%;
 	padding: 0;
 	margin: auto;
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
-       
-
 }
 
 
@@ -552,10 +464,9 @@ button:hover {
 	opacity: 1;
 	z-index: 1;
     overflow: hidden;
-    
-    
-
-
+    padding: 15px 15px 15px 15px;
+    margin: 0;
+    border: 0;
 	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
@@ -567,34 +478,7 @@ button:hover {
 	z-index: 2;
 }
 
-.slided:nth-of-type(1){
-	background-image: url("/assets/images/d-monkey-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;    
-}
-.slided:nth-of-type(2){
-	background-image: url("/assets/images/d-banana-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slided:nth-of-type(3){
-	background-image: url("/assets/images/d-banana-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slided:nth-of-type(4){
-	background-image: url("/assets/images/d-monkey-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-
-
 /* everything E */
-
 .image-e {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -604,14 +488,12 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
-    
 }
 
 .image-e::after {
     content: attr(data-type);
     color: black;
     position: relative;
-
 }
 
 .image-e:focus {
@@ -630,9 +512,7 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
-    
 }
-
 
 #pausee {
     border-radius: 50%;
@@ -642,23 +522,18 @@ button:hover {
     height: 125px;
     width: 125px;
     outline-color: black;
-
-    
 }
 
 #slidese{
 	position: relative;
-	height: 120px;
-    width: 120px;
+	height: 100%;
+    width: 100%;
 	padding: 0;
 	margin: auto;
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
-       
-
 }
-
 
 .slidee{
 	position: absolute;
@@ -669,11 +544,10 @@ button:hover {
 	opacity: 1;
 	z-index: 1;
     overflow: hidden;
-    
-    
-
-
-	-webkit-transition: opacity 1;
+    padding: 15px 15px 15px 15px;
+    margin: 0;
+    border: 0;
+    -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -684,33 +558,7 @@ button:hover {
 	z-index: 2;
 }
 
-.slidee:nth-of-type(1){
-	background-image: url("/assets/images/e-monkey-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;    
-}
-.slidee:nth-of-type(2){
-	background-image: url("/assets/images/e-banana-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slidee:nth-of-type(3){
-	background-image: url("/assets/images/e-banana-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slidee:nth-of-type(4){
-	background-image: url("/assets/images/e-monkey-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-
 /* everything F */
-
 .image-f {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -720,14 +568,12 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
-    
 }
 
 .image-f::after {
     content: attr(data-type);
     color: black;
     position: relative;
-
 }
 
 .image-f:focus {
@@ -746,9 +592,7 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
-    
 }
-
 
 #pausef {
     border-radius: 50%;
@@ -758,21 +602,17 @@ button:hover {
     height: 125px;
     width: 125px;
     outline-color: black;
-
-    
 }
 
 #slidesf{
 	position: relative;
-	height: 120px;
-    width: 120px;
+	height: 100%;
+    width: 100%;
 	padding: 0;
 	margin: auto;
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
-       
-
 }
 
 
@@ -785,11 +625,10 @@ button:hover {
 	opacity: 1;
 	z-index: 1;
     overflow: hidden;
-    
-    
-
-
-	-webkit-transition: opacity 1;
+    padding: 15px 15px 15px 15px;
+    margin: 0;
+    border: 0;
+    -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -800,33 +639,7 @@ button:hover {
 	z-index: 2;
 }
 
-.slidef:nth-of-type(1){
-	background-image: url("/assets/images/f-monkey-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;    
-}
-.slidef:nth-of-type(2){
-	background-image: url("/assets/images/f-banana-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slidef:nth-of-type(3){
-	background-image: url("/assets/images/f-banana-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slidef:nth-of-type(4){
-	background-image: url("/assets/images/f-monkey-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-
 /* everything G */
-
 .image-g {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -836,14 +649,12 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
-    
 }
 
 .image-g::after {
     content: attr(data-type);
     color: black;
     position: relative;
-
 }
 
 .image-g:focus {
@@ -862,7 +673,6 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
-    
 }
 
 
@@ -873,22 +683,18 @@ button:hover {
     color: black;
     height: 125px;
     width: 125px;
-    outline-color: black;
-
-    
+    outline-color: black;   
 }
 
 #slidesg{
 	position: relative;
-	height: 120px;
-    width: 120px;
+	height: 100%;
+    width: 100%;
 	padding: 0;
 	margin: auto;
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
-       
-
 }
 
 
@@ -901,11 +707,10 @@ button:hover {
 	opacity: 1;
 	z-index: 1;
     overflow: hidden;
-    
-    
-
-
-	-webkit-transition: opacity 1;
+    padding: 15px 15px 15px 15px;
+    margin: 0;
+    border: 0;
+    -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -916,33 +721,7 @@ button:hover {
 	z-index: 2;
 }
 
-.slideg:nth-of-type(1){
-	background-image: url("/assets/images/g-monkey-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;    
-}
-.slideg:nth-of-type(2){
-	background-image: url("/assets/images/g-banana-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slideg:nth-of-type(3){
-	background-image: url("/assets/images/g-banana-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slideg:nth-of-type(4){
-	background-image: url("/assets/images/g-monkey-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-
 /* everything H */
-
 .image-h {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -952,14 +731,12 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
-    
 }
 
 .image-h::after {
     content: attr(data-type);
     color: black;
     position: relative;
-
 }
 
 .image-h:focus {
@@ -978,9 +755,7 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
-    
 }
-
 
 #pauseh {
     border-radius: 50%;
@@ -990,23 +765,18 @@ button:hover {
     height: 125px;
     width: 125px;
     outline-color: black;
-
-    
 }
 
 #slidesh{
 	position: relative;
-	height: 120px;
-    width: 120px;
+	height: 100%;
+    width: 100%;
 	padding: 0;
 	margin: auto;
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
-       
-
 }
-
 
 .slideh{
 	position: absolute;
@@ -1017,11 +787,10 @@ button:hover {
 	opacity: 1;
 	z-index: 1;
     overflow: hidden;
-    
-    
-
-
-	-webkit-transition: opacity 1;
+    padding: 15px 15px 15px 15px;
+    margin: 0;
+    border: 0;
+    -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -1032,33 +801,7 @@ button:hover {
 	z-index: 2;
 }
 
-.slideh:nth-of-type(1){
-	background-image: url("/assets/images/h-monkey-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;    
-}
-.slideh:nth-of-type(2){
-	background-image: url("/assets/images/h-banana-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slideh:nth-of-type(3){
-	background-image: url("/assets/images/h-banana-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slideh:nth-of-type(4){
-	background-image: url("/assets/images/h-monkey-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-
 /* everything I */
-
 .image-i {
     color: black;
     margin: 10px 10px 10px 10px;
@@ -1068,14 +811,12 @@ button:hover {
     cursor:pointer;
     overflow: hidden;  
     transition: all 200ms
-    
 }
 
 .image-i::after {
     content: attr(data-type);
     color: black;
     position: relative;
-
 }
 
 .image-i:focus {
@@ -1094,7 +835,6 @@ button:hover {
     border-radius: 50%;
     box-shadow: inset 0 0 20px black, 0 0 30px gold;
     outline: none;
-    
 }
 
 
@@ -1106,23 +846,18 @@ button:hover {
     height: 125px;
     width: 125px;
     outline-color: black;
-
-    
 }
 
 #slidesi{
 	position: relative;
-	height: 120px;
-    width: 120px;
+	height: 100%;
+    width: 100%;
 	padding: 0;
 	margin: auto;
 	list-style-type: none;
     overflow: hidden;
     border-radius: 50%;
-       
-
 }
-
 
 .slidei{
 	position: absolute;
@@ -1133,11 +868,10 @@ button:hover {
 	opacity: 1;
 	z-index: 1;
     overflow: hidden;
-    
-    
-
-
-	-webkit-transition: opacity 1;
+    padding: 15px 15px 15px 15px;
+    margin: 0;
+    border: 0;
+    -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
 	transition: opacity 1;
@@ -1148,132 +882,660 @@ button:hover {
 	z-index: 2;
 }
 
-.slidei:nth-of-type(1){
-	background-image: url("/assets/images/i-monkey-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;    
-}
-.slidei:nth-of-type(2){
-	background-image: url("/assets/images/i-banana-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slidei:nth-of-type(3){
-	background-image: url("/assets/images/i-banana-yellow.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-.slidei:nth-of-type(4){
-	background-image: url("/assets/images/i-monkey-black-white.png");
-    background-repeat: no-repeat;
-    background-size:     100%;      
-    background-position: center center;
-}
-
-
 /* scores */
-
 .score-area {
-    margin: 5px auto;
+    margin: auto;
     width: 60%;
-    font-size: 1.5rem;
-    padding: 10px;
+    padding: ;
 }
 
 .game-over {
-    margin: 5px auto;
-    width: 60%;
-    padding: 20px 20px 20px 20px;
-    font-size: 1.5rem;
-    padding: 10px;
+    margin: auto;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
 }
-
-
 
 #score {
     color: gold;
     font-weight: bold;
-    
+    font-size: 75px;
 }
 
 #result {
     color: gold;
     font-weight: bold;
-    
+    text-align: center;
 }
 
 #test {
     color: gold;
     font-weight: bold;
-    
 }
 
 #bananas {
     color: gold;
     font-weight: bold;
-    
-}
-
-#game-over {
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    
 }
 
 #monkeylives {
     color: red;
     font-weight: bold;
+    font-size: 75px;
 }
 
 .scores {
     display: inline-block;
-    padding: 10px;
+    padding: ;
     border: 10px;
+    font-size: 42;
 }
-
-
 
 
 /* --------- Media queries */
+@media (max-width: 460px) {
 
-@media (max-width: 414px) {
-    .controls-area {
-        width: 100%;
-    }
-
-    .score-area {
-        width: 100%;
-    }
-
-    .scores {
-        margin: 0.5em auto;
-        display: block;
-        padding: 5px;
-    }
-
-    .heading {
-        font-size: 2rem;
-    }
+.score-area {
+    width: 100%;
 }
 
-@media (max-width: 320px) {
-    .game-area {
-        height: 70vh;
-    }
+.scores {
+    margin: auto;
+    display: block;
+    padding: 5px;
+}
 
-    .controls-area {
-        width: 75%;
-        margin: 10px auto;
-    }
+.heading {
+    font-size: 2rem;
+}
 
-    .question-area {
-        padding: 10px 0;
-    }
+ 
+.game-area {
+    width: 100%;
+}
 
+button {
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: gold;
+    background-color: black;
+    border-color: gold;
+    border: solid;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5%;
+  }
+
+/* A */
+.image-a {
+    color: black;
+    margin: 20px 1px 0px 1px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+.image-a:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
+    outline: none;  
+}
+
+#pausea {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 90px;
+    width: 90px;
+    outline-color: black;
+}
+
+#slidesa {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.slidea{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    -webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+/* B */
+.image-b {
+    color: black;
+    margin: 20px 1px 0px 1px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+.image-b:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
+    outline: none;  
+}
+
+#pauseb {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 90px;
+    width: 90px;
+    outline-color: black;
+}
+
+#slidesb {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.slideb{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    -webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+/* C */
+.image-c {
+    color: black;
+    margin: 20px 1px 0px 1px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+.image-c:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
+    outline: none;  
+}
+
+#pausec {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 90px;
+    width: 90px;
+    outline-color: black;
+}
+
+#slidesc {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.slidec{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    -webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+/* D */
+.image-d {
+    color: black;
+    margin: 20px 1px 0px 1px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+.image-d:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
+    outline: none;  
+}
+
+#paused {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 90px;
+    width: 90px;
+    outline-color: black;
+}
+
+#slidesd {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.slided{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    -webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+/* E */
+.image-e {
+    color: black;
+    margin: 20px 1px 0px 1px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+.image-e:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
+    outline: none;  
+}
+
+#pausee {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 90px;
+    width: 90px;
+    outline-color: black;
+}
+
+#slidese {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.slidee{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    -webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+/* F */
+.image-f {
+    color: black;
+    margin: 20px 1px 0px 1px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+.image-f:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
+    outline: none;  
+}
+
+#pausef {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 90px;
+    width: 90px;
+    outline-color: black;
+}
+
+#slidesf {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.slidef{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    -webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+/* G */
+.image-g {
+    color: black;
+    margin: 20px 1px 0px 1px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+.image-g:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
+    outline: none;  
+}
+
+#pauseg {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 90px;
+    width: 90px;
+    outline-color: black;
 }
 
 
+#slidesg {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.slideg{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    -webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+/* H */
+.image-h {
+    color: black;
+    margin: 20px 1px 0px 1px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+.image-h:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
+    outline: none;  
+}
+
+#pauseh {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 90px;
+    width: 90px;
+    outline-color: black;
+}
+
+#slidesh {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.slideh{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    -webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+/* I */
+.image-i {
+    color: black;
+    margin: 20px 1px 0px 1px;
+    background-color: black;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    transition: all 200ms;   
+}
+
+.image-i:active {
+    color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black, 0 0 30px gold;
+    outline: none;  
+}
+
+#pausei {
+    border-radius: 50%;
+    background-color: black;
+    border-color: black;
+    color: black;
+    height: 90px;
+    width: 90px;
+    outline-color: black;
+}
+
+#slidesi {
+	position: relative;
+	height: 100%;
+    width: 100%;
+	padding: 0;
+	margin: auto;
+	list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.slidei{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    -webkit-transition: opacity 1;
+	-moz-transition: opacity 1;
+	-o-transition: opacity 1;
+	transition: opacity 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+#score {
+    color: gold;
+    font-weight: bold;
+    font-size: 44px;
+}
+
+#monkeylives {
+    color: red;
+    font-weight: bold;
+    font-size: 44px;
+}
+}

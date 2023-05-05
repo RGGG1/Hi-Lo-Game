@@ -1,4 +1,8 @@
 /* root */
+* {
+    box-sizing: border-box;
+  }
+  
 :root {
     --gold: gold;
     --light-shadow: #77571d;
@@ -880,9 +884,8 @@ button:hover {
 
 /* scores */
 .score-area {
-    margin: 5px auto;
+    margin: auto;
     width: 60%;
-    font-size: 1.5rem;
     padding: ;
 }
 
@@ -939,7 +942,7 @@ button:hover {
 }
 
 .scores {
-    margin: 0.5em auto;
+    margin: auto;
     display: block;
     padding: 5px;
 }
@@ -1527,12 +1530,12 @@ button {
 #score {
     color: gold;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 44px;
 }
 
 #monkeylives {
     color: red;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 44px;
 }
 }
