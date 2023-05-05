@@ -4,7 +4,6 @@ function muteMe(elem) {
     
     elem.muted = true;
     elem.pause();
-    object.style.borderColor = 'color | red | inherit | initial';
 }
 
 // Try to mute all video and audio elements on the page
@@ -14,7 +13,7 @@ function mutePage() {
 
     [].forEach.call(elems, function(elem) { muteMe(elem); }); 
     
-        mute.classList.toggle('muted');
+    object.classList.toggle('muted');
         if (elem.muted === true) {
             elem.muted = false;
         }
@@ -23,7 +22,6 @@ function mutePage() {
         }
     }
     
-
 
 
 // Hide / reveal functions - Start button

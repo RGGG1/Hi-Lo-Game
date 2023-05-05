@@ -10,6 +10,8 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="assets/css/style3.css">
+    <audio id="monkey" src="assets/audio/monkey.mp3" preload="auto"></audio>
+    <audio id="yip" src="assets/audio/yip.mp3" preload="auto"></audio>
     <title>Tap Tap Monkey</title>
 
 
@@ -24,9 +26,11 @@
 
 <body>
 
-<audio id="monkey" src="assets/audio/monkey.mp3" preload="auto"></audio>
-<audio id="yip" src="assets/audio/yip.mp3" preload="auto"></audio>
-
+<!--Start-->
+<div>
+    <button onclick="myFunction()" id="start">Go Bananas</button>
+    <br>
+</div>
 
 
 <!--Game-->  
@@ -122,14 +126,7 @@
     </div>
 </div>      
 
-<!--Mute-->
-<div>
-    <button onclick="myFunction()" id="start">Go Bananas</button>
-    <br>
-    <br>
-    <button id="mute" onclick="mutePage()"><i class="fa fa-volume-off" aria-hidden="true"></i>
-    </button>
-</div>
+
 <!--Game Over-->
 <div class="game-over" id="over" hidden>
     <p class="result"><h2>You<br>Collected<br><br><span id="result">0<br><br><p id="bananas">bananas</p></span></h2></p>
@@ -137,6 +134,13 @@
     <p class="lives" hidden>Monkey Lives Remaining <span id="lives">5</span></p>
 </div>
 
+<!--Mute-->
+<div>
+    <br>
+    <br>
+    <button id="mute" onclick="mutePage()"><i class="fa fa-volume-off" aria-hidden="true"></i>
+    </button>
+</div>
     
 
     <script src="assets/js/script3.js"></script>
