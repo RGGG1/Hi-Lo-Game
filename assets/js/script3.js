@@ -213,7 +213,7 @@ function pauseSlideshowb(){
         function playSlideshowb(){
             playingb = true;
             slideIntervalb = setInterval(nextSlideb,250);
-        }, 0);
+        }, 5000);
 }
 
 pauseButtonb.onclick = function b(){
@@ -269,7 +269,7 @@ function pauseSlideshowc(){
         function playSlideshowc(){
             playingc = true;
             slideIntervalc = setInterval(nextSlidec,250);
-        }, 250);
+        }, 5000);
 }
 
 pauseButtonc.onclick = function c(){
@@ -325,7 +325,7 @@ function pauseSlideshowd(){
         function playSlideshowd(){
             playingd = true;
             slideIntervald = setInterval(nextSlided,250);
-        }, 250);
+        }, 5000);
 }
 
 pauseButtond.onclick = function d(){
@@ -383,7 +383,7 @@ function pauseSlideshowe(){
         function playSlideshowe(){
             playinge = true;
             slideIntervale = setInterval(nextSlidee,250);
-        }, 250);
+        }, 5000);
 }
 
 pauseButtone.onclick = function e(){
@@ -441,7 +441,7 @@ function pauseSlideshowf(){
         function playSlideshowf(){
             playingf = true;
             slideIntervalf = setInterval(nextSlidef,250);
-        }, 250);
+        }, 5000);
 }
 
 pauseButtonf.onclick = function f(){
@@ -499,7 +499,7 @@ function pauseSlideshowg(){
         function playSlideshowg(){
             playingg = true;
             slideIntervalg = setInterval(nextSlideg,250);
-        }, 250);
+        }, 5000);
 }
 
 pauseButtong.onclick = function g(){
@@ -557,7 +557,7 @@ function pauseSlideshowh(){
         function playSlideshowh(){
             playingh = true;
             slideIntervalh = setInterval(nextSlideh,250);
-        }, 250);
+        }, 5000);
 }
 
 pauseButtonh.onclick = function h(){
@@ -615,7 +615,7 @@ function pauseSlideshowi(){
         function playSlideshowi(){
             playingi = true;
             slideIntervali = setInterval(nextSlidei,250);
-        }, 250);
+        }, 5000);
 }
 
 pauseButtoni.onclick = function i(){

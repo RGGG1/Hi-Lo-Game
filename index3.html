@@ -8,7 +8,7 @@
     <!-- font awesome and google fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="assets/css/style3.css">
     <title>Tap Tap Monkey</title>
 
@@ -18,12 +18,13 @@
 <div class="wrapper" >
     <div class="bg">Tap Tap Monkey</div>
     <div class="fg">Tap Tap Monkey</div>
-    <h2 id="box2">Grab<br>the<br>bananas<br><br>avoid the monkies!<br><br><br</h2>
+    <h2 id="box2"><p class="animate__animated animate__tada">Grab<br>the<br>bananas<br></p><p class="animate__animated animate__flash">avoid the monkies!</p><br><br><br</h2>
   </div>
 
 
 <body>
 
+<img src="assets/images/aBananaBlackWhite.png" class="animate__animated animate__backOutUp">
 
 <audio id="monkey" src="assets/audio/monkey.mp3" preload="auto"></audio>
 <audio id="yip" src="assets/audio/yip.mp3" preload="auto"></audio>
@@ -36,7 +37,12 @@
 
 <!--Game-->  
 
+
 <div class="game-area" id="box" hidden>
+    <div class="score-area">
+        <p class="scores">Bananas <span id="score">0</span></p>
+    </div>
+
     <div class="controls-area">
             <button class="image-a" id="pausea">
                 <ul id="slidesa">
@@ -117,10 +123,8 @@
     </div>
     <!--Scores-->
     <div class="score-area">
-        <p class="scores">Bananas <span id="score">0</span></p>
         <p class="scores">Monkey Lives <span id="monkeylives">3</span></p>
         <p class="speed">Speed<span id="speed">250</span></p>
-        
     </div>
 </div>      
 
