@@ -46,7 +46,7 @@ function decrementWrongAnswer() {
    
 }
 
-// Speed
+/* Speed
 
 function incrementSpeed() {
 
@@ -60,6 +60,7 @@ function incrementSpeed() {
     
 }
 
+*/
 
 
 
@@ -135,12 +136,10 @@ function pauseSlideshowa(){
     if (currentSlidea === 0) {        
         incrementScore();
         incrementResult();
-        decrementSpeed()
         document.getElementById('yip').play();
     } if (currentSlidea === 1) {        
         incrementScore();
         incrementResult();
-        decrementSpeed()
         document.getElementById('yip').play();
     } if (currentSlidea === 2) {        
         decrementWrongAnswer();
