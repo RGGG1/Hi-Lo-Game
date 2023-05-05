@@ -133,31 +133,37 @@ function pauseSlideshowa(){
 	clearInterval(slideIntervala);
     console.log(currentSlidea);
     
+    
     if (currentSlidea === 0) {        
         document.getElementById('yip').play();
         incrementScore();
         incrementResult();
+        pauseButtona.classList.add('animate__animated', 'animate__zoomOutUp');
     } if (currentSlidea === 1) {        
         document.getElementById('yip').play();
         incrementScore();
         incrementResult();
+        pauseButtona.classList.add('animate__animated', 'animate__zoomOutUp');
         } if (currentSlidea === 2) {        
         document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
+        pauseButtona.classList.add('animate__animated', 'animate__zoomOutUp');
         document.getElementById('monkey').play();
     } if (currentSlidea === 3) {        
         document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
+        pauseButtona.classList.add('animate__animated', 'animate__zoomOutUp');
     } else {
     }
     
     setTimeout(
         function playSlideshowa(){
-            playinga = true;
+            playinga = true;            
+            pauseButtona.classList.remove('animate__animated', 'animate__zoomOutUp');
             slideIntervala = setInterval(nextSlidea,250);
-        }, 5000);
+        }, 1000);
 }
 
 pauseButtona.onclick = function a(){
@@ -213,7 +219,7 @@ function pauseSlideshowb(){
         function playSlideshowb(){
             playingb = true;
             slideIntervalb = setInterval(nextSlideb,250);
-        }, 5000);
+        }, 1000);
 }
 
 pauseButtonb.onclick = function b(){
@@ -269,7 +275,7 @@ function pauseSlideshowc(){
         function playSlideshowc(){
             playingc = true;
             slideIntervalc = setInterval(nextSlidec,250);
-        }, 5000);
+        }, 1000);
 }
 
 pauseButtonc.onclick = function c(){
@@ -325,7 +331,7 @@ function pauseSlideshowd(){
         function playSlideshowd(){
             playingd = true;
             slideIntervald = setInterval(nextSlided,250);
-        }, 5000);
+        }, 1000);
 }
 
 pauseButtond.onclick = function d(){
@@ -383,7 +389,7 @@ function pauseSlideshowe(){
         function playSlideshowe(){
             playinge = true;
             slideIntervale = setInterval(nextSlidee,250);
-        }, 5000);
+        }, 1000);
 }
 
 pauseButtone.onclick = function e(){
@@ -441,7 +447,7 @@ function pauseSlideshowf(){
         function playSlideshowf(){
             playingf = true;
             slideIntervalf = setInterval(nextSlidef,250);
-        }, 5000);
+        }, 1000);
 }
 
 pauseButtonf.onclick = function f(){
@@ -499,7 +505,7 @@ function pauseSlideshowg(){
         function playSlideshowg(){
             playingg = true;
             slideIntervalg = setInterval(nextSlideg,250);
-        }, 5000);
+        }, 1000);
 }
 
 pauseButtong.onclick = function g(){
@@ -557,7 +563,7 @@ function pauseSlideshowh(){
         function playSlideshowh(){
             playingh = true;
             slideIntervalh = setInterval(nextSlideh,250);
-        }, 5000);
+        }, 1000);
 }
 
 pauseButtonh.onclick = function h(){
@@ -581,6 +587,8 @@ function nextSlidei(){
 	currentSlidei = (currentSlidei+Math.floor(Math.random() * slidesi.length))%slidesi.length;
 	slidesi[currentSlidei].className = 'slidei showing';
 }
+
+
 
 var playingi = true;
 var pauseButtoni = document.getElementById('pausei');
@@ -615,7 +623,7 @@ function pauseSlideshowi(){
         function playSlideshowi(){
             playingi = true;
             slideIntervali = setInterval(nextSlidei,250);
-        }, 5000);
+        }, 1000);
 }
 
 pauseButtoni.onclick = function i(){

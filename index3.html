@@ -24,7 +24,7 @@
 
 <body>
 
-<img src="assets/images/aBananaBlackWhite.png" class="animate__animated animate__backOutUp">
+<button ><img src="assets/images/aBananaBlackWhite.png" class="animate__animated animate__backOutUp"></button>
 
 <audio id="monkey" src="assets/audio/monkey.mp3" preload="auto"></audio>
 <audio id="yip" src="assets/audio/yip.mp3" preload="auto"></audio>
@@ -45,7 +45,7 @@
 
     <div class="controls-area">
             <button class="image-a" id="pausea">
-                <ul id="slidesa">
+                <ul id="slidesa" >
                     <img class="slidea showing" src="assets/images/aBananaBlackWhite.png">
                     <img class="slidea" src="assets/images/aBananaYellow.png">
                     <img class="slidea" src="assets/images/aMonkeyBlackWhite.png">
@@ -125,13 +125,14 @@
     <div class="score-area">
         <p class="scores">Monkey Lives <span id="monkeylives">3</span></p>
         <p class="speed">Speed<span id="speed">250</span></p>
+        <p class="lives" hidden>Monkey Lives Remaining <span id="lives">3</span></p>
     </div>
 </div>      
 
 <div class="game-over" id="over" hidden>
     <p class="result"><h2>You<br>Collected<br><br><span id="result">0<br><br><p id="bananas">bananas</p></span></h2></p>
     <button id="play-again" onClick="gamerestart()">Play Again</button>
-    <p class="lives" hidden>Monkey Lives Remaining <span id="lives">3</span></p>
+    <p class="lives" hidden>Monkey Lives Remaining <span id="lives">5</span></p>
 </div>
 
     
