@@ -138,30 +138,30 @@ function pauseSlideshowa(){
         document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        pauseButtona.classList.add('animate__animated', 'animate__zoomOutUp');
+        pauseButtona.classList.add('animate__animated', 'animate__backOutUp');
     } if (currentSlidea === 1) {        
         document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        pauseButtona.classList.add('animate__animated', 'animate__zoomOutUp');
+        pauseButtona.classList.add('animate__animated', 'animate__backOutUp');
         } if (currentSlidea === 2) {        
         document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        pauseButtona.classList.add('animate__animated', 'animate__zoomOutUp');
-        document.getElementById('monkey').play();
+        pauseButtona.classList.add('animate__animated', 'animate__backOutDown');
     } if (currentSlidea === 3) {        
         document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        pauseButtona.classList.add('animate__animated', 'animate__zoomOutUp');
+        pauseButtona.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
+    
     
     setTimeout(
         function playSlideshowa(){
             playinga = true;            
-            pauseButtona.classList.remove('animate__animated', 'animate__zoomOutUp');
+            pauseButtona.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervala = setInterval(nextSlidea,250);
         }, 1000);
 }
@@ -197,27 +197,33 @@ function pauseSlideshowb(){
     console.log(currentSlideb);
     
     if (currentSlideb === 0) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
+        pauseButtonb.classList.add('animate__animated', 'animate__backOutUp');
     } if (currentSlideb === 1) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
-    } if (currentSlideb === 2) {        
+        pauseButtonb.classList.add('animate__animated', 'animate__backOutUp');
+        } if (currentSlideb === 2) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        document.getElementById('monkey').play();
+        pauseButtonb.classList.add('animate__animated', 'animate__backOutDown');
     } if (currentSlideb === 3) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        document.getElementById('monkey').play();
+        pauseButtonb.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
     
+    
     setTimeout(
         function playSlideshowb(){
-            playingb = true;
+            playingb = true;            
+            pauseButtonb.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervalb = setInterval(nextSlideb,250);
         }, 1000);
 }
@@ -253,36 +259,46 @@ function pauseSlideshowc(){
     console.log(currentSlidec);
     
     if (currentSlidec === 0) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
+        pauseButtonc.classList.add('animate__animated', 'animate__backOutUp');
     } if (currentSlidec === 1) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
-    } if (currentSlidec === 2) {        
+        pauseButtonc.classList.add('animate__animated', 'animate__backOutUp');
+        } if (currentSlidec === 2) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        document.getElementById('monkey').play();
+        pauseButtonc.classList.add('animate__animated', 'animate__backOutDown');
     } if (currentSlidec === 3) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        document.getElementById('monkey').play();
+        pauseButtonc.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
     
+    
     setTimeout(
         function playSlideshowc(){
-            playingc = true;
+            playingc = true;            
+            pauseButtonc.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervalc = setInterval(nextSlidec,250);
         }, 1000);
 }
+
+
 
 pauseButtonc.onclick = function c(){
 	if(playingc){ pauseSlideshowc(); }
 	else{ playSlideshowc(); }
     
 };
+
+
 
 
 // button d
@@ -309,30 +325,38 @@ function pauseSlideshowd(){
     console.log(currentSlided);
     
     if (currentSlided === 0) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
+        pauseButtond.classList.add('animate__animated', 'animate__backOutUp');
     } if (currentSlided === 1) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
-    } if (currentSlided === 2) {        
+        pauseButtond.classList.add('animate__animated', 'animate__backOutUp');
+        } if (currentSlided === 2) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        document.getElementById('monkey').play();
+        pauseButtond.classList.add('animate__animated', 'animate__backOutDown');
     } if (currentSlided === 3) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        document.getElementById('monkey').play();
+        pauseButtond.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
     
+    
     setTimeout(
         function playSlideshowd(){
-            playingd = true;
+            playingd = true;            
+            pauseButtond.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervald = setInterval(nextSlided,250);
         }, 1000);
 }
+
+
 
 pauseButtond.onclick = function d(){
 	if(playingd){ pauseSlideshowd(); }
@@ -367,30 +391,37 @@ function pauseSlideshowe(){
     console.log(currentSlidee);
     
     if (currentSlidee === 0) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
+        pauseButtone.classList.add('animate__animated', 'animate__backOutUp');
     } if (currentSlidee === 1) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
-    } if (currentSlidee === 2) {        
+        pauseButtone.classList.add('animate__animated', 'animate__backOutUp');
+        } if (currentSlideea === 2) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        document.getElementById('monkey').play();
+        pauseButtone.classList.add('animate__animated', 'animate__backOutDown');
     } if (currentSlidee === 3) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        document.getElementById('monkey').play();
+        pauseButtone.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
     
+    
     setTimeout(
         function playSlideshowe(){
-            playinge = true;
+            playinge = true;            
+            pauseButtone.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervale = setInterval(nextSlidee,250);
         }, 1000);
 }
+
 
 pauseButtone.onclick = function e(){
 	if(playinge){ pauseSlideshowe(); }
@@ -425,30 +456,38 @@ function pauseSlideshowf(){
     console.log(currentSlidef);
     
     if (currentSlidef === 0) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
+        pauseButtonf.classList.add('animate__animated', 'animate__backOutUp');
     } if (currentSlidef === 1) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
-    } if (currentSlidef === 2) {        
+        pauseButtonf.classList.add('animate__animated', 'animate__backOutUp');
+        } if (currentSlidef === 2) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        document.getElementById('monkey').play();
+        pauseButtonf.classList.add('animate__animated', 'animate__backOutDown');
     } if (currentSlidef === 3) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        document.getElementById('monkey').play();
+        pauseButtonf.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
     
+    
     setTimeout(
         function playSlideshowf(){
-            playingf = true;
+            playingf = true;            
+            pauseButtonf.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervalf = setInterval(nextSlidef,250);
         }, 1000);
 }
+
+
 
 pauseButtonf.onclick = function f(){
 	if(playingf){ pauseSlideshowf(); }
@@ -483,30 +522,38 @@ function pauseSlideshowg(){
     console.log(currentSlideg);
     
     if (currentSlideg === 0) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
+        pauseButtong.classList.add('animate__animated', 'animate__backOutUp');
     } if (currentSlideg === 1) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
-    } if (currentSlideg === 2) {        
+        pauseButtong.classList.add('animate__animated', 'animate__backOutUp');
+        } if (currentSlideg === 2) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        document.getElementById('monkey').play();
+        pauseButtong.classList.add('animate__animated', 'animate__backOutDown');
     } if (currentSlideg === 3) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        document.getElementById('monkey').play();
+        pauseButtong.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
     
+    
     setTimeout(
         function playSlideshowg(){
-            playingg = true;
+            playingg = true;            
+            pauseButtong.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervalg = setInterval(nextSlideg,250);
         }, 1000);
 }
+
+
 
 pauseButtong.onclick = function g(){
 	if(playingg){ pauseSlideshowg(); }
@@ -541,30 +588,37 @@ function pauseSlideshowh(){
     console.log(currentSlideh);
     
     if (currentSlideh === 0) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
+        pauseButtonh.classList.add('animate__animated', 'animate__backOutUp');
     } if (currentSlideh === 1) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
-    } if (currentSlideh === 2) {        
+        pauseButtonh.classList.add('animate__animated', 'animate__backOutUp');
+        } if (currentSlideh === 2) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        document.getElementById('monkey').play();
+        pauseButtonh.classList.add('animate__animated', 'animate__backOutDown');
     } if (currentSlideh === 3) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        document.getElementById('monkey').play();
+        pauseButtonh.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
     
+    
     setTimeout(
         function playSlideshowh(){
-            playingh = true;
+            playingh = true;            
+            pauseButtonh.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervalh = setInterval(nextSlideh,250);
         }, 1000);
 }
+
 
 pauseButtonh.onclick = function h(){
 	if(playingh){ pauseSlideshowh(); }
@@ -601,30 +655,37 @@ function pauseSlideshowi(){
     console.log(currentSlidei);
     
     if (currentSlidei === 0) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
+        pauseButtoni.classList.add('animate__animated', 'animate__backOutUp');
     } if (currentSlidei === 1) {        
+        document.getElementById('yip').play();
         incrementScore();
         incrementResult();
-        document.getElementById('yip').play();
-    } if (currentSlidei === 2) {        
+        pauseButtoni.classList.add('animate__animated', 'animate__backOutUp');
+        } if (currentSlidei === 2) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        document.getElementById('monkey').play();
+        pauseButtoni.classList.add('animate__animated', 'animate__backOutDown');
     } if (currentSlidei === 3) {        
+        document.getElementById('monkey').play();
         decrementWrongAnswer();
         decrementLives();
-        document.getElementById('monkey').play();
+        pauseButtoni.classList.add('animate__animated', 'animate__backOutDown');
     } else {
     }
     
+    
     setTimeout(
         function playSlideshowi(){
-            playingi = true;
+            playingi = true;            
+            pauseButtoni.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
             slideIntervali = setInterval(nextSlidei,250);
         }, 1000);
 }
+
 
 pauseButtoni.onclick = function i(){
 	if(playingi){ pauseSlideshowi(); }
