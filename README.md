@@ -5,7 +5,7 @@ Welcome to the read me for Tap Tap Monkey.<br>
 This documents outlines the goals of the website and its functionality throughout.<br>
 
 ------
-## Core Aims<br>
+## Core Aims
 
 Tap Tap Monkey is intended to be a simple to play game, on all devices, where the user has to test their reaction skills by clicking randomly changing images of bananas and avoiding monkeys.<br>
 
@@ -99,6 +99,7 @@ The site is deployed to Github pages, accessible via: https://rggg1.github.io/hi
 
 The source files are available here: https://github.com/RGGG1/hi-lo-game<br>
 
+------
 ## References
 <br>
 I used the following resources to find solutions to various parts of the game UI / UX. <br>
