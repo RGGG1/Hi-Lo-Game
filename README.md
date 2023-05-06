@@ -102,12 +102,12 @@ The source files are available here: https://github.com/RGGG1/hi-lo-game<br>
 I used the following resources to find solutions to various parts of the game UI / UX. <br>
 
 https://codepen.io/TajShireen/pen/LYyOzJL - title font effect
-https://fontawesome.com/icons/banana?f=classic&s=duotone&pc=%23ffffff&sc=%23ffffff&po=1&so=0.6 - banana icon
-https://fontawesome.com/icons/monkey?f=classic&s=solid&pc=%23ffff06 - Monkey icon
-https://codepen.io/houssem93171714/pen/abZZEaz - for image transition effect
-https://codepen.io/SitePoint/pen/zqVGQK - slider inside button effect
-https://developer.mozilla.org/en-US/docs/Web/CSS/opacity - to fix opacity on slider images
-https://codepen.io/dajreamdigital/pen/jvqKLX - hide button functionality
-https://bobbyhadz.com/blog/javascript-hide-button-after-click - hide button functionality
-https://stackoverflow.com/questions/12953928/immediate-play-sound-on-button-click-in-html-page - audio functionality
-https://stackoverflow.com/questions/14044761/how-to-mute-all-sound-in-a-page-with-js - mute control
+https://fontawesome.com/icons/banana?f=classic&s=duotone&pc=%23ffffff&sc=%23ffffff&po=1&so=0.6 - banana icon<br>
+https://fontawesome.com/icons/monkey?f=classic&s=solid&pc=%23ffff06 - Monkey icon<br>
+https://codepen.io/houssem93171714/pen/abZZEaz - for image transition effect<br>
+https://codepen.io/SitePoint/pen/zqVGQK - slider inside button effect<br>
+https://developer.mozilla.org/en-US/docs/Web/CSS/opacity - to fix opacity on slider images<br>
+https://codepen.io/dajreamdigital/pen/jvqKLX - hide button functionality<br>
+https://bobbyhadz.com/blog/javascript-hide-button-after-click - hide button functionality<br>
+https://stackoverflow.com/questions/12953928/immediate-play-sound-on-button-click-in-html-page - audio functionality<br>
+https://stackoverflow.com/questions/14044761/how-to-mute-all-sound-in-a-page-with-js - mute control<br>
