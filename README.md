@@ -21,7 +21,6 @@ The site is fully responsive across all devices and maintains good resizing and 
 <strong>Navigation</strong><br>
 There is no navigation menu. Instead, there is a straightforward progression for the user, broken into three stages: Start screen, game play, game over screen.<br>
 
-
 <strong>Site Fonts</strong><br>
 We use Sans Serif as our primary font throughout the site.<br>
 
@@ -77,13 +76,11 @@ I have tested the site across multiple devices of different sizes, and a variety
 
 <strong>Unfixed bugs</strong><br> I am having a problem toggling the mute button to different colours depending on its state.<br>
 
-------
-## Testing
+CSS - Passed all W3C validation checks.<br>
+
+HTML - When we run it through the w3c validator we have an error regarding the child of the button elements. Working to resolve. I need to put the id=slidesa into the controls area div area and then fix the css.<br>
+
 ![Lighthouse Score](assets/images/lighthouse.png)<br>
-
-CSS - When we run it through the w3c validator we have multiple errors to resolve.<br>
-
-HTML - When we run it through the w3c validator we have multiple errors to resolve.<br>
 
 <strong>Accessibility</strong><br> We used google chrome's lighthouse tool and ranked as follows:<br>
     <strong>Performance:</strong> 38/100 (The main issue is the number of javascript funtions running. I need to try and run the same script for each button, instead of one each.)<br>

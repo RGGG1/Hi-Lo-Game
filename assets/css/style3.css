@@ -148,7 +148,7 @@ button:hover {
 /* controls area */
 .controls-area {
     width: 100%;
-    margin: auto;
+    margin: auto;    
 }
 
 /* everything A */
@@ -207,6 +207,7 @@ button:hover {
     overflow: hidden;
     border-radius: 50%;
 }
+
 
 .slidea{
 	position: absolute;

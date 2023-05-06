@@ -1,10 +1,10 @@
-// Mute audio
+// Mute audio individual
 function muteMe(elem) {
     elem.muted = true;
     elem.pause();
 }
 
-// Try to mute all video and audio elements on the page
+// Mute audio all
 function mutePage() {
     var elems = document.querySelectorAll("audio");
     const object = document.getElementById('mute');
