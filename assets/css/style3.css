@@ -71,12 +71,10 @@ div.fg{
 /* h2 */
 h2 {
     font-size: 34px;
-    font-weight: ;
     text-align: center;
     text-transform: uppercase;
     padding: 20px 20px 20px 20px;
     color: white;
-    display: ;
   }
 
 
@@ -151,7 +149,6 @@ button:hover {
 .controls-area {
     width: 100%;
     margin: auto;
-    padding: ;  
 }
 
 /* everything A */
@@ -173,7 +170,7 @@ button:hover {
 }
 
 .image-a:focus {
-    outline: soid;
+    outline: solid;
     border-radius: 50%;
 }
 
@@ -226,7 +223,6 @@ button:hover {
     -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
@@ -253,7 +249,7 @@ button:hover {
 }
 
 .image-b:focus {
-    outline: soid;
+    outline: solid;
     border-radius: 50%;
 }
 
@@ -308,7 +304,6 @@ button:hover {
 	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
@@ -335,7 +330,7 @@ button:hover {
 }
 
 .image-c:focus {
-    outline: soid;
+    outline: solid;
     border-radius: 50%;
 }
 
@@ -388,7 +383,6 @@ button:hover {
     -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
@@ -415,7 +409,7 @@ button:hover {
 }
 
 .image-d:focus {
-    outline: soid;
+    outline: solid;
     border-radius: 50%;
 }
 
@@ -470,7 +464,6 @@ button:hover {
 	-webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
@@ -497,7 +490,7 @@ button:hover {
 }
 
 .image-e:focus {
-    outline: soid;
+    outline: solid;
     border-radius: 50%;
 }
 
@@ -550,7 +543,6 @@ button:hover {
     -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
@@ -577,7 +569,7 @@ button:hover {
 }
 
 .image-f:focus {
-    outline: soid;
+    outline: solid;
     border-radius: 50%;
 }
 
@@ -631,7 +623,6 @@ button:hover {
     -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
@@ -658,7 +649,7 @@ button:hover {
 }
 
 .image-g:focus {
-    outline: soid;
+    outline: solid;
     border-radius: 50%;
 }
 
@@ -713,7 +704,6 @@ button:hover {
     -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
@@ -740,7 +730,7 @@ button:hover {
 }
 
 .image-h:focus {
-    outline: soid;
+    outline: solid;
     border-radius: 50%;
 }
 
@@ -793,7 +783,6 @@ button:hover {
     -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
@@ -820,7 +809,7 @@ button:hover {
 }
 
 .image-i:focus {
-    outline: soid;
+    outline: solid;
     border-radius: 50%;
 }
 
@@ -874,7 +863,6 @@ button:hover {
     -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
@@ -886,7 +874,7 @@ button:hover {
 .score-area {
     margin: auto;
     width: 60%;
-    padding: ;
+    
 }
 
 .game-over {
@@ -928,9 +916,8 @@ button:hover {
 
 .scores {
     display: inline-block;
-    padding: ;
     border: 10px;
-    font-size: 42;
+    font-size: 42px;
 }
 
 
@@ -1022,7 +1009,6 @@ button {
     -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
@@ -1084,7 +1070,6 @@ button {
     -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
@@ -1146,7 +1131,6 @@ button {
     -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
@@ -1208,7 +1192,6 @@ button {
     -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
@@ -1270,7 +1253,6 @@ button {
     -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
@@ -1332,7 +1314,6 @@ button {
     -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
@@ -1395,7 +1376,6 @@ button {
     -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
@@ -1457,7 +1437,6 @@ button {
     -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
@@ -1519,7 +1498,6 @@ button {
     -webkit-transition: opacity 1;
 	-moz-transition: opacity 1;
 	-o-transition: opacity 1;
-	transition: opacity 1;
 }
 
 .showing{
