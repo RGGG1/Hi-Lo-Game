@@ -84,7 +84,7 @@ function gamerestart() {
 // button a
 var slidesa = document.querySelectorAll('#slidesa .slidea');
 var currentSlidea = 0;
-var slideIntervala = setInterval(nextSlidea,250);
+var slideIntervala = setInterval(nextSlidea,350);
 
 function nextSlidea(){
 	slidesa[currentSlidea].className = 'slidea';
@@ -127,7 +127,7 @@ function pauseSlideshowa(){
         function playSlideshowa(){
             playinga = true;            
             pauseButtona.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
-            slideIntervala = setInterval(nextSlidea,250);
+            slideIntervala = setInterval(nextSlidea,350);
         }, 2500);
 }
 
@@ -140,7 +140,7 @@ pauseButtona.onclick = function a(){
 // button b
 var slidesb = document.querySelectorAll('#slidesb .slideb');
 var currentSlideb = 0;
-var slideIntervalb = setInterval(nextSlideb,250);
+var slideIntervalb = setInterval(nextSlideb,350);
 
 function nextSlideb(){
 	slidesb[currentSlideb].className = 'slideb';
@@ -183,7 +183,7 @@ function pauseSlideshowb(){
         function playSlideshowb(){
             playingb = true;            
             pauseButtonb.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
-            slideIntervalb = setInterval(nextSlideb,250);
+            slideIntervalb = setInterval(nextSlideb,350);
         }, 2500);
 }
 
@@ -196,7 +196,7 @@ pauseButtonb.onclick = function b(){
 // button c
 var slidesc = document.querySelectorAll('#slidesc .slidec');
 var currentSlidec = 0;
-var slideIntervalc = setInterval(nextSlidec,250);
+var slideIntervalc = setInterval(nextSlidec,350);
 
 function nextSlidec(){
 	slidesc[currentSlidec].className = 'slidec';
@@ -239,7 +239,7 @@ function pauseSlideshowc(){
         function playSlideshowc(){
             playingc = true;            
             pauseButtonc.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
-            slideIntervalc = setInterval(nextSlidec,250);
+            slideIntervalc = setInterval(nextSlidec,350);
         }, 2500);
 }
 
@@ -251,7 +251,7 @@ pauseButtonc.onclick = function c(){
 // button d
 var slidesd = document.querySelectorAll('#slidesd .slided');
 var currentSlided = 0;
-var slideIntervald = setInterval(nextSlided,250);
+var slideIntervald = setInterval(nextSlided,350);
 
 function nextSlided(){
 	slidesd[currentSlided].className = 'slided';
@@ -294,7 +294,7 @@ function pauseSlideshowd(){
         function playSlideshowd(){
             playingd = true;            
             pauseButtond.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
-            slideIntervald = setInterval(nextSlided,250);
+            slideIntervald = setInterval(nextSlided,350);
         }, 2500);
 }
 
@@ -306,7 +306,7 @@ pauseButtond.onclick = function d(){
 // button e
 var slidese = document.querySelectorAll('#slidese .slidee');
 var currentSlidee = 0;
-var slideIntervale = setInterval(nextSlidee,250);
+var slideIntervale = setInterval(nextSlidee,350);
 
 function nextSlidee(){
 	slidese[currentSlidee].className = 'slidee';
@@ -349,7 +349,7 @@ function pauseSlideshowe(){
         function playSlideshowe(){
             playinge = true;            
             pauseButtone.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
-            slideIntervale = setInterval(nextSlidee,250);
+            slideIntervale = setInterval(nextSlidee,350);
         }, 2500);
 }
 
@@ -361,7 +361,7 @@ pauseButtone.onclick = function e(){
 // button f
 var slidesf = document.querySelectorAll('#slidesf .slidef');
 var currentSlidef = 0;
-var slideIntervalf = setInterval(nextSlidef,250);
+var slideIntervalf = setInterval(nextSlidef,350);
 
 function nextSlidef(){
 	slidesf[currentSlidef].className = 'slidef';
@@ -404,7 +404,7 @@ function pauseSlideshowf(){
         function playSlideshowf(){
             playingf = true;            
             pauseButtonf.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
-            slideIntervalf = setInterval(nextSlidef,250);
+            slideIntervalf = setInterval(nextSlidef,350);
         }, 2500);
 }
 
@@ -416,7 +416,7 @@ pauseButtonf.onclick = function f(){
 // button g
 var slidesg = document.querySelectorAll('#slidesg .slideg');
 var currentSlideg = 0;
-var slideIntervalg = setInterval(nextSlideg,250);
+var slideIntervalg = setInterval(nextSlideg,350);
 
 function nextSlideg(){
 	slidesg[currentSlideg].className = 'slideg';
@@ -459,7 +459,7 @@ function pauseSlideshowg(){
         function playSlideshowg(){
             playingg = true;            
             pauseButtong.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
-            slideIntervalg = setInterval(nextSlideg,250);
+            slideIntervalg = setInterval(nextSlideg,350);
         }, 2500);
 }
 
@@ -472,7 +472,7 @@ pauseButtong.onclick = function g(){
 // button h
 var slidesh = document.querySelectorAll('#slidesh .slideh');
 var currentSlideh = 0;
-var slideIntervalh = setInterval(nextSlideh,250);
+var slideIntervalh = setInterval(nextSlideh,350);
 
 function nextSlideh(){
 	slidesh[currentSlideh].className = 'slideh';
@@ -515,7 +515,7 @@ function pauseSlideshowh(){
         function playSlideshowh(){
             playingh = true;            
             pauseButtonh.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
-            slideIntervalh = setInterval(nextSlideh,250);
+            slideIntervalh = setInterval(nextSlideh,350);
         }, 2500);
 }
 
@@ -530,7 +530,7 @@ pauseButtonh.onclick = function h(){
 // button i
 var slidesi = document.querySelectorAll('#slidesi .slidei');
 var currentSlidei = 0;
-var slideIntervali = setInterval(nextSlidei,250);
+var slideIntervali = setInterval(nextSlidei,350);
 
 function nextSlidei(){
 	slidesi[currentSlidei].className = 'slidei';
@@ -573,7 +573,7 @@ function pauseSlideshowi(){
         function playSlideshowi(){
             playingi = true;            
             pauseButtoni.classList.remove('animate__animated', 'animate__backOutDown', 'animate__backOutUp');
-            slideIntervali = setInterval(nextSlidei,250);
+            slideIntervali = setInterval(nextSlidei,350);
         }, 2500);
 }
 
