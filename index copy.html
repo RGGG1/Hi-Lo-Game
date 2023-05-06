@@ -3,78 +3,156 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- font awesome and google fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style3.css">
+    
+    <!-- Description, Kyewords, Title -->
+    <title>Tap Tap Monkey</title>
+    <meta name="description" content="Fast Action Game - Grab the bananas, avoid the monkeys">
+    <meta name="keywords" content="Mobile game, cool new apps, fun mobile games">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Knock Knock, Monkey</title>
-
-
-
-    <div class="wrapper">
-        <div class="bg"> Knock Knock, Monkey </div>
-        <div class="fg"> Knock Knock, Monkey </div>
-        <h2>Grab the bananas, avoid the monkey!</h2>
-      </div>
-
-    <i class="fa-solid fa-clock"></i>
-    <div class="timer" id="timer">
-    </div>
-
-    <html>
-
+</head>
 <body>
+<!--Header-->
+<div class="wrapper">
+    <div class="bg, animate__animated animate__tada">Tap Tap Monkey</div>
+    <div class="fg animate__animated animate__tada">Tap Tap Monkey</div>
+    <h2 id="box2">Grab<br>the<br>bananas<br><br>avoid the monkeys!<br><br><br></h2>
+</div>
 
+    <!-- audios -->
+<audio id="monkey" src="assets/audio/monkey.mp3" preload="auto"></audio>
+<audio id="yip" src="assets/audio/yip.mp3" preload="auto"></audio>
 
+<!--Start-->
+<div>
+    <button onclick="start()" id="start">Go Bananas</button>
+    <br>
+</div>
 
-    
-
-<b>HTML stand for</b> <br>
-
-<p>
-
-<input type="button" id="bt" value="Show Answer" onclick="changeImg();" />
-
-<button id="show-image-button">Show Image</button>
-<img id="myimg10" src="/assets/images/banana-black-white.png" style="display: none;">
-<script>
-   const showImageButton = document.getElementById("show-image-button");
-   const myImage = document.getElementById("myimg10");
-
-   showImageButton.addEventListener("click", () => { 
-      myImage.style.display = "hide";
-   });
-</script>
-
-
-    <div class="game-area">
-        <div class="controls-area">
-            <button class="image-button" onclick="pause()"><img id='myimg1' src="/assets/images/banana-black-white.png" alt="Image"></button>
-            <button class="image-button"><img id='myimg2' src="/assets/images/banana-black-white.png" alt="Image"></button>
-            <button class="image-button"><img id='myimg3' src="/assets/images/banana-black-white.png" alt="Image"></button>
-            <br>
-            <button class="image-button"><img id='myimg4' src="/assets/images/banana-black-white.png" alt="Image"></button>
-            <button class="image-button"><img id='myimg5' src="/assets/images/banana-black-white.png" alt="Image"></button>
-            <button class="image-button"><img id='myimg6' src="/assets/images/banana-black-white.png" alt="Image"></button>
-            <br>
-            <button class="image-button"><img id='myimg7' src="/assets/images/banana-black-white.png" alt="Image"></button>
-            <button class="image-button"><img id='myimg8' src="/assets/images/banana-black-white.png" alt="Image"></button>
-            <button class="image-button"><img id='myimg9' src="/assets/images/banana-black-white.png" alt="Image"></button>
-        </div>        
-    </div>
-
+<!--Game-->  
+<div class="game-area" id="box" hidden>
     <div class="score-area">
-        <p class="scores">Bananas Collected <span id="score">0</span></p>
-        <p class="scores">Monkey Lives Remaining <span id="monkey-lives">3</span></p>
+        <p class="scores"><span id="score">0</span></p>
     </div>
-    
 
-    <script src="assets/js/script.js"></script>
+    <div class="controls-area">
+        <button class="image-a" id="pausea">
+            <div id="slidesa" >
+                <img class="slidea showing" src="assets/images/aBananaBlackWhite.png" alt="a black and white banana">
+                <img class="slidea" src="assets/images/aBananaYellow.png" alt="a yellow banana">
+                <img class="slidea" src="assets/images/aMonkeyBlackWhite.png" alt="a black and white monkey">
+                <img class="slidea" src="assets/images/aMonkeyYellow.png" alt="a yellow monkey">
+            </div>
+        </button>
+                      
+        <button class="image-b" id="pauseb">
+            <div id="slidesb">
+                <img class="slideb showing" src="assets/images/aBananaBlackWhite.png" alt="a black and white banana">
+                <img class="slideb" src="assets/images/aBananaYellow.png" alt="a yellow banana">
+                <img class="slideb" src="assets/images/aMonkeyBlackWhite.png" alt="a black and white monkey">
+                <img class="slideb" src="assets/images/aMonkeyYellow.png" alt="a yellow monkey">
+            </div>
+        </button>
+
+        <button class="image-c" id="pausec">
+            <div id="slidesc">
+                <img class="slidec showing" src="assets/images/aBananaBlackWhite.png" alt="a black and white banana">
+                <img class="slidec" src="assets/images/aBananaYellow.png" alt="a yellow banana">
+                <img class="slidec" src="assets/images/aMonkeyBlackWhite.png" alt="a black and white monkey">
+                <img class="slidec" src="assets/images/aMonkeyYellow.png" alt="a yellow monkey">
+            </div>
+        </button>
+    </div>
+
+    <div class="controls-area">
+        <button class="image-d" id="paused">
+            <div id="slidesd">
+                <img class="slided showing" src="assets/images/aBananaBlackWhite.png" alt="a black and white banana">
+                <img class="slided" src="assets/images/aBananaYellow.png" alt="a yellow banana">
+                <img class="slided" src="assets/images/aMonkeyBlackWhite.png" alt="a black and white monkey">
+                <img class="slided" src="assets/images/aMonkeyYellow.png" alt="a yellow monkey">
+            </div>
+        </button>
+  
+       <button class="image-e" id="pausee">
+            <div id="slidese">
+                <img class="slidee showing" src="assets/images/aBananaBlackWhite.png" alt="a black and white banana">
+                <img class="slidee" src="assets/images/aBananaYellow.png" alt="a yellow banana">
+                <img class="slidee" src="assets/images/aMonkeyBlackWhite.png" alt="a black and white monkey">
+                <img class="slidee" src="assets/images/aMonkeyYellow.png" alt="a yellow monkey">
+            </div>
+        </button>
+
+        <button class="image-f" id="pausef">
+            <div id="slidesf">
+                <img class="slidef showing" src="assets/images/aBananaBlackWhite.png" alt="a black and white banana">
+                <img class="slidef" src="assets/images/aBananaYellow.png" alt="a yellow banana">
+                <img class="slidef" src="assets/images/aMonkeyBlackWhite.png" alt="a black and white monkey">
+                <img class="slidef" src="assets/images/aMonkeyYellow.png" alt="a yellow monkey">
+            </div>
+        </button>
+    </div>
+
+    <div class="controls-area">
+        <button class="image-g" id="pauseg">
+            <div id="slidesg">
+                <img class="slideg showing" src="assets/images/aBananaBlackWhite.png" alt="a black and white banana">
+                <img class="slideg" src="assets/images/aBananaYellow.png" alt="a yellow banana">
+                <img class="slideg" src="assets/images/aMonkeyBlackWhite.png" alt="a black and white monkey">
+                <img class="slideg" src="assets/images/aMonkeyYellow.png" alt="a yellow monkey">
+            </div>
+        </button>
+  
+       <button class="image-h" id="pauseh">
+            <div id="slidesh">
+                <img class="slideh showing" src="assets/images/aBananaBlackWhite.png" alt="a black and white banana">
+                <img class="slideh" src="assets/images/aBananaYellow.png" alt="a yellow banana">
+                <img class="slideh" src="assets/images/aMonkeyBlackWhite.png" alt="a black and white monkey">
+                <img class="slideh" src="assets/images/aMonkeyYellow.png" alt="a yellow monkey">
+            </div>
+        </button>
+
+        <button class="image-i" id="pausei">
+            <div id="slidesi">
+                <img class="slidei showing" src="assets/images/aBananaBlackWhite.png" alt="a black and white banana">
+                <img class="slidei" src="assets/images/aBananaYellow.png" alt="a yellow banana">
+                <img class="slidei" src="assets/images/aMonkeyBlackWhite.png" alt="a black and white monkey">
+                <img class="slidei" src="assets/images/aMonkeyYellow.png" alt="a yellow monkey">
+            </div>
+        </button>
+    </div>
+
+<!--Scores-->
+    <div class="score-area">
+        <p class="scores"><span id="monkeylives">5</span></p>
+        <p class="lives" hidden>Monkey Lives Remaining <span id="lives">5</span></p>
+    </div>
+</div>      
+
+<!--Game Over-->
+<div class="game-over" id="over" hidden>
+    <h2 class="result">You Collected<br><br><span id="result">0<br><br><i id="bananas">bananas</i></span></h2>
+    <button id="play-again" onClick="gamerestart()">Play Again</button>
+    <h2 class="lives" hidden>Monkey Lives Remaining <span id="lives">5</span></h2>
+</div>
+
+<!--Mute-->
+<div>
+    <br>
+    <br>
+    <button id="mute" onclick="mutePage()"><i class="fa fa-volume-off" aria-hidden="true"></i>
+    </button>
+</div>
+    
+    <script src="assets/js/script3.js"></script>
     <!--font awesome script-->
     <script src="https://kit.fontawesome.com/1f271c2fd4.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
