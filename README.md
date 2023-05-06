@@ -8,126 +8,109 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/opacity - to fix opacity on sli
 https://codepen.io/dajreamdigital/pen/jvqKLX - hide button functionality
 https://bobbyhadz.com/blog/javascript-hide-button-after-click - hide button functionality
 https://stackoverflow.com/questions/12953928/immediate-play-sound-on-button-click-in-html-page - audio functionality
-https://pixabay.com/sound-effects/ - yippee sound
-https://animate.style/ - effects
+
 https://stackoverflow.com/questions/14044761/how-to-mute-all-sound-in-a-page-with-js - mute control
 
 
 
 
+![Tap Tap Monkey Logo](assets/images/aBananaYellow.png)<br>
 
+Welcome to the read me for Tap Tap Monkey.<br>
 
-
-
-
-
-
-
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome USER_NAME,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+This documents outlines the goals of the website and its functionality throughout.<br>
 
 ------
+## Core Aims<br>
 
-## Release History
+Tap Tap Monkey is intended to be a simple to play game, on all devices, where the user has to test their reaction skills by clicking randomly changing images of bananas and avoiding monkeys.<br>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The core aim of the site is to provide a simple game for people to enjoy while they have a few minutes to relax, for example when on the bus, waiting for an appointment etc.<br>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![Am I Responsive](assets/images/amIResponsive.png)<br>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+The site is fully responsive across all devices and maintains good resizing and positioning throughout. It is also purposefully designed to fit on a mobile screen without need for scrolling.<br>
 
 ------
+## Features
 
-## FAQ about the uptime script
+<strong>Navigation</strong><br>
+There is no navigation menu. Instead, there is a straightforward progression for the user, broken into three stages: Start screen, game play, game over screen.<br>
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+<strong>Site Fonts</strong><br>
+We use Sans Serif as our primary font throughout the site.<br>
 
-**How will this affect me?**
+<strong>Colors</strong><br> 
+There is a constant colour structure throughout the site of Gold and Black. White is used ocassionally, for elements like audio control, and when buttons are hovered / clicked.<br>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+<strong>Header</strong><br> 
+The header shows the site title and also includes a selection of keywords related to games. It is clear who the site is targeted towards.<br>
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+<strong>Iconography</strong><br> 
+Icons are used from: https://fontawesome.com<br>
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+We use a banana icon and monkey icon, each in two variations of black and white, or black and yellow.<br>
 
-**So….?**
+<strong>Animations</strong><br> 
+Animation effects are used from: https://animate.style/<br>
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+We use a text animation to shake the Tap Tap Monkey title upon first load of the webpage.<br>
 
-**Can I opt out?**
+We use other animations in the game itself. If a user clicks a banana it shoots upward, if they click a monkey it shoots downward. This UX is intended to reenforce the main aim of the game - to click bananas, not monkeys.<br>
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+<strong>Sounds</strong><br>
+Sound effects are from: https://pixabay.com/sound-effects/<br>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+We use two audio files to further reenforce the UX of clicking bananas and monkeys.<br>
 
-**Anything more?**
+Bananas make a yippee sound, monkeys make a squeel sound.<br>
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
+<strong>Start screen</strong><br> 
+This section shows our animated title and gives a simple introduction to the game rules.<br>
 
-Happy coding!
+There is also a Go Bananas button for users to commence playing.<br>
+
+<strong>Gameplay</strong><br> 
+The game uses a layout of 3 x 3 buttons. Each button is a randomised rotation of four images, two bananas, two monkeys. Users begin the game with a score of zero bananas and a score of 5 lives. If they click a banana image, their banana score increases and is displayed in a large yellow number at the top of the screen. If they click a monkey, their monkey lives score is reduced, shown in the red score at the bottom of the screen. The game ends when they have clicked five monkeys.
+<br>
+
+<strong>Game Over</strong><br> 
+The game over screen shows the user how many bananas they collected.<br>
+
+It also shows a play again button, which when clicked refreshes the whole site and therefore returns the scores to their original state.<br>
+
+
+------
+## Testing
+
+I have tested the site across multiple devices of different sizes, and a variety of popular browsers. The site performs well across all.<br>
+
+<strong>Responsiveness</strong><br> Confirmed across multiple devices.<br>
+
+<strong>Buttons on all screens - including gameplay</strong><br> All are functional and easy to understand.<br>
+
+<strong>Unfixed bugs</strong><br> I am having a problem toggling the mute button to different colours depending on its state.<br>
+
+------
+## Testing
+![Lighthouse Score](assets/images/lighthouse.png)<br>
+
+CSS - When we run it through the w3c validator we have multiple errors to resolve.<br>
+
+HTML - When we run it through the w3c validator we have multiple errors to resolve.<br>
+
+<strong>Accessibility</strong><br> We used google chrome's lighthouse tool and ranked as follows:<br>
+    <strong>Performance:</strong> 38/100 (The main issue is the number of javascript funtions running. I need to try and run the same script for each button, instead of one each.)<br>
+    <strong>Accessibility:</strong> 80/100 (The main issue appears to be with the labelling of the audio button. We use an icon instead of a text word, making it hard to understand for blind users. I need to fix that.)<br>
+    <strong>Best Practices:</strong> 100/100<br>
+    <strong>SEO:</strong> 100/100<br>
+
+------
+## Deployment
+
+The site is deployed to Github pages, accessible via: https://rggg1.github.io/hi-lo-game<br>
+
+
+The source files are available here: https://github.com/RGGG1/hi-lo-game
